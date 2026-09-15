@@ -1,0 +1,16 @@
+# Entornos y cachés
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+# Configuración local de agentes (permisos, alias de hosts)
+.claude/
+# Salidas del pipeline: vídeo, transcripciones, subtítulos, planes (se regeneran)
+output/*
+# ...salvo las notas y scripts de investigación
+!output/_research/
+output/_research/**/*.log
+output/_research/metadata/preview*/
+# Guiones de producción: sólo el ejemplo se versiona (publicar guiones reales es decisión de Mario)
+guiones/*
+!guiones/ejemplo.md
