@@ -1,0 +1,61 @@
+id: clipfactory
+version: 1
+root: ../../../../../..
+task_type: CODE
+objective: 'Crear scripts/render_vertical.py que entregue cortos 9:16 reutilizando
+  vertical_cropper de CleanVideos (/Volumes/Medios/Repos/CleanVideos/video_pipeline/scripts/vertical_cropper.py)
+  para el seguimiento del sujeto, sin reimplementar deteccion (sin ''mediapipe'' ni
+  ''pose_landmarker'' en el fuente): verificar ffmpeg con shutil.which/FileNotFoundError/mensaje
+  claro, evitar MarginV=60, no escribir sobre clips/ horizontales (solo clips/vertical
+  o output), generar output/_acceptance/vertical.mp4 en 9:16 y output/_acceptance/crop_plan.json
+  con centres variados, mas tests/ de apoyo si hace falta.'
+gate_policy:
+  scope:
+    required: true
+  tests:
+    required: true
+  artifacts:
+    required: true
+  regressions:
+    required: false
+  reproducibility:
+    required: false
+review:
+  enabled: false
+  required: false
+scope:
+  baseline: .governance/baseline.json
+  allow:
+  - scripts
+  - tests
+  deny:
+  - acceptance/
+  - README.md
+  - PIPELINE.md
+  - .governance
+  - acceptance/test_vertical.py
+  - acceptance/evaluate.py
+  - acceptance
+  ignore:
+  - .governance
+  - .governance
+  - .governance/runs
+  - .governance/current.json
+  - .gov-runs
+  - output/
+  - guiones/
+  - .governance/
+acceptance:
+  tests:
+    command: python3 -m pytest -q -p no:cacheprovider acceptance/test_vertical.py
+    timeout: 1800.0
+    junit: false
+  artifacts:
+    required:
+    - path: README.md
+      kind: file
+    - path: PIPELINE.md
+      kind: file
+verification:
+  reproducible_runs: 1
+escalate_when: []
