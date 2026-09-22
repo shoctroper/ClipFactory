@@ -1,0 +1,53 @@
+{
+  "classification": "SPEC_REVIEW",
+  "cost_registered": true,
+  "failures_caught": [
+    "QA",
+    "ARCHITECT"
+  ],
+  "retries": 3,
+  "role_count": 3,
+  "roles": {
+    "ARCHITECT": {
+      "contributed": true,
+      "latency_ms": 22305.9,
+      "model": "opencode/big-pickle",
+      "provider": "opencode",
+      "status": "COMPLETED",
+      "timeout_seconds": 180.0,
+      "usage": {
+        "cost": 0,
+        "input_tokens": 451,
+        "output_tokens": 338,
+        "tokens": 16405
+      }
+    },
+    "IMPLEMENTER": {
+      "contributed": true,
+      "latency_ms": 17680.9,
+      "model": "opencode-go/deepseek-v4-flash",
+      "provider": "opencode",
+      "status": "COMPLETED",
+      "timeout_seconds": 3000.0,
+      "usage": {
+        "duration_ms": 17680.3
+      }
+    },
+    "QA": {
+      "contributed": true,
+      "latency_ms": 9354.5,
+      "model": "opencode/big-pickle",
+      "provider": "opencode",
+      "status": "COMPLETED",
+      "timeout_seconds": 180.0,
+      "usage": {
+        "cost": 0,
+        "input_tokens": 2861,
+        "output_tokens": 158,
+        "tokens": 15400
+      }
+    }
+  },
+  "task_type": "CODE",
+  "total_latency_ms": 49341.3
+}

@@ -1,0 +1,30 @@
+{
+  "attempt_id": "att-be01eb0a4d19",
+  "executor": "supervisor",
+  "goal_id": "clip-vertical",
+  "objective": "Implementar la capacidad de recorte vertical 9:16 que sigue al sujeto en scripts/ reutilizando vertical_cropper de CleanVideos, de modo que las 7 pruebas de acceptance/test_vertical.py pasen (empezando por test_A7_sin_ffmpeg_falla_diciendo_por_que que falla por no encontrar o informar correctamente la ausencia de ffmpeg).",
+  "producer_task": null,
+  "proposal_hash": "0ae272a004137b110d85c9b42f9bdf0954df1abeed7bf60e5d63818dbf6b271b",
+  "scope": {
+    "allow": [
+      "scripts",
+      "tests"
+    ],
+    "deny": [
+      "acceptance/",
+      "README.md",
+      "PIPELINE.md",
+      ".governance",
+      "acceptance/test_vertical.py",
+      "acceptance/evaluate.py",
+      "acceptance"
+    ],
+    "ignore": [
+      "output/",
+      "guiones/",
+      ".governance/"
+    ]
+  },
+  "seq": 4,
+  "task_type": "CODE"
+}

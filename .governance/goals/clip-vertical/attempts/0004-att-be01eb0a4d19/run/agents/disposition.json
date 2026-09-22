@@ -1,0 +1,106 @@
+{
+  "classification": "SPEC_REVIEW",
+  "created_at": "2026-09-22T14:01:38+00:00",
+  "cycle": 3,
+  "diff": {
+    "after_hash": "edbb740c750b4d8c156cad03f213622ecb9433b0e0ab9f5f7c8c94e59ff62d81",
+    "before_hash": "edbb740c750b4d8c156cad03f213622ecb9433b0e0ab9f5f7c8c94e59ff62d81",
+    "changed_files": [],
+    "forbidden_files": [],
+    "in_scope": true,
+    "unexpected_files": []
+  },
+  "escalated_role": "ARCHITECT",
+  "executed_roles": {
+    "ARCHITECT": {
+      "latency_ms": 22305.9,
+      "model": "opencode/big-pickle",
+      "provider": "opencode",
+      "status": "COMPLETED"
+    },
+    "IMPLEMENTER": {
+      "latency_ms": 17680.9,
+      "model": "opencode-go/deepseek-v4-flash",
+      "provider": "opencode",
+      "status": "COMPLETED"
+    },
+    "QA": {
+      "latency_ms": 9354.5,
+      "model": "opencode/big-pickle",
+      "provider": "opencode",
+      "status": "COMPLETED"
+    }
+  },
+  "gates": null,
+  "human_gate": null,
+  "max_repair_cycles": 3,
+  "metrics": {
+    "cost_registered": true,
+    "failures_caught": [
+      "QA",
+      "ARCHITECT"
+    ],
+    "retries": 3,
+    "role_count": 3,
+    "roles": {
+      "ARCHITECT": {
+        "contributed": true,
+        "latency_ms": 22305.9,
+        "model": "opencode/big-pickle",
+        "provider": "opencode",
+        "status": "COMPLETED",
+        "timeout_seconds": 180.0,
+        "usage": {
+          "cost": 0,
+          "input_tokens": 451,
+          "output_tokens": 338,
+          "tokens": 16405
+        }
+      },
+      "IMPLEMENTER": {
+        "contributed": true,
+        "latency_ms": 17680.9,
+        "model": "opencode-go/deepseek-v4-flash",
+        "provider": "opencode",
+        "status": "COMPLETED",
+        "timeout_seconds": 3000.0,
+        "usage": {
+          "duration_ms": 17680.3
+        }
+      },
+      "QA": {
+        "contributed": true,
+        "latency_ms": 9354.5,
+        "model": "opencode/big-pickle",
+        "provider": "opencode",
+        "status": "COMPLETED",
+        "timeout_seconds": 180.0,
+        "usage": {
+          "cost": 0,
+          "input_tokens": 2861,
+          "output_tokens": 158,
+          "tokens": 15400
+        }
+      }
+    },
+    "total_latency_ms": 49341.3
+  },
+  "policy_hash": "7844d57e2db8c744038badd1bd4cb4bf3c28fd499687d84d5b54a87ce68ac04a",
+  "provider_failure": null,
+  "reason": "independent validation found a specification defect",
+  "required_roles": [
+    "IMPLEMENTER",
+    "QA"
+  ],
+  "required_validations": [
+    "artifacts",
+    "scope_diff",
+    "semantic_review",
+    "tests"
+  ],
+  "role_registry_hash": "4bbcaec87c1d47a6256e693d86816abb304676179bb5a798f98a0b0a4e62229e",
+  "schema_version": "1",
+  "spec_id": "clipfactory",
+  "spec_version": 1,
+  "task_type": "CODE"
+}

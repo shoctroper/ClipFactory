@@ -1,12 +1,12 @@
 {
-  "attempt_id": "att-ddfcb3b0ece4",
-  "attempt_seq": 3,
-  "classification": "OPERATIONAL_LIMIT",
+  "attempt_id": "att-be01eb0a4d19",
+  "attempt_seq": 4,
+  "classification": "SPEC_REVIEW",
   "contract_hash": "915269e0fc4ed24543e1854ff06e03f85c202338fe6f8b78c26ff147b67b7a27",
   "goal_id": "clip-vertical",
   "governance_version": "1.0.0",
-  "objective": "Crear scripts/render_vertical.py que entregue cortos 9:16 reutilizando vertical_cropper de CleanVideos (/Volumes/Medios/Repos/CleanVideos/video_pipeline/scripts/vertical_cropper.py) para el seguimiento del sujeto, sin reimplementar deteccion (sin 'mediapipe' ni 'pose_landmarker' en el fuente): verificar ffmpeg con shutil.which/FileNotFoundError/mensaje claro, evitar MarginV=60, no escribir sobre clips/ horizontales (solo clips/vertical o output), generar output/_acceptance/vertical.mp4 en 9:16 y output/_acceptance/crop_plan.json con centres variados, mas tests/ de apoyo si hace falta.",
-  "out_root": "/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/attempts/0003-att-ddfcb3b0ece4/run",
+  "objective": "Implementar la capacidad de recorte vertical 9:16 que sigue al sujeto en scripts/ reutilizando vertical_cropper de CleanVideos, de modo que las 7 pruebas de acceptance/test_vertical.py pasen (empezando por test_A7_sin_ffmpeg_falla_diciendo_por_que que falla por no encontrar o informar correctamente la ausencia de ffmpeg).",
+  "out_root": "/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/attempts/0004-att-be01eb0a4d19/run",
   "project": "clipfactory",
   "task_type": "CODE"
 }

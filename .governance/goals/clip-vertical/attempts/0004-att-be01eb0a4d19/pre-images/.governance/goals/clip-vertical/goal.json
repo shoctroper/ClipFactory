@@ -1,5 +1,5 @@
 {
-  "attempts_count": 4,
+  "attempts_count": 3,
   "authority_envelope": {
     "accept_missing_tests": [],
     "allow": [
@@ -75,12 +75,12 @@
       "timed_out": false
     }
   },
-  "goal_hash": "b6d1c61e23b3a34e7792de09f01b63f7c643cf2897c7a62ffdb7d4e7c3022a5d",
+  "goal_hash": "155f091520c536f65b567ec6c3d987fd27fcaa4cae20840289771707e7d366fe",
   "goal_id": "clip-vertical",
   "halt_reason": null,
   "last_evaluation": {
     "authority_required": false,
-    "evaluation_path": "/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/evaluations/0009.json",
+    "evaluation_path": "/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/evaluations/0008.json",
     "evaluator_output": "{\"clipfactory_vertical_passing\": 0, \"progress\": 0, \"total\": 7, \"collected\": 7, \"skipped\": 0, \"notes\": [], \"tail\": [\"FAILED acceptance/test_vertical.py::A_Reencuadre::test_A7_sin_ffmpeg_falla_diciendo_por_que\", \"7 failed in 0.01s\"]}",
     "observed": 0,
     "op": ">=",

@@ -1,0 +1,24 @@
+{
+  "changed_files": [],
+  "changed_files_verified": false,
+  "created_at": "2026-09-22T14:00:30+00:00",
+  "cycle": 2,
+  "error": null,
+  "latency_ms": 11436.5,
+  "log": "f85c20/run/spec.yaml\\n.governance/goals/clip-vertical/attempts/0002-att-3fddc3f85c20/run/branch-policy.json\\n.governance/goals/clip-vertical/attempts/0002-att-3fddc3f85c20/run/agents\\n.governance/goals/clip-vertical/attempts/0002-att-3fddc3f85c20/run/sessions.jsonl\\n.governance/goals/clip-vertical/attempts/0002-att-3fddc3f85c20/run/git-baseline.json\\n.governance/goals/clip-vertical/attempts/0002-att-3fddc3f85c20/run/repository-identity.json\\n.governance/goals/clip-vertical/attempts/0002-att-3fddc3f85c20/run/repository-identity-post.json\\n.governance/goals/clip-vertical/attempts/0004-att-be01eb0a4d19\\n.governance/goals/clip-vertical/attempts/0004-att-be01eb0a4d19/pre-snapshot.json\\n---\\ntotal 552\\ndrwxr-xr-x@  8 mariocolli  staff     256 Sep 22 07:59 .\\ndrwxr-xr-x@  3 mariocolli  staff      96 Sep 22 07:51 ..\\ndrwxr-xr-x@  6 mariocolli  staff     192 Sep 22 07:59 attempts\\ndrwxr-xr-x@  5 mariocolli  staff     160 Sep 22 07:51 baseline\\ndrwxr-xr-x@ 18 mariocolli  staff     576 Sep 22 07:59 evaluations\\n-rw-r--r--@  1 mariocolli  staff  213120 Sep 22 07:59 events.jsonl\\n-rw-------@  1 mariocolli  staff    9063 Sep 22 07:59 goal.json\\n-rw-r--r--@  1 mariocolli  staff       0 Sep 22 07:51 lock\\n\",\"exit\":0,\"truncated\":false},\"title\":\"find .governance/goals/clip-vertical/attempts -maxdepth 3 | head -60; echo \\\"---\\\"; ls -la .governance/goals/clip-vertical/\",\"time\":{\"start\":1790085630814,\"end\":1790085630829}},\"id\":\"prt_0c96b0ac50015wixLVNLzAXOJ0\",\"sessionID\":\"ses_f36951e95ffeiRfH2Hj766KUlk\",\"messageID\":\"msg_0c96b0360001wU381IEG4J7X8A\"}}\n{\"type\":\"step_finish\",\"timestamp\":1790085630873,\"sessionID\":\"ses_f36951e95ffeiRfH2Hj766KUlk\",\"part\":{\"id\":\"prt_0c96b0b97001p48gk2nWPh5tEX\",\"reason\":\"tool-calls\",\"snapshot\":\"66265338f2baf7c52e7db9eaf3f63ce1b1039675\",\"messageID\":\"msg_0c96b0360001wU381IEG4J7X8A\",\"sessionID\":\"ses_f36951e95ffeiRfH2Hj766KUlk\",\"type\":\"step-finish\",\"tokens\":{\"total\":21878,\"input\":1678,\"output\":176,\"reasoning\":56,\"cache\":{\"write\":0,\"read\":19968}},\"cost\":0.000450804}}",
+  "model": "opencode-go/deepseek-v4-flash",
+  "output": {
+    "exit_code": 0,
+    "reported_status": "COMPLETED",
+    "session_id": "ses_f36951e95ffeiRfH2Hj766KUlk"
+  },
+  "provider": "opencode",
+  "result_hash": "3b2c5c7eb98d1d59640dc4196b95f6da96b480b937373643fcf448c8b7365666",
+  "role": "IMPLEMENTER",
+  "schema_version": "1",
+  "status": "COMPLETED",
+  "tasks_id": "at-b19bc3c01763",
+  "usage": {
+    "duration_ms": 11435.8
+  }
+}
