@@ -1,0 +1,57 @@
+{
+  "artifacts": {
+    "entries": [
+      {
+        "exists": true,
+        "kind": "file",
+        "path": "README.md",
+        "status": "PASS"
+      },
+      {
+        "exists": true,
+        "kind": "file",
+        "path": "PIPELINE.md",
+        "status": "PASS"
+      }
+    ],
+    "status": "PASS"
+  },
+  "scope_diff": {
+    "after_hash": "edbb740c750b4d8c156cad03f213622ecb9433b0e0ab9f5f7c8c94e59ff62d81",
+    "allow": [
+      "scripts",
+      "tests"
+    ],
+    "before_hash": "edbb740c750b4d8c156cad03f213622ecb9433b0e0ab9f5f7c8c94e59ff62d81",
+    "change_kinds": {},
+    "changed_files": [],
+    "deny": [
+      "acceptance/",
+      "README.md",
+      "PIPELINE.md",
+      ".governance",
+      "acceptance/test_vertical.py",
+      "acceptance/evaluate.py",
+      "acceptance"
+    ],
+    "forbidden_files": [],
+    "in_scope": true,
+    "protected_violations": [],
+    "rule": "real worktree diff; forbidden/unexpected -> scope violation",
+    "status": "PASS",
+    "unexpected_files": []
+  },
+  "tests": {
+    "exit_code": 1,
+    "false_green": false,
+    "output_sha256": "ced826287f3c3ca4930026a784f61d9315ef2aa35eb501f482609ec01c0ec32e",
+    "reason": "exit_nonzero",
+    "status": "FAIL",
+    "stderr_tail": "",
+    "stdout_tail": "...[truncated]...\n3.9/pathlib.py:1242: in open\n    return io.open(self, mode, buffering, encoding, errors, newline,\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = PosixPath('/Volumes/Medios/Repos/ClipFactory/scripts/render_vertical.py')\nname = '/Volumes/Medios/Repos/ClipFactory/scripts/render_vertical.py'\nflags = 16777216, mode = 438\n\n    def _opener(self, name, flags, mode=0o666):\n        # A stub for the opener argument to built-in open()\n>       return self._accessor.open(self, flags, mode)\nE       FileNotFoundError: [Errno 2] No such file or directory: '/Volumes/Medios/Repos/ClipFactory/scripts/render_vertical.py'\n\n/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py:1110: FileNotFoundError\n=========================== short test summary info ============================\nFAILED acceptance/test_vertical.py::A_Reencuadre::test_A1_existe_un_renderizador_vertical\nFAILED acceptance/test_vertical.py::A_Reencuadre::test_A2_reutiliza_el_cropper_de_cleanvideos\nFAILED acceptance/test_vertical.py::A_Reencuadre::test_A3_la_salida_es_9_16\nFAILED acceptance/test_vertical.py::A_Reencuadre::test_A4_el_recorte_sigue_al_sujeto\nFAILED acceptance/test_vertical.py::A_Reencuadre::test_A5_los_subtitulos_caben_en_vertical\nFAILED acceptance/test_vertical.py::A_Reencuadre::test_A6_no_pisa_la_salida_horizontal\nFAILED acceptance/test_vertical.py::A_Reencuadre::test_A7_sin_ffmpeg_falla_diciendo_por_que\n7 failed in 0.09s\n",
+    "test_counts": {
+      "failed": 7
+    },
+    "timed_out": false
+  }
+}

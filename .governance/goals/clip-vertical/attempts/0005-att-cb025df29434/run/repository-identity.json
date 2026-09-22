@@ -1,0 +1,54 @@
+{
+  "absolute_path": "/Volumes/Medios/Repos/ClipFactory",
+  "ahead": 5,
+  "behind": 0,
+  "branch": "main",
+  "captured_at": "2026-09-22T14:01:57+00:00",
+  "clean": false,
+  "detached": false,
+  "dirty": true,
+  "evidence_origin": "MARIOGOVERNANCE",
+  "git_dir": ".git",
+  "head": "8a6ba71176c300823d04d5349a8a79b9f814f834",
+  "head_short": "8a6ba71",
+  "is_git": true,
+  "local_branches": [
+    "main"
+  ],
+  "remote_branches": [
+    "origin/main"
+  ],
+  "remote_url": "https://github.com/shoctroper/ClipFactory.git",
+  "remotes": {
+    "origin": "https://github.com/shoctroper/ClipFactory.git"
+  },
+  "repository_id": "repo-d6704ac2de7a31eb",
+  "schema_version": "1",
+  "stash": 0,
+  "tags": [],
+  "uncommitted_changes": [
+    ".governance/goals/clip-vertical/attempts/0005-att-cb025df29434/attempt-spec.json",
+    ".governance/goals/clip-vertical/attempts/0005-att-cb025df29434/boundary-config.json",
+    ".governance/goals/clip-vertical/attempts/0005-att-cb025df29434/governance-fingerprint.json",
+    ".governance/goals/clip-vertical/attempts/0005-att-cb025df29434/pre-images/.governance/current.json",
+    ".governance/goals/clip-vertical/attempts/0005-att-cb025df29434/pre-images/.governance/goals/clip-vertical/goal.json",
+    ".governance/goals/clip-vertical/attempts/0005-att-cb025df29434/pre-images/.governance/project.yaml",
+    ".governance/goals/clip-vertical/attempts/0005-att-cb025df29434/pre-images/acceptance/evaluate.py",
+    ".governance/goals/clip-vertical/attempts/0005-att-cb025df29434/pre-images/acceptance/test_vertical.py",
+    ".governance/goals/clip-vertical/attempts/0005-att-cb025df29434/pre-snapshot.json",
+    ".governance/goals/clip-vertical/evaluations/0010-bracket/pre-snapshot.json",
+    ".governance/goals/clip-vertical/evaluations/0010.json",
+    ".governance/goals/clip-vertical/events.jsonl",
+    ".governance/goals/clip-vertical/goal.json",
+    ".governance/last-rebaseline.json"
+  ],
+  "unpushed_commits": [
+    "8a6ba71 wip(clip-vertical): attempt output consolidated between windows",
+    "f7ae784 wip(clip-vertical): attempt output consolidated between windows",
+    "4f9c8f6 wip(clip-vertical): attempt output consolidated between windows",
+    "2af9bfb wip(clip-vertical): attempt output consolidated between windows",
+    "85fa983 acceptance(vertical): el examen fijado antes de implementar"
+  ],
+  "upstream": "origin/main",
+  "worktree_root": "/Volumes/Medios/Repos/ClipFactory"
+}

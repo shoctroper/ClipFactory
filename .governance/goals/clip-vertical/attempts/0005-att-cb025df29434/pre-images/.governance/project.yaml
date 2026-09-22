@@ -1,0 +1,54 @@
+schema_version: '1'
+project: clipfactory
+governance_version: 1.0.0
+task_type: CODE
+policy_version: 1
+objective: 'ClipFactory entrega cortos verticales 9:16 con el recorte siguiendo
+  al sujeto, REUTILIZANDO vertical_cropper de CleanVideos en vez de
+  reimplementarlo. Diseño: la aceptación fijada en acceptance/test_vertical.py'
+scope:
+  allow:
+  - scripts/
+  - tests/
+  deny:
+  # La aceptación es el examen: un Attempt que pueda editarla se califica solo.
+  - acceptance/
+  - README.md
+  - PIPELINE.md
+  ignore:
+  - output/
+  - guiones/
+  - .governance/
+acceptance:
+  tests:
+    command: python3 -m pytest -q -p no:cacheprovider acceptance/test_vertical.py
+    timeout: 1800.0
+    junit: false
+  artifacts:
+  - path: README.md
+    kind: file
+  - path: PIPELINE.md
+    kind: file
+providers:
+  # 2026-09-22: deepseek-v4-flash es el caballo de calidad (NUNCA v4.1-flash,
+  # que cuesta como PRO). Los validadores en otro canal: un modelo no puede
+  # juzgar su propio trabajo (BUG-GOV-13).
+  ARCHITECT:
+    provider: opencode
+    model: opencode/big-pickle
+    timeout_seconds: 900
+  IMPLEMENTER:
+    provider: opencode
+    model: opencode-go/deepseek-v4-flash
+    timeout_seconds: 3000
+  QA:
+    provider: opencode
+    model: opencode/big-pickle
+    timeout_seconds: 1200
+repository:
+  id: clipfactory
+  remote: origin
+  branch_policy:
+    mode: direct
+    allowed_branches:
+    - main
