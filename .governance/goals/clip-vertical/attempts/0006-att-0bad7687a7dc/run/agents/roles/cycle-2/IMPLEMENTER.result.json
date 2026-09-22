@@ -1,0 +1,24 @@
+{
+  "changed_files": [],
+  "changed_files_verified": false,
+  "created_at": "2026-09-22T14:04:40+00:00",
+  "cycle": 2,
+  "error": null,
+  "latency_ms": 13344.2,
+  "log": "dios/Repos/ClipFactory/.governance/goals/clip-vertical/evaluations/0009-bracket/pre-snapshot.json\\n/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/evaluations/0004.json\\n/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/evaluations/0012.json\\n/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/evaluations/0008-bracket/pre-snapshot.json\\n/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/evaluations/0011-bracket/pre-snapshot.json\\n/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/evaluations/0001-bracket/pre-snapshot.json\\n=== gitignore ===\\n# Entornos y cachés\\n.venv/\\n__pycache__/\\n*.pyc\\n.DS_Store\\n# Configuración local de agentes (permisos, alias de hosts)\\n.claude/\\n# Salidas del pipeline: vídeo, transcripciones, subtítulos, planes (se regeneran)\\noutput/*\\n# ...salvo las notas y scripts de investigación\\n!output/_research/\\noutput/_research/**/*.log\\noutput/_research/metadata/preview*/\\n# Guiones de producción: sólo el ejemplo se versiona (publicar guiones reales es decisión de Mario)\\nguiones/*\\n!guiones/ejemplo.md\\n\",\"exit\":0,\"truncated\":false},\"title\":\"ls -la /Volumes/Medios/Repos/ClipFactory/.governance/goals && find /Volumes/Medios/Repos/ClipFactory/.governance/goals -type f | head && echo \\\"=== gitignore ===\\\" && cat /Volumes/Medios/Repos/ClipFactory/.gitignore\",\"time\":{\"start\":1790085880093,\"end\":1790085880113}},\"id\":\"prt_0c96ed84a001w3zwMVxDyVs1om\",\"sessionID\":\"ses_f36915710ffeI7F9xLvE4ADDY5\",\"messageID\":\"msg_0c96ecff9001qi3GGLi0iehZSE\"}}\n{\"type\":\"step_finish\",\"timestamp\":1790085880148,\"sessionID\":\"ses_f36915710ffeI7F9xLvE4ADDY5\",\"part\":{\"id\":\"prt_0c96ed952001zgBOswPW4DIjIe\",\"reason\":\"tool-calls\",\"snapshot\":\"10c19841902bad3d8f750338da5e7c81b6e230f4\",\"messageID\":\"msg_0c96ecff9001qi3GGLi0iehZSE\",\"sessionID\":\"ses_f36915710ffeI7F9xLvE4ADDY5\",\"type\":\"step-finish\",\"tokens\":{\"total\":30376,\"input\":10301,\"output\":205,\"reasoning\":30,\"cache\":{\"write\":0,\"read\":19840}},\"cost\":0.00174567}}",
+  "model": "opencode-go/deepseek-v4-flash",
+  "output": {
+    "exit_code": 0,
+    "reported_status": "COMPLETED",
+    "session_id": "ses_f36915710ffeI7F9xLvE4ADDY5"
+  },
+  "provider": "opencode",
+  "result_hash": "04720166a2901107f07640d426a63e9beb0122185e6df1000a6c274190f9eab9",
+  "role": "IMPLEMENTER",
+  "schema_version": "1",
+  "status": "COMPLETED",
+  "tasks_id": "at-2a4e8d42611a",
+  "usage": {
+    "duration_ms": 13343.4
+  }
+}

@@ -1,12 +1,30 @@
 {
   "attempt_id": "att-0bad7687a7dc",
-  "attempt_seq": 6,
-  "classification": "OPERATIONAL_LIMIT",
-  "contract_hash": "915269e0fc4ed24543e1854ff06e03f85c202338fe6f8b78c26ff147b67b7a27",
+  "executor": "supervisor",
   "goal_id": "clip-vertical",
-  "governance_version": "1.0.0",
   "objective": "Implementar la capacidad de ClipFactory para generar cortos verticales 9:16 con recorte que sigue al sujeto, reutilizando vertical_cropper de CleanVideos: crear en scripts/ el módulo/pipeline de recorte vertical (invocación de vertical_cropper, salida 9:16, seguimiento de sujeto, manejo ausente de ffmpeg con error claro) y en tests/ las pruebas unitarias cubriendo esos comportamientos, sin modificar acceptance/ ni la documentación restringida.",
-  "out_root": "/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/attempts/0006-att-0bad7687a7dc/run",
-  "project": "clipfactory",
+  "producer_task": null,
+  "proposal_hash": "73a1973a29134ca6dfeb6c5efb3d8d038610813fc63a84bf489f814292fdb993",
+  "scope": {
+    "allow": [
+      "scripts",
+      "tests"
+    ],
+    "deny": [
+      "acceptance/",
+      "README.md",
+      "PIPELINE.md",
+      ".governance",
+      "acceptance",
+      "acceptance/test_vertical.py",
+      "acceptance/evaluate.py"
+    ],
+    "ignore": [
+      "output/",
+      "guiones/",
+      ".governance/"
+    ]
+  },
+  "seq": 6,
   "task_type": "CODE"
 }

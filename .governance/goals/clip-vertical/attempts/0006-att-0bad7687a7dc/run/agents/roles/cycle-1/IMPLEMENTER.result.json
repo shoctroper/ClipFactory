@@ -1,0 +1,24 @@
+{
+  "changed_files": [],
+  "changed_files_verified": false,
+  "created_at": "2026-09-22T14:04:16+00:00",
+  "cycle": 1,
+  "error": null,
+  "latency_ms": 9484.1,
+  "log": "\\\"clipfactory_vertical_passing\\\\\\\": 0, \\\\\\\"progress\\\\\\\": 0, \\\\\\\"total\\\\\\\": 7, \\\\\\\"collected\\\\\\\": 7, \\\\\\\"skipped\\\\\\\": 0, \\\\\\\"notes\\\\\\\": [], \\\\\\\"tail\\\\\\\": [\\\\\\\"FAILED acceptance/test_vertical.py::A_Reencuadre::test_A7_sin_ffmpeg_falla_diciendo_por_que\\\\\\\", \\\\\\\"7 failed in 0.01s\\\\\\\"]}\\\",\\n    \\\"observed\\\": 0,\\n    \\\"op\\\": \\\">=\\\",\\n    \\\"progress\\\": 0,\\n    \\\"reason\\\": null,\\n    \\\"target\\\": 7,\\n    \\\"verified\\\": false\\n  },\\n  \\\"objective\\\": \\\"ClipFactory entrega cortos verticales 9:16 con el recorte siguiendo al sujeto, reutilizando vertical_cropper de CleanVideos en vez de reimplementarlo.\\\",\\n  \\\"outcome_predicate\\\": {\\n    \\\"evaluator\\\": {\\n      \\\"command\\\": [\\n        \\\"python3\\\",\\n        \\\"acceptance/evaluate.py\\\"\\n      ],\\n      \\\"pinned\\\": [\\n        \\\"acceptance/test_vertical.py\\\",\\n        \\\"acceptance/evaluate.py\\\"\\n      ],\\n      \\\"timeout_seconds\\\": 1800.0\\n    },\\n    \\\"metric\\\": \\\"clipfactory_vertical_passing\\\",\\n    \\\"op\\\": \\\">=\\\",\\n    \\\"progress_direction\\\": \\\"up\\\",\\n    \\\"stall_attempts\\\": 6,\\n    \\\"value\\\": 7\\n  },\\n  \\\"planner\\\": {\\n    \\\"mode\\\": \\\"agent\\\"\\n  },\\n  \\\"repository_id\\\": \\\"repo-d6704ac2de7a31eb\\\",\\n  \\\"schema_version\\\": \\\"2\\\",\\n  \\\"status\\\": \\\"GOAL_INCOMPLETE_CONTINUE\\\",\\n  \\\"task_type\\\": \\\"CODE\\\"\\n}\",\"lineStart\":1,\"lineEnd\":118,\"totalLines\":118,\"truncated\":false}},\"title\":\".governance/goals/clip-vertical/goal.json\",\"time\":{\"start\":1790085856137,\"end\":1790085856140}},\"id\":\"prt_0c96e7b09001TTCjwOJJWOmqBv\",\"sessionID\":\"ses_f3691a6b8ffeumIY91jyq6hMIj\",\"messageID\":\"msg_0c96e74f1001UePs9ElRxv0UmS\"}}\n{\"type\":\"step_finish\",\"timestamp\":1790085856186,\"sessionID\":\"ses_f3691a6b8ffeumIY91jyq6hMIj\",\"part\":{\"id\":\"prt_0c96e7bb80011NE4dL0cYtC431\",\"reason\":\"tool-calls\",\"snapshot\":\"c7276497890254cdadba3ec41d0729fe4197d61e\",\"messageID\":\"msg_0c96e74f1001UePs9ElRxv0UmS\",\"sessionID\":\"ses_f3691a6b8ffeumIY91jyq6hMIj\",\"type\":\"step-finish\",\"tokens\":{\"total\":20613,\"input\":4089,\"output\":114,\"reasoning\":26,\"cache\":{\"write\":0,\"read\":16384}},\"cost\":0.000746502}}",
+  "model": "opencode-go/deepseek-v4-flash",
+  "output": {
+    "exit_code": 0,
+    "reported_status": "COMPLETED",
+    "session_id": "ses_f3691a6b8ffeumIY91jyq6hMIj"
+  },
+  "provider": "opencode",
+  "result_hash": "371ba4ccf5eb49d38c05c905c3a1b02e3a3d9bd38661ada4f46eaffd14a45997",
+  "role": "IMPLEMENTER",
+  "schema_version": "1",
+  "status": "COMPLETED",
+  "tasks_id": "at-128fed000307",
+  "usage": {
+    "duration_ms": 9483.3
+  }
+}

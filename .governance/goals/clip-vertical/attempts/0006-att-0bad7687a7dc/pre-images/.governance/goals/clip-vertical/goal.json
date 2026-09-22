@@ -1,5 +1,5 @@
 {
-  "attempts_count": 6,
+  "attempts_count": 5,
   "authority_envelope": {
     "accept_missing_tests": [],
     "allow": [
@@ -75,12 +75,12 @@
       "timed_out": false
     }
   },
-  "goal_hash": "725ab79e4fff18d7c127bd99c6c95fc38886971c6a72972826a83945ba393455",
+  "goal_hash": "27b924a15523f7ba2b63e8f9148c53acb7c2dcff4b17220a8146d3a6b70085a7",
   "goal_id": "clip-vertical",
-  "halt_reason": "NO_PROGRESS",
+  "halt_reason": null,
   "last_evaluation": {
     "authority_required": false,
-    "evaluation_path": "/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/evaluations/0013.json",
+    "evaluation_path": "/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/evaluations/0012.json",
     "evaluator_output": "{\"clipfactory_vertical_passing\": 0, \"progress\": 0, \"total\": 7, \"collected\": 7, \"skipped\": 0, \"notes\": [], \"tail\": [\"FAILED acceptance/test_vertical.py::A_Reencuadre::test_A7_sin_ffmpeg_falla_diciendo_por_que\", \"7 failed in 0.01s\"]}",
     "observed": 0,
     "op": ">=",
@@ -113,6 +113,6 @@
   },
   "repository_id": "repo-d6704ac2de7a31eb",
   "schema_version": "2",
-  "status": "STALLED",
+  "status": "GOAL_INCOMPLETE_CONTINUE",
   "task_type": "CODE"
 }
