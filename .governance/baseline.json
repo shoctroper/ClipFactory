@@ -1,0 +1,511 @@
+{
+  "files": [
+    {
+      "path": ".claude/settings.local.json",
+      "sha256": "998f99e6403f0215ba682c7a6fd0b74ba78afa820cfe2a244dda0ad76dd9207f",
+      "size": 1387
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "63aa0efd14362e37e4bbb60eca482ead103186b76ec8838ecfeb090033affdea",
+      "size": 483
+    },
+    {
+      "path": ".venv/.gitignore",
+      "sha256": "684888c0ebb17f374298b65ee2807526c066094c701bcc7ebbe1c1095f494fc1",
+      "size": 1
+    },
+    {
+      "path": ".venv/.lock",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": ".venv/CACHEDIR.TAG",
+      "sha256": "5953156d7e0c564a427251316eaf26f8870e6483ae2197f916b630e4f93e31ae",
+      "size": 43
+    },
+    {
+      "path": ".venv/bin/activate",
+      "sha256": "704366e772d3a61e30e1cb79b151469f52b1f1e5ae5bb366fb8a63668886d1a9",
+      "size": 4094
+    },
+    {
+      "path": ".venv/bin/activate.bat",
+      "sha256": "7b374ca392d43164358cc541c1e00dab61f81d4636a43cf16ef10bf7b7403a50",
+      "size": 2674
+    },
+    {
+      "path": ".venv/bin/activate.csh",
+      "sha256": "c002c598148cc97ce2783fe4a8bf3672df79f4b44f9e08a63557cab9f5f97431",
+      "size": 2624
+    },
+    {
+      "path": ".venv/bin/activate.fish",
+      "sha256": "cc8295e0579ed9121c3d146d58fca8b20ba924a4c4c989a0fe704ba214b08d32",
+      "size": 4335
+    },
+    {
+      "path": ".venv/bin/activate.nu",
+      "sha256": "57556c189eefdf645ca4a3517443f036fbbd1e140b9272e336704b40af1ece3d",
+      "size": 3950
+    },
+    {
+      "path": ".venv/bin/activate.ps1",
+      "sha256": "5f4d6ebf3a7ef28fb3ef89a6d8f02b47d5c2d225e361c41428bb9960410ae4ab",
+      "size": 2764
+    },
+    {
+      "path": ".venv/bin/activate.xsh",
+      "sha256": "df312406d0948f4d7aabfda405ebf28b4b59a1099a8d8f16759e15eefff0a910",
+      "size": 3867
+    },
+    {
+      "path": ".venv/bin/activate_this.py",
+      "sha256": "1f06997007ffaab0edbbc5752edf26c175422ecaf3b35213ffd0fde1a2605aed",
+      "size": 2383
+    },
+    {
+      "path": ".venv/bin/deactivate.bat",
+      "sha256": "13ea86073a9ee43a66e3549312599dd47ff315758b4ca5a0406faf041fb82300",
+      "size": 1730
+    },
+    {
+      "path": ".venv/bin/pydoc.bat",
+      "sha256": "09f9608d478fa48a9e49af8f413cfeaab47773effd185433088b7688ce75890e",
+      "size": 1219
+    },
+    {
+      "path": ".venv/bin/python",
+      "sha256": "612bb6e55a95ea6eaf3c9693cf17fbf1a738408ad3bbfce988f712d7321d2c42",
+      "size": 17257904
+    },
+    {
+      "path": ".venv/bin/python3",
+      "sha256": "612bb6e55a95ea6eaf3c9693cf17fbf1a738408ad3bbfce988f712d7321d2c42",
+      "size": 17257904
+    },
+    {
+      "path": ".venv/bin/python3.11",
+      "sha256": "612bb6e55a95ea6eaf3c9693cf17fbf1a738408ad3bbfce988f712d7321d2c42",
+      "size": 17257904
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/_virtualenv.pth",
+      "sha256": "69ac3d8f27e679c81b94ab30b3b56e9cd138219b1ba94a1fa3606d5a76a1433d",
+      "size": 18
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/_virtualenv.py",
+      "sha256": "cfb3db86aaa53bb62b5ff764970bec2d71c9228590a0ebec57f6ec926cc0bf1a",
+      "size": 5246
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/__init__.py",
+      "sha256": "abc539cf6347a12dd6ba042136fde758d6528cc7ca8fcccee17b81ac0373abc4",
+      "size": 836
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/__init__.pyi",
+      "sha256": "e8d3680a8c2d5866c70511d9f8a3ee9975d2a64db1e2dacf992b435aa93d3ae8",
+      "size": 201
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/__pyinstaller/__init__.py",
+      "sha256": "78d8cc6481cb11d780ace9aa8d1817ae1931b24bf1800409a1672a83e71ea8fb",
+      "size": 132
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/__pyinstaller/test_rapidfuzz_packaging.py",
+      "sha256": "881b2c22d08d755669afb2560c9b79cfb74852cc9d96bbae3ecdaa78ba458399",
+      "size": 1114
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/_common_py.py",
+      "sha256": "c5b7230cfd60f3e5e4f08907c08a7f09de1ea7f2b71d2c0571b87348a6f98e21",
+      "size": 1773
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/_feature_detector.py",
+      "sha256": "bd39df4c1f897e58dbaeea71b2fb1ae4041c6409061e0ec55c1834a48dff6158",
+      "size": 332
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/_utils.py",
+      "sha256": "4ae2b532b977305842391149be972b4eacd4aa488bb4d8954f8d89fe6e52c069",
+      "size": 2307
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/DamerauLevenshtein.py",
+      "sha256": "2e272fa1a21a77809ac10b8a9c6ed424f80d57bc8bdb494d5df8f50a42ed9a48",
+      "size": 4055
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/DamerauLevenshtein.pyi",
+      "sha256": "6cc4741e6db9d768d775c057c537cf40e6709c9a2708863c5f64497e45ec1338",
+      "size": 1904
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/DamerauLevenshtein_py.py",
+      "sha256": "fb374c338befef40e4e551c085b8de0794e939debe6346c54b4b986d2041f459",
+      "size": 6591
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/Hamming.py",
+      "sha256": "fdd8fdfb5b9b7eab4a080da1ec9b7365af4d7e120a7db7d2b4d7ab0aec2f4860",
+      "size": 4392
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/Hamming.pyi",
+      "sha256": "4e3a17b7d972b0cf7e64e79d8a30a28b9d311867631a5cf6dfd2d6c74c1b61e6",
+      "size": 2769
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/Hamming_py.py",
+      "sha256": "1407a890c08e716dd46fc5e53bab6c1d65a974959250a55b2423590a73fea662",
+      "size": 9081
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/Indel.py",
+      "sha256": "0be642c83ddd39a98a22fb7596d343ae828f4aa6cc878cc2e056ae76176f1e4a",
+      "size": 4296
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/Indel.pyi",
+      "sha256": "c63b35b1d7edec071b1ce87dae9f691f415a9807ff4eb376ab258174c5e4f8d1",
+      "size": 2593
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/Indel_py.py",
+      "sha256": "a04fa199bf76a3e6b9c585376e3e9442dbd496327809fe956235c02304adcd60",
+      "size": 9935
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/Jaro.py",
+      "sha256": "92307fafa0815497d48d1882891903aed765a1543d6a4da1510078e27225bcdd",
+      "size": 3575
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/Jaro.pyi",
+      "sha256": "2298cb82f87bde36a526230c36ac1ce934a693b53dc84fc95cb3f7439eb4e463",
+      "size": 1908
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/JaroWinkler.py",
+      "sha256": "dd1459e0136df51b382802e040d62ca7c1c2059e0174cc4c39c8ab9cc1b0c6fa",
+      "size": 3831
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/JaroWinkler.pyi",
+      "sha256": "e570be6397d816798834cd03c36f4181152fcc57e71b4ec756bb82af02f8305f",
+      "size": 2164
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/JaroWinkler_py.py",
+      "sha256": "08903d2261103c6a914e85e08de8dd5044bddcbe494597fd80691b56e5fa01b5",
+      "size": 6481
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/Jaro_py.py",
+      "sha256": "d667b156c7ed4c647386372d7d41ee686dc3f0cf13f68003b8ef42a8aa2295e5",
+      "size": 7345
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/LCSseq.py",
+      "sha256": "b60eb6146f0fccfc5819d871e36f3151f71df1c8046a507f866ab17392be65cc",
+      "size": 4392
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/LCSseq.pyi",
+      "sha256": "c63b35b1d7edec071b1ce87dae9f691f415a9807ff4eb376ab258174c5e4f8d1",
+      "size": 2593
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/LCSseq_py.py",
+      "sha256": "987dc95cabd79655d7dd3b3a75a19f7432865a8e55d711e423d472586555c391",
+      "size": 11504
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/Levenshtein.py",
+      "sha256": "50918b72cf5d5cbdb990e8db8ba4ce0941d77fab86325193592a2dc515dfdc95",
+      "size": 4584
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/Levenshtein.pyi",
+      "sha256": "ec2fa75a7ff210e4688fe228a30d01b2668b9e9287ede8ffe6c9b2905b707273",
+      "size": 3678
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/Levenshtein_py.py",
+      "sha256": "7f881a8360420024865cf55ed209c69d87f90832c0772aa1bdfe5c525f69b515",
+      "size": 17103
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/OSA.py",
+      "sha256": "0f3912951ac44e109ff3373d382239b6036a180ceeb16727e5c604d910152bae",
+      "size": 3543
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/OSA.pyi",
+      "sha256": "6cc4741e6db9d768d775c057c537cf40e6709c9a2708863c5f64497e45ec1338",
+      "size": 1904
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/OSA_py.py",
+      "sha256": "0460f8f7002335b039c6a86b5080f8be403bc9a789de35e58ec13ad1259b1228",
+      "size": 6251
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/Postfix.py",
+      "sha256": "4284e56cb8238fad420ccfebc9c143a1aa778004515973aeeafc08c38d58d101",
+      "size": 3671
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/Postfix.pyi",
+      "sha256": "6cc4741e6db9d768d775c057c537cf40e6709c9a2708863c5f64497e45ec1338",
+      "size": 1904
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/Postfix_py.py",
+      "sha256": "cb058ed0ce6cc025a48d9aa3a76c0a30467bfc657c67dd4844c7bcff364679a4",
+      "size": 5039
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/Prefix.py",
+      "sha256": "d88bb9efb5a769808709077c8adefa80393ad10c51765168d1c40122d099cd6c",
+      "size": 3639
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/Prefix.pyi",
+      "sha256": "6cc4741e6db9d768d775c057c537cf40e6709c9a2708863c5f64497e45ec1338",
+      "size": 1904
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/Prefix_py.py",
+      "sha256": "987b56df0443d23a25efa3670ce80800b32fb2520db46249f62a59ef5dec95d4",
+      "size": 5015
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/__init__.py",
+      "sha256": "82984a593508d825bee0e63f03d00e833d1d6ffb1be24c52a91af6d0fc6c5f6c",
+      "size": 621
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/__init__.pyi",
+      "sha256": "c17e7de2884f6788004a6bcaa5ba2f0d61f6041f48715a2346ab45d323e3cef8",
+      "size": 571
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/_initialize.py",
+      "sha256": "50ac0a2131150d3be3ecc89636c98f2410cdef1828c15c25cca9651230f3a680",
+      "size": 3074
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/_initialize.pyi",
+      "sha256": "37ba28ce742dad085928d675506b635327fa2e23ffbdbb5209615ae3d2bd7c90",
+      "size": 3998
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/_initialize_cpp.cpython-311-darwin.so",
+      "sha256": "2185a7de82f5c6d14a217474a93e078bda90f2c08626da77baf201618f09481d",
+      "size": 246872
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/_initialize_py.py",
+      "sha256": "23fcfee786af0fce041351c0eca8d3f1a9dde061ce408fa8dad2bd646e9e62c2",
+      "size": 26320
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/metrics_cpp.cpython-311-darwin.so",
+      "sha256": "e9de8e47488cdc6983e5a9128b7e6d6e9cdc8dded2be8c818604661e4e9eec17",
+      "size": 1749776
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/distance/metrics_py.py",
+      "sha256": "1847c33808245febcaadd340d26c78eff8e2dbce983d8be1eb39176b66f2d2fc",
+      "size": 9037
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/fuzz.py",
+      "sha256": "82438cf1bfe4279c9aab57abfec02a5c93fac1b649a27f66b15d8be84c064b6e",
+      "size": 4625
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/fuzz.pyi",
+      "sha256": "f08dc026d5f9d159686da02016daa25e0d7ea5bcda440f5d15229ecefef38145",
+      "size": 4811
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/fuzz_cpp.cpython-311-darwin.so",
+      "sha256": "4750b4cb99afceef1279326e7809a2c7e7115e815fe07507313c35768ec5e796",
+      "size": 1220048
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/fuzz_py.py",
+      "sha256": "a5ad94b0617b096f9f3b221c1a0bff94fb4b07a7956ee52a1a5200e2ec7660ac",
+      "size": 25826
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/process.py",
+      "sha256": "272953fad6018703f9ebaa74ccef8ed994f4a7ed245b77025206e70823a855c4",
+      "size": 2672
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/process.pyi",
+      "sha256": "75693b0d02b4f4bf96e10000c88039dac5ca13a74743d10def485d17886d4b1a",
+      "size": 20534
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/process_cpp.py",
+      "sha256": "b805db1ddfd4546d3239a16f55b64a819cd02e90d6b5e209c42b18e8c79444a5",
+      "size": 2530
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/process_cpp_impl.cpython-311-darwin.so",
+      "sha256": "f5c6b90a9c3b20ed52157090f595bfc4f51f07dac87101ba8788e9c4a8b440f5",
+      "size": 557560
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/process_py.py",
+      "sha256": "762d804b6127e95cc8ae9a20d87fafb2f6ae6989cc671078696079f66298ee7b",
+      "size": 26646
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/py.typed",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/utils.py",
+      "sha256": "eebb363420922f6fe66a776fc52124725cb95966f4451e20c4a39d6192626af1",
+      "size": 1910
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/utils.pyi",
+      "sha256": "af3da5c61c50bbe066ea03f10438f005b36cda80418c0acfe8f11895671a1394",
+      "size": 304
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/utils_cpp.cpython-311-darwin.so",
+      "sha256": "3edfff8988c391a39b440129302b106cf9e57736ff6e720efa570aa30858c270",
+      "size": 226272
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz/utils_py.py",
+      "sha256": "a0feb180eb28a644743613637f7bbac79e60c34dcb50c275ce1d85608b319e8e",
+      "size": 622
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz-3.14.5.dist-info/INSTALLER",
+      "sha256": "e6184ce10e266134fdcfa401e8f1a95005bcd4f18d16b62b757323e2833fe9a9",
+      "size": 2
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz-3.14.5.dist-info/METADATA",
+      "sha256": "51dae324caa606a75cc7e7c22f08e7f12d76c341a43e969fffdaab7f056e0291",
+      "size": 12293
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz-3.14.5.dist-info/RECORD",
+      "sha256": "421e1da422f2f04be9a2707525884322f313f1ca240cccf6c79adeb4059aaf24",
+      "size": 5752
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz-3.14.5.dist-info/REQUESTED",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz-3.14.5.dist-info/WHEEL",
+      "sha256": "343c78a713d9dddf526adac4df50da28c88693650f99560af0aa64bf9b0f8541",
+      "size": 141
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz-3.14.5.dist-info/entry_points.txt",
+      "sha256": "866661a89859c6bccaa5ab3ab5bfe400a50413df79dabe20aa424e57ababbedd",
+      "size": 71
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/rapidfuzz-3.14.5.dist-info/licenses/LICENSE",
+      "sha256": "f34ccdffdff56fc417785915eedf18601d5479755df3c472b2c754c29802d683",
+      "size": 1092
+    },
+    {
+      "path": ".venv/pyvenv.cfg",
+      "sha256": "cd8113a9417eccdb850978278c7446dafeb949ac2b504aa122c5dd98f19dda8b",
+      "size": 178
+    },
+    {
+      "path": "ARRANQUE.md",
+      "sha256": "d030911d59a74a421888f4970c5f182ff836e6c79558625a6fe7dec253473806",
+      "size": 10387
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256": "7732094ed11a0a3ae09d216714d6f6075456a40dc5fb591b41812abc260ba317",
+      "size": 723
+    },
+    {
+      "path": "PIPELINE.md",
+      "sha256": "39568fa3d2665224efde565c647e526856e95e6d9c0d27e931f7dadf9e2767b8",
+      "size": 22342
+    },
+    {
+      "path": "README.md",
+      "sha256": "62c41bc7023a1e3d0f4e55de90b9d7397571a1d87a6163a0b8b81dd59276b7a6",
+      "size": 8792
+    },
+    {
+      "path": "VALIDACION-WHISPERX.md",
+      "sha256": "e2541133b2c25f9bddc741ee5fe97dd5d980ad94341be4cd260f7c66adba2eba",
+      "size": 3000
+    },
+    {
+      "path": "acceptance/evaluate.py",
+      "sha256": "2141ea89119f8530fee0651041545b088b50b3836a2343ed62381f62cf2d1974",
+      "size": 1155
+    },
+    {
+      "path": "acceptance/test_vertical.py",
+      "sha256": "383bf26d7ed00ff4846c45b2fd273791cdf0d277c40227d1a1ee4809be46607c",
+      "size": 4846
+    },
+    {
+      "path": "scripts/extract_candidates.py",
+      "sha256": "c4902aee45dd397764ee059d8c3f4fa2931809a90303b408ad95d180613aa3e2",
+      "size": 5456
+    },
+    {
+      "path": "scripts/generate_metadata.py",
+      "sha256": "f4eae7cadce820609bc5e973ee7e835f093f1f0a219f7f75f9abb1e4250cce8e",
+      "size": 4808
+    },
+    {
+      "path": "scripts/match_candidates.py",
+      "sha256": "a809f954449d37873ec0d1313759b6076deb9db279f94c55cb4b9906330239bb",
+      "size": 7565
+    },
+    {
+      "path": "scripts/plan_clips.py",
+      "sha256": "4942f82af80a695d883d2512c8ffd4366a98f5c10b5e71173e568721aa4ff1a3",
+      "size": 7264
+    },
+    {
+      "path": "scripts/render_clips.py",
+      "sha256": "16b4bb4ba5901155939cbfd4a78857c558122ae7bd20d2f3392f8ddc57f0c9bd",
+      "size": 8430
+    },
+    {
+      "path": "scripts/requirements.txt",
+      "sha256": "5e6621cfd3a8edff95b03203a6abd50bedc6eb6f613caefd84434dbb71f31318",
+      "size": 18
+    },
+    {
+      "path": "scripts/run_with_vram_monitor.sh",
+      "sha256": "30d008d3ccc28dd6d942e77d12d96461520f6efd8a980be8843bb681d216e1fe",
+      "size": 824
+    }
+  ],
+  "generator": "GovernanceOs",
+  "version": 1
+}

@@ -1,0 +1,42 @@
+{
+  "exclude": [
+    ".governance/goals/clip-vertical/attempts/0002-att-3fddc3f85c20",
+    ".governance/goals/clip-vertical/events.jsonl",
+    ".governance/goals/clip-vertical/lock",
+    ".governance/goal-exec.lock",
+    ".governance/goals/clip-vertical/evaluations"
+  ],
+  "protected": [
+    "GovernanceOs/human/",
+    "GovernanceOs/agents/protected.yaml",
+    "GovernanceOs/core/result.py",
+    "GovernanceOs/orchestration/orchestrate.py",
+    "GovernanceOs/policy/orchestration_policy.yaml",
+    "GovernanceOs/policy/continuation_policy.yaml",
+    "GovernanceOs/control/controller.py",
+    "GovernanceOs/run_execute/executor.py",
+    "GovernanceOs/runtime/runtime.py",
+    "GovernanceOs/runtime/state.py"
+  ],
+  "root": "/Volumes/Medios/Repos/ClipFactory",
+  "scope_allow": [
+    "scripts"
+  ],
+  "scope_deny": [
+    "acceptance/",
+    "README.md",
+    "PIPELINE.md",
+    ".governance",
+    "acceptance/test_vertical.py",
+    "acceptance/evaluate.py",
+    "acceptance"
+  ],
+  "watched": [
+    ".governance/goals",
+    ".governance/current.json",
+    ".governance/runs",
+    ".governance/project.yaml",
+    "acceptance/test_vertical.py",
+    "acceptance/evaluate.py"
+  ]
+}

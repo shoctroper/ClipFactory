@@ -1,0 +1,24 @@
+{
+  "changed_files": [],
+  "changed_files_verified": false,
+  "created_at": "2026-09-22T13:55:48+00:00",
+  "cycle": 1,
+  "error": null,
+  "latency_ms": 8045.1,
+  "log": "ory/acceptance/evaluate.py\",\"text\":\"# -*- coding: utf-8 -*-\\n\\\"\\\"\\\"Evaluador fijado de ClipFactory: cuantos casos de la aceptacion pasan.\\n\\nImprime una sola linea JSON. Un caso SALTADO cuenta como NO pasado: un skip\\nnunca es un verde, leccion pagada en G1 y G2.\\n\\\"\\\"\\\"\\nimport json\\nimport re\\nimport subprocess\\nimport sys\\nfrom pathlib import Path\\n\\nROOT = Path(__file__).resolve().parents[1]\\n\\nproc = subprocess.run(\\n    [sys.executable, \\\"-m\\\", \\\"pytest\\\", \\\"-q\\\", \\\"-p\\\", \\\"no:cacheprovider\\\",\\n     \\\"acceptance/test_vertical.py\\\", \\\"--tb=no\\\"],\\n    cwd=str(ROOT), capture_output=True, text=True)\\nout = (proc.stdout or \\\"\\\") + (proc.stderr or \\\"\\\")\\n\\npassed = int((re.search(r\\\"(\\\\d+) passed\\\", out) or [0, 0])[1])\\nfailed = int((re.search(r\\\"(\\\\d+) failed\\\", out) or [0, 0])[1])\\nskipped = int((re.search(r\\\"(\\\\d+) skipped\\\", out) or [0, 0])[1])\\ntotal = passed + failed + skipped\\n\\nnotes = []\\nif skipped:\\n    notes.append(\\\"%d caso(s) SALTADO(s), contados como NO pasados\\\" % skipped)\\n\\nprint(json.dumps({\\n    \\\"clipfactory_vertical_passing\\\": passed,\\n    \\\"progress\\\": passed,\\n    \\\"total\\\": total or 7,\\n    \\\"collected\\\": total,\\n    \\\"skipped\\\": skipped,\\n    \\\"notes\\\": notes,\\n    \\\"tail\\\": out.strip().splitlines()[-2:],\\n}, ensure_ascii=False))\",\"lineStart\":1,\"lineEnd\":38,\"totalLines\":38,\"truncated\":false}},\"title\":\"acceptance/evaluate.py\",\"time\":{\"start\":1790085348519,\"end\":1790085348526}},\"id\":\"prt_0c966bc55001TVVJNRhkqvL2Ek\",\"sessionID\":\"ses_f36995fe4ffeqbkOJ65YZze2Il\",\"messageID\":\"msg_0c966b683001i4JlvcwdTgUaAZ\"}}\n{\"type\":\"step_finish\",\"timestamp\":1790085348589,\"sessionID\":\"ses_f36995fe4ffeqbkOJ65YZze2Il\",\"part\":{\"id\":\"prt_0c966bcea0018VZ6eWOPXinbp5\",\"reason\":\"tool-calls\",\"snapshot\":\"1d72c1f893b9c432d64a0ab605a224b47953d7b1\",\"messageID\":\"msg_0c966b683001i4JlvcwdTgUaAZ\",\"sessionID\":\"ses_f36995fe4ffeqbkOJ65YZze2Il\",\"type\":\"step-finish\",\"tokens\":{\"total\":19443,\"input\":5823,\"output\":153,\"reasoning\":27,\"cache\":{\"write\":0,\"read\":13440}},\"cost\":0.00102177}}",
+  "model": "opencode-go/deepseek-v4-flash",
+  "output": {
+    "exit_code": 0,
+    "reported_status": "COMPLETED",
+    "session_id": "ses_f36995fe4ffeqbkOJ65YZze2Il"
+  },
+  "provider": "opencode",
+  "result_hash": "323ca80fd2e308b7408235fc6b2fdd8d854411d081395528903064b9d29ee11c",
+  "role": "IMPLEMENTER",
+  "schema_version": "1",
+  "status": "COMPLETED",
+  "tasks_id": "at-0da6ee61bede",
+  "usage": {
+    "duration_ms": 8044.4
+  }
+}
