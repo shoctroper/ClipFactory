@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="7" skipped="0" tests="7" time="0.102" timestamp="2026-09-22T07:51:49.432900-06:00" hostname="MacBook-Pro-de-Mario.local"><testcase classname="acceptance.test_vertical.A_Reencuadre" name="test_A1_existe_un_renderizador_vertical" time="0.000"><failure message="AssertionError: False is not true : falta el punto de entrada del render vertical">self = &lt;test_vertical.A_Reencuadre testMethod=test_A1_existe_un_renderizador_vertical&gt;
+
+    def test_A1_existe_un_renderizador_vertical(self):
+        mod = ROOT / "scripts" / "render_vertical.py"
+&gt;       self.assertTrue(mod.is_file(),
+                        "falta el punto de entrada del render vertical")
+E       AssertionError: False is not true : falta el punto de entrada del render vertical
+
+acceptance/test_vertical.py:43: AssertionError</failure></testcase><testcase classname="acceptance.test_vertical.A_Reencuadre" name="test_A2_reutiliza_el_cropper_de_cleanvideos" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/6n/s6j20gdx10b9fkzqr86zl4040000gn/T/gov-closure-b932750u/wt/scripts/render_vertical.py'">self = &lt;test_vertical.A_Reencuadre testMethod=test_A2_reutiliza_el_cropper_de_cleanvideos&gt;
+
+    def test_A2_reutiliza_el_cropper_de_cleanvideos(self):
+        """No se reimplementa el seguimiento de sujeto: se usa el que ya existe.
+    
+        Dos implementaciones del mismo recorte divergen, y la segunda empieza
+        sin saber lo que la primera aprendio sobre suavizado y muestreo.
+        """
+&gt;       src = (ROOT / "scripts" / "render_vertical.py").read_text(encoding="utf-8")
+
+acceptance/test_vertical.py:52: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py:1256: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py:1242: in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/private/var/folders/6n/s6j20gdx10b9fkzqr86zl4040000gn/T/gov-closure-b932750u/wt/scripts/render_vertical.py')
+name = '/private/var/folders/6n/s6j20gdx10b9fkzqr86zl4040000gn/T/gov-closure-b932750u/wt/scripts/render_vertical.py'
+flags = 16777216, mode = 438
+
+    def _opener(self, name, flags, mode=0o666):
+        # A stub for the opener argument to built-in open()
+&gt;       return self._accessor.open(self, flags, mode)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/6n/s6j20gdx10b9fkzqr86zl4040000gn/T/gov-closure-b932750u/wt/scripts/render_vertical.py'
+
+/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py:1110: FileNotFoundError</failure></testcase><testcase classname="acceptance.test_vertical.A_Reencuadre" name="test_A3_la_salida_es_9_16" time="0.000"><failure message="AssertionError: no hay salida vertical que medir: /private/var/folders/6n/s6j20gdx10b9fkzqr86zl4040000gn/T/gov-closure-b932750u/wt/output/_acceptance/vertical.mp4">self = &lt;test_vertical.A_Reencuadre testMethod=test_A3_la_salida_es_9_16&gt;
+
+    def test_A3_la_salida_es_9_16(self):
+        salida = ROOT / "output" / "_acceptance" / "vertical.mp4"
+        if not salida.is_file():
+&gt;           self.fail("no hay salida vertical que medir: %s" % salida)
+E           AssertionError: no hay salida vertical que medir: /private/var/folders/6n/s6j20gdx10b9fkzqr86zl4040000gn/T/gov-closure-b932750u/wt/output/_acceptance/vertical.mp4
+
+acceptance/test_vertical.py:62: AssertionError</failure></testcase><testcase classname="acceptance.test_vertical.A_Reencuadre" name="test_A4_el_recorte_sigue_al_sujeto" time="0.000"><failure message="AssertionError: False is not true : falta el plan de recorte">self = &lt;test_vertical.A_Reencuadre testMethod=test_A4_el_recorte_sigue_al_sujeto&gt;
+
+    def test_A4_el_recorte_sigue_al_sujeto(self):
+        """Un recorte fijo al centro deja a Mario fuera de cuadro cuando se mueve.
+    
+        La prueba no mira el video: mira que el plan de recorte tenga mas de una
+        posicion. Un solo valor para todo el clip es un recorte fijo.
+        """
+        plan = ROOT / "output" / "_acceptance" / "crop_plan.json"
+&gt;       self.assertTrue(plan.is_file(), "falta el plan de recorte")
+E       AssertionError: False is not true : falta el plan de recorte
+
+acceptance/test_vertical.py:75: AssertionError</failure></testcase><testcase classname="acceptance.test_vertical.A_Reencuadre" name="test_A5_los_subtitulos_caben_en_vertical" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/6n/s6j20gdx10b9fkzqr86zl4040000gn/T/gov-closure-b932750u/wt/scripts/render_vertical.py'">self = &lt;test_vertical.A_Reencuadre testMethod=test_A5_los_subtitulos_caben_en_vertical&gt;
+
+    def test_A5_los_subtitulos_caben_en_vertical(self):
+        """MarginV=60 esta calculado para 2160 de alto; en 3840 queda pegado."""
+&gt;       src = (ROOT / "scripts" / "render_vertical.py").read_text(encoding="utf-8")
+
+acceptance/test_vertical.py:84: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py:1256: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py:1242: in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/private/var/folders/6n/s6j20gdx10b9fkzqr86zl4040000gn/T/gov-closure-b932750u/wt/scripts/render_vertical.py')
+name = '/private/var/folders/6n/s6j20gdx10b9fkzqr86zl4040000gn/T/gov-closure-b932750u/wt/scripts/render_vertical.py'
+flags = 16777216, mode = 438
+
+    def _opener(self, name, flags, mode=0o666):
+        # A stub for the opener argument to built-in open()
+&gt;       return self._accessor.open(self, flags, mode)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/6n/s6j20gdx10b9fkzqr86zl4040000gn/T/gov-closure-b932750u/wt/scripts/render_vertical.py'
+
+/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py:1110: FileNotFoundError</failure></testcase><testcase classname="acceptance.test_vertical.A_Reencuadre" name="test_A6_no_pisa_la_salida_horizontal" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/6n/s6j20gdx10b9fkzqr86zl4040000gn/T/gov-closure-b932750u/wt/scripts/render_vertical.py'">self = &lt;test_vertical.A_Reencuadre testMethod=test_A6_no_pisa_la_salida_horizontal&gt;
+
+    def test_A6_no_pisa_la_salida_horizontal(self):
+        """El canal de YouTube sigue vivo: el vertical se anade, no sustituye."""
+&gt;       src = (ROOT / "scripts" / "render_vertical.py").read_text(encoding="utf-8")
+
+acceptance/test_vertical.py:90: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py:1256: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py:1242: in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/private/var/folders/6n/s6j20gdx10b9fkzqr86zl4040000gn/T/gov-closure-b932750u/wt/scripts/render_vertical.py')
+name = '/private/var/folders/6n/s6j20gdx10b9fkzqr86zl4040000gn/T/gov-closure-b932750u/wt/scripts/render_vertical.py'
+flags = 16777216, mode = 438
+
+    def _opener(self, name, flags, mode=0o666):
+        # A stub for the opener argument to built-in open()
+&gt;       return self._accessor.open(self, flags, mode)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/6n/s6j20gdx10b9fkzqr86zl4040000gn/T/gov-closure-b932750u/wt/scripts/render_vertical.py'
+
+/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py:1110: FileNotFoundError</failure></testcase><testcase classname="acceptance.test_vertical.A_Reencuadre" name="test_A7_sin_ffmpeg_falla_diciendo_por_que" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/6n/s6j20gdx10b9fkzqr86zl4040000gn/T/gov-closure-b932750u/wt/scripts/render_vertical.py'">self = &lt;test_vertical.A_Reencuadre testMethod=test_A7_sin_ffmpeg_falla_diciendo_por_que&gt;
+
+    def test_A7_sin_ffmpeg_falla_diciendo_por_que(self):
+&gt;       src = (ROOT / "scripts" / "render_vertical.py").read_text(encoding="utf-8")
+
+acceptance/test_vertical.py:95: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py:1256: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py:1242: in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/private/var/folders/6n/s6j20gdx10b9fkzqr86zl4040000gn/T/gov-closure-b932750u/wt/scripts/render_vertical.py')
+name = '/private/var/folders/6n/s6j20gdx10b9fkzqr86zl4040000gn/T/gov-closure-b932750u/wt/scripts/render_vertical.py'
+flags = 16777216, mode = 438
+
+    def _opener(self, name, flags, mode=0o666):
+        # A stub for the opener argument to built-in open()
+&gt;       return self._accessor.open(self, flags, mode)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/6n/s6j20gdx10b9fkzqr86zl4040000gn/T/gov-closure-b932750u/wt/scripts/render_vertical.py'
+
+/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py:1110: FileNotFoundError</failure></testcase></testsuite></testsuites>

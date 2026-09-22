@@ -1,0 +1,12 @@
+{
+  "attempt_id": "att-ace941823eef",
+  "attempt_seq": 1,
+  "classification": "OPERATIONAL_LIMIT",
+  "contract_hash": "915269e0fc4ed24543e1854ff06e03f85c202338fe6f8b78c26ff147b67b7a27",
+  "goal_id": "clip-vertical",
+  "governance_version": "1.0.0",
+  "objective": "Implementar el capability de recorte vertical 9:16 con seguimiento de sujeto en scripts/, reutilizando vertical_cropper de CleanVideos en vez de reimplementarlo, más sus pruebas unitarias en tests/, para que la suite de aceptación deje de fallar por módulos ausentes.",
+  "out_root": "/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/attempts/0001-att-ace941823eef/run",
+  "project": "clipfactory",
+  "task_type": "CODE"
+}

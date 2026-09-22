@@ -1,0 +1,53 @@
+{
+  "absolute_path": "/Volumes/Medios/Repos/ClipFactory",
+  "ahead": 1,
+  "behind": 0,
+  "branch": "main",
+  "captured_at": "2026-09-22T13:52:07+00:00",
+  "clean": false,
+  "detached": false,
+  "dirty": true,
+  "evidence_origin": "MARIOGOVERNANCE",
+  "git_dir": ".git",
+  "head": "85fa983eb06170c97a98ea3f59c64fbc5f4e6c17",
+  "head_short": "85fa983",
+  "is_git": true,
+  "local_branches": [
+    "main"
+  ],
+  "remote_branches": [
+    "origin/main"
+  ],
+  "remote_url": "https://github.com/shoctroper/ClipFactory.git",
+  "remotes": {
+    "origin": "https://github.com/shoctroper/ClipFactory.git"
+  },
+  "repository_id": "repo-d6704ac2de7a31eb",
+  "schema_version": "1",
+  "stash": 0,
+  "tags": [],
+  "uncommitted_changes": [
+    ".governance/goal-exec.lock",
+    ".governance/goals/clip-vertical/attempts/0001-att-ace941823eef/attempt-spec.json",
+    ".governance/goals/clip-vertical/attempts/0001-att-ace941823eef/boundary-config.json",
+    ".governance/goals/clip-vertical/attempts/0001-att-ace941823eef/governance-fingerprint.json",
+    ".governance/goals/clip-vertical/attempts/0001-att-ace941823eef/pre-images/.governance/goals/clip-vertical/goal.json",
+    ".governance/goals/clip-vertical/attempts/0001-att-ace941823eef/pre-images/.governance/project.yaml",
+    ".governance/goals/clip-vertical/attempts/0001-att-ace941823eef/pre-images/acceptance/evaluate.py",
+    ".governance/goals/clip-vertical/attempts/0001-att-ace941823eef/pre-images/acceptance/test_vertical.py",
+    ".governance/goals/clip-vertical/attempts/0001-att-ace941823eef/pre-snapshot.json",
+    ".governance/goals/clip-vertical/baseline/baseline-junit.xml",
+    ".governance/goals/clip-vertical/baseline/baseline.json",
+    ".governance/goals/clip-vertical/baseline/snapshot/pre-snapshot.json",
+    ".governance/goals/clip-vertical/evaluations/0001-bracket/pre-snapshot.json",
+    ".governance/goals/clip-vertical/evaluations/0001.json",
+    ".governance/goals/clip-vertical/events.jsonl",
+    ".governance/goals/clip-vertical/goal.json",
+    ".governance/goals/clip-vertical/lock"
+  ],
+  "unpushed_commits": [
+    "85fa983 acceptance(vertical): el examen fijado antes de implementar"
+  ],
+  "upstream": "origin/main",
+  "worktree_root": "/Volumes/Medios/Repos/ClipFactory"
+}

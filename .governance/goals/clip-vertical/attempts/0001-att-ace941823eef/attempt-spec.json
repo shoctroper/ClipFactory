@@ -1,0 +1,28 @@
+{
+  "attempt_id": "att-ace941823eef",
+  "executor": "supervisor",
+  "goal_id": "clip-vertical",
+  "objective": "Implementar el capability de recorte vertical 9:16 con seguimiento de sujeto en scripts/, reutilizando vertical_cropper de CleanVideos en vez de reimplementarlo, más sus pruebas unitarias en tests/, para que la suite de aceptación deje de fallar por módulos ausentes.",
+  "producer_task": null,
+  "proposal_hash": "0261bf7fc555c1a9d5c6c1e75b7297c825dd72b09dd70434d52954b34dd7bfad",
+  "scope": {
+    "allow": [
+      "scripts",
+      "tests"
+    ],
+    "deny": [
+      "acceptance/",
+      "README.md",
+      "PIPELINE.md",
+      "acceptance",
+      ".governance"
+    ],
+    "ignore": [
+      "output/",
+      "guiones/",
+      ".governance/"
+    ]
+  },
+  "seq": 1,
+  "task_type": "CODE"
+}
