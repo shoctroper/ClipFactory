@@ -1,0 +1,54 @@
+id: clipfactory
+version: 1
+root: ../../../../../..
+task_type: CODE
+objective: Corregir el recorte vertical en scripts/render_vertical.py para que el
+  crop siga al sujeto (failing test A_Reencuadre::test_A4_el_recorte_sigue_al_sujeto)
+  y subir clipfactory_vertical_passing de 6 a >=7.
+gate_policy:
+  scope:
+    required: true
+  tests:
+    required: true
+  artifacts:
+    required: true
+  regressions:
+    required: false
+  reproducibility:
+    required: false
+review:
+  enabled: false
+  required: false
+scope:
+  baseline: .governance/baseline.json
+  allow:
+  - scripts
+  - tests
+  deny:
+  - acceptance/
+  - README.md
+  - PIPELINE.md
+  - acceptance
+  ignore:
+  - .governance
+  - .governance
+  - .governance/runs
+  - .governance/current.json
+  - .gov-runs
+  - output/
+  - guiones/
+  - .governance/
+acceptance:
+  tests:
+    command: python3 -m pytest -q -p no:cacheprovider acceptance/test_vertical.py
+    timeout: 1800.0
+    junit: false
+  artifacts:
+    required:
+    - path: README.md
+      kind: file
+    - path: PIPELINE.md
+      kind: file
+verification:
+  reproducible_runs: 1
+escalate_when: []

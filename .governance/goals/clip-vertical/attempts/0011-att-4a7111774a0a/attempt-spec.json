@@ -1,0 +1,27 @@
+{
+  "attempt_id": "att-4a7111774a0a",
+  "executor": "supervisor",
+  "goal_id": "clip-vertical",
+  "objective": "Corregir el recorte vertical en scripts/render_vertical.py para que el crop siga al sujeto (failing test A_Reencuadre::test_A4_el_recorte_sigue_al_sujeto) y subir clipfactory_vertical_passing de 6 a >=7.",
+  "producer_task": null,
+  "proposal_hash": "4bcac41b429cc7b71939ff238d2fc8e9bf6a431ef501266fcf203961d59d297a",
+  "scope": {
+    "allow": [
+      "scripts",
+      "tests"
+    ],
+    "deny": [
+      "acceptance/",
+      "README.md",
+      "PIPELINE.md",
+      "acceptance"
+    ],
+    "ignore": [
+      "output/",
+      "guiones/",
+      ".governance/"
+    ]
+  },
+  "seq": 11,
+  "task_type": "CODE"
+}

@@ -1,5 +1,5 @@
 {
-  "attempts_count": 11,
+  "attempts_count": 10,
   "authority_envelope": {
     "accept_missing_tests": [],
     "allow": [
@@ -76,12 +76,12 @@
       "timed_out": false
     }
   },
-  "goal_hash": "44efe7a72cc3d51560e3fe7f75635ab71fe64f4e71db7dd716bf6cb2565228ce",
+  "goal_hash": "d0a8ed36a8065d629a80f66991de5b03ea57621dde530fae64f13d5d045737d3",
   "goal_id": "clip-vertical",
   "halt_reason": null,
   "last_evaluation": {
     "authority_required": false,
-    "evaluation_path": "/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/evaluations/0023.json",
+    "evaluation_path": "/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/evaluations/0022.json",
     "evaluator_output": "{\"clipfactory_vertical_passing\": 6, \"progress\": 6, \"total\": 8, \"collected\": 8, \"skipped\": 0, \"notes\": [], \"tail\": [\"FAILED acceptance/test_vertical.py::A_Reencuadre::test_A4_el_recorte_sigue_al_sujeto\", \"2 failed, 6 passed in 0.01s\"]}",
     "observed": 6,
     "op": ">=",

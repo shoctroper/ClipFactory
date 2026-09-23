@@ -1,0 +1,21 @@
+{
+  "after_hash": "89d848bc0d2ac122d946c975e61a7b2fb268c0c45254b1f7809c4eb3ec76bddf",
+  "allow": [
+    "scripts",
+    "tests"
+  ],
+  "before_hash": "89d848bc0d2ac122d946c975e61a7b2fb268c0c45254b1f7809c4eb3ec76bddf",
+  "change_kinds": {},
+  "changed_files": [],
+  "deny": [
+    "acceptance/",
+    "README.md",
+    "PIPELINE.md",
+    "acceptance"
+  ],
+  "forbidden_files": [],
+  "in_scope": true,
+  "protected_violations": [],
+  "rule": "real worktree diff; forbidden/unexpected -> scope violation",
+  "unexpected_files": []
+}

@@ -1,0 +1,85 @@
+{
+  "classification": "OPERATIONAL_LIMIT",
+  "created_at": "2026-09-23T01:31:54+00:00",
+  "cycle": 3,
+  "diff": {
+    "after_hash": "89d848bc0d2ac122d946c975e61a7b2fb268c0c45254b1f7809c4eb3ec76bddf",
+    "before_hash": "89d848bc0d2ac122d946c975e61a7b2fb268c0c45254b1f7809c4eb3ec76bddf",
+    "changed_files": [],
+    "forbidden_files": [],
+    "in_scope": true,
+    "unexpected_files": []
+  },
+  "escalated_role": null,
+  "executed_roles": {
+    "IMPLEMENTER": {
+      "latency_ms": 415941.0,
+      "model": "opencode-go/deepseek-v4-flash",
+      "provider": "opencode",
+      "status": "COMPLETED"
+    },
+    "QA": {
+      "latency_ms": 9680.9,
+      "model": "opencode/big-pickle",
+      "provider": "opencode",
+      "status": "COMPLETED"
+    }
+  },
+  "gates": null,
+  "human_gate": null,
+  "max_repair_cycles": 3,
+  "metrics": {
+    "cost_registered": true,
+    "failures_caught": [
+      "QA"
+    ],
+    "retries": 3,
+    "role_count": 2,
+    "roles": {
+      "IMPLEMENTER": {
+        "contributed": true,
+        "latency_ms": 415941.0,
+        "model": "opencode-go/deepseek-v4-flash",
+        "provider": "opencode",
+        "status": "COMPLETED",
+        "timeout_seconds": 3000.0,
+        "usage": {
+          "duration_ms": 415933.5
+        }
+      },
+      "QA": {
+        "contributed": true,
+        "latency_ms": 9680.9,
+        "model": "opencode/big-pickle",
+        "provider": "opencode",
+        "status": "COMPLETED",
+        "timeout_seconds": 180.0,
+        "usage": {
+          "cost": 0,
+          "input_tokens": 13451,
+          "output_tokens": 548,
+          "tokens": 15791
+        }
+      }
+    },
+    "total_latency_ms": 425621.9
+  },
+  "policy_hash": "7844d57e2db8c744038badd1bd4cb4bf3c28fd499687d84d5b54a87ce68ac04a",
+  "provider_failure": null,
+  "reason": "required validations failed: tests, semantic_review",
+  "required_roles": [
+    "IMPLEMENTER",
+    "QA"
+  ],
+  "required_validations": [
+    "artifacts",
+    "scope_diff",
+    "semantic_review",
+    "tests"
+  ],
+  "role_registry_hash": "4bbcaec87c1d47a6256e693d86816abb304676179bb5a798f98a0b0a4e62229e",
+  "schema_version": "1",
+  "spec_id": "clipfactory",
+  "spec_version": 1,
+  "task_type": "CODE"
+}

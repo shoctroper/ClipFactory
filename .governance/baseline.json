@@ -7287,8 +7287,8 @@
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/__init__.py",
-      "sha256": "4861ae05995be8339869b533ea961985e36242206822a1ca013f77427d051c62",
-      "size": 782
+      "sha256": "239c2c24f215cee2c839bb8eeaf31eed2c9d4c1947b30c2803a4b59a15c01e7c",
+      "size": 784
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/modules/hand_landmark/handedness.txt",
@@ -7312,8 +7312,8 @@
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/c/libmediapipe.dylib",
-      "sha256": "9cffc37134d98bdbbcc4b5811d2e2acd66361d05b89761e68a5cb72e0406b53a",
-      "size": 101518912
+      "sha256": "f183acadefa74df7d9651beb3ff8339320c544020920e8d9038637f50bfdd453",
+      "size": 50690400
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/metadata/image_segmenter_metadata_schema.fbs",
@@ -7322,8 +7322,8 @@
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/metadata/image_segmenter_metadata_schema_py_generated.py",
-      "sha256": "11b2cbb6a88f07b6e461885cf11eadc646a31f98c3c1383886f760ed57d17e62",
-      "size": 3612
+      "sha256": "000163fd1da51a9a397c39ffb9e631bbbf420c64359441e9dccab306223d4f24",
+      "size": 3509
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/metadata/metadata_schema.fbs",
@@ -7332,8 +7332,8 @@
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/metadata/metadata_schema_py_generated.py",
-      "sha256": "2c955700827b987555939cc645b834994185765a2a4ecebd0fdf6ad1f573f668",
-      "size": 120280
+      "sha256": "bcd857b0f5af7d74ec948e882d4d8e31f4bdd41dece562110d1ffcbd8453bf50",
+      "size": 117481
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/metadata/object_detector_metadata_schema.fbs",
@@ -7342,18 +7342,18 @@
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/metadata/object_detector_metadata_schema_py_generated.py",
-      "sha256": "832329f704378a7556f00b2b86e936dacf659bb6299b5876bbe57024d1956760",
-      "size": 25143
+      "sha256": "f6a574436deb1912a3dcd4d9b89c36ddf90d466b00902f7e5a03996f96fe399c",
+      "size": 24287
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/metadata/schema_py_generated.py",
-      "sha256": "dff93c12ba82f25f3ae8df79ffb841fa0705a24fb37b905dd8cf8fcd60769cfd",
-      "size": 676265
+      "sha256": "8f59885a2dd08a263491545cba035da9571319f462699991ea36fb02fc155323",
+      "size": 649242
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/__init__.py",
-      "sha256": "8bed325a9bff56001c65e04541988b96021bd05b856f57c7753fbed04a8b0805",
-      "size": 838
+      "sha256": "c0833f58e59ba0e548d4c79e84df1f90dfc38e8034304055c3999284077c012e",
+      "size": 858
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/audio/__init__.py",
@@ -7362,8 +7362,8 @@
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/audio/audio_classifier.py",
-      "sha256": "3b49b0a358fc648f53c08fec0c75f28206500d436d542caaef41983156ecee3f",
-      "size": 17951
+      "sha256": "904dd36b4ea74332e6b65dd6f64cf6ca01b2ff7ca32c374221fb75cac0f5bbf1",
+      "size": 17650
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/audio/core/__init__.py",
@@ -7422,78 +7422,78 @@
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/components/containers/audio_data.py",
-      "sha256": "0128a008344b15685c30fd840287d089a0ad814fa59e7b7f4f40013fe3ea0749",
-      "size": 5119
+      "sha256": "d3d8a2cf564c9a67cbc1c76d74a5e14b3193c7d543c88f9cbcd5dd9c4a019040",
+      "size": 5115
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/components/containers/audio_data_c.py",
-      "sha256": "9f7283fe2fc4e4da229f6f5e0c5722d6e05b53faeea13a1c6284ab7268fddb74",
-      "size": 915
+      "sha256": "336ca069578d809451de97b431dfd565b6d074c2df4ab5b0458b11e8977bc11c",
+      "size": 913
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/components/containers/bounding_box.py",
-      "sha256": "a009e3eab3f40f97f07216ddc5599aaa2590db67461eaafa25bb5f566ee406e9",
-      "size": 2041
+      "sha256": "67f94ebae9b73f248e2a5e521f48ac82e67327056bd403ad12b91f73909e1526",
+      "size": 2037
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/components/containers/category.py",
-      "sha256": "36fd6a4d5e7934bee2a45c51fce5a5127cf119d14395742f16f952580bf6b917",
-      "size": 3309
+      "sha256": "809f0fce6c7866352c4f9c5910497341d39e078089c3ca4c8d87f4309efd2552",
+      "size": 3293
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/components/containers/category_c.py",
-      "sha256": "24c7eaa192f95478744cf4362817bfecb28fcd3acf60cef7de53f540c206369c",
-      "size": 1081
+      "sha256": "58336ef4326b995f433ba1983c03dc5aeb238f8931e9057cd4259e9c38c64b4a",
+      "size": 1069
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/components/containers/classification_result.py",
-      "sha256": "79cf26a6ae867c9153e600b605be860460939b18f99d7da7447236e62b46c4e4",
-      "size": 3635
+      "sha256": "f475b0ac99e6481722bd7b20443834381b94ad595e7ab3fe25494f985db9274e",
+      "size": 3631
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/components/containers/classification_result_c.py",
-      "sha256": "1725776c102fb7c36a593f965ef1c2df39ac58583527f20f7ed11a9b6485f0b2",
-      "size": 1225
+      "sha256": "e37ed6ecbda616743e8438edb624c4ae5e92cf1918505360d766f86d8a5c2f43",
+      "size": 1215
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/components/containers/detections.py",
-      "sha256": "de397fd225a7a8d0c71c3bcb4b039caca52d0819723e09b326429b84fac4f980",
-      "size": 3880
+      "sha256": "a1e64672bed9f27d337a84d55a6bd8db31f961e351dfdc959f590f5697dc263f",
+      "size": 3870
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/components/containers/detections_c.py",
-      "sha256": "4eae29cd5dac48d53ef27113f2c9e5c88c8f3dce900b579898b8617d22146aff",
-      "size": 1413
+      "sha256": "8748369aa6ec78f04aeb7b2514e8075d7a927638d812afe43047280337d2ea4e",
+      "size": 1401
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/components/containers/embedding_result.py",
-      "sha256": "20cb74dc91f3f6def879336ad6197b504e8057a53aeb4ddc91a26c32e45a9b23",
-      "size": 3396
+      "sha256": "7eb9c513ee9e6f66bae4c62c30a045509a781e85bee98c68cc14dd8dfd354e9c",
+      "size": 3356
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/components/containers/embedding_result_c.py",
-      "sha256": "bf157f2f75d01d9da5ba740019de5a68143af4743c725b04bc0e66541ab07605",
-      "size": 1251
+      "sha256": "34f45ad1fd85b75a35a2086102b6e1d6ffca2fb730a85a54a64008cb3e0297c6",
+      "size": 1242
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/components/containers/keypoint.py",
-      "sha256": "a6db556d4bf2c6ca8ee928ce282b2f63a0001a0697daf6c0cf6205df0e4e3056",
-      "size": 2240
+      "sha256": "81973e55b23138cf1f7e29c31bfc60c8d95bec7602569dae0b24b89e26a13c1e",
+      "size": 2236
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/components/containers/keypoint_c.py",
-      "sha256": "4c78090283a26fbb3ae61b2ab5bf07bf57542bdbc2f4032d792419ceb206854e",
-      "size": 879
+      "sha256": "6431a3e69d3b4bdf7a9f026d2c489c95cc28b8544c172e06016b7949f3b8dd94",
+      "size": 877
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/components/containers/landmark.py",
-      "sha256": "3b13e76a2b2ef530afc32ad3f96e087d1d4ae1c2db2e55bd918e84ab5f79e8de",
-      "size": 4219
+      "sha256": "ccd39ab34e204a8cb6e2cbf5fa2e2666da89a4a8321f11e493a657ebeb159344",
+      "size": 4215
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/components/containers/landmark_c.py",
-      "sha256": "afcc5f18da976bc7a1f54924e75e58e49d22c7a8d5efde1a3f7a8bd2f8833611",
-      "size": 1846
+      "sha256": "20f79a48d2a307c7ef15cf061e471bae4346e8a92f345bdbbc5d9ba419e91efd",
+      "size": 1824
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/components/containers/landmark_detection_result.py",
@@ -7502,18 +7502,18 @@
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/components/containers/matrix_c.py",
-      "sha256": "f8345c7a875958b8538336d0640435fd8159a0024861de6adc1210106fb7a609",
-      "size": 1573
+      "sha256": "72efcada22d8ee28243025e41b8a6ee76dc53432ad427ffc01d6fd064c5ca2d9",
+      "size": 1563
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/components/containers/rect.py",
-      "sha256": "6a5e245e3046cdfb950b77b5c4bc75c64b39287b40881164135be271125c7e61",
-      "size": 3822
+      "sha256": "680db404394a69ef90576e485e8228aff41608719662604249090a826525744a",
+      "size": 3810
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/components/containers/rect_c.py",
-      "sha256": "e263c8d1aae0ccbc44d30e044b9f41a17c9d617ed552f5cf57dcac0349ca79bf",
-      "size": 1390
+      "sha256": "fc5bacb3b025e8ef04d06c404da86e6521741d00a8ba2887d9d819eb6f1d533b",
+      "size": 1384
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/components/processors/__init__.py",
@@ -7527,8 +7527,8 @@
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/components/processors/classifier_options_c.py",
-      "sha256": "fa539a484520f3d884eb6e4c92ec342d52195ae7cc755764e6fa9e68b9cf6769",
-      "size": 2858
+      "sha256": "2b846db97ad73afd8a379bc657f6f780eef5d42a49900f46fe63c47c9c6d30aa",
+      "size": 2848
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/components/utils/__init__.py",
@@ -7547,23 +7547,23 @@
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/core/async_result_dispatcher.py",
-      "sha256": "7d66858ab1c78e889302380ddc0022a536f75680dc80bb3bfd49dcf6fb7fb014",
-      "size": 7813
+      "sha256": "94a79b50dedf85377a06c766d7e405758ad93a8de0d6bd5885db77ba108a3ffd",
+      "size": 7775
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/core/base_options.py",
-      "sha256": "0068feb75bdfe89bd71c33a8dd845654c724dc5b7173f3a958eb698cb8d00a9d",
-      "size": 3997
+      "sha256": "79960c3e00b467d014f306865cf28756808630d8fc16acadf48db9dac06a6492",
+      "size": 3901
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/core/base_options_c.py",
-      "sha256": "d01d31e2e02723c8a5cf9f34bd291761d950131333a6138bf954c0bd249647df",
-      "size": 1928
+      "sha256": "edb3f4ce2c8303b42a79fa4536be217567658d5bb75c9324984451a6c4c167a5",
+      "size": 1599
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/core/mediapipe_c_bindings.py",
-      "sha256": "e7fc1b3b064492e166de001ff6e241080b56815084b4cfd88b9260e85ae91d79",
-      "size": 3578
+      "sha256": "b57d0abf3051a643ce9adc2c9640607865b4d90db9fc97e1e33af23b3b16ae0d",
+      "size": 3465
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/core/mediapipe_c_utils.py",
@@ -7579,6 +7579,106 @@
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/core/serial_dispatcher.py",
       "sha256": "5d24a9211ae64474175de9416d308c8a48d71ebfaad576f21d0de40d6976f3ff",
       "size": 3071
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/genai/__init__.py",
+      "sha256": "eebae2e9f4fac0dbab95af0ed9ce722a22ecf7fdea218d2f2a4c950140defb5f",
+      "size": 620
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/genai/bundler/__init__.py",
+      "sha256": "f16fb03951ecf5478e6582561f5829b0fe0218a0ce3075b62c36a12d296da730",
+      "size": 849
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/genai/bundler/llm_bundler.py",
+      "sha256": "2ec7ccb019766b4f65db5ff562e9707c52d1fc78e83f7928382f8c71cbe86a15",
+      "size": 9170
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/genai/bundler/llm_bundler_metadata_options.py",
+      "sha256": "c05d1e5c6af91b0518ea63cbeac0fe6521708c509ada87f1813aa54ad550ee4e",
+      "size": 5661
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/genai/bundler/llm_bundler_metadata_options_c.py",
+      "sha256": "c2472764f5dd7e41c9017e85f8a44c32fd0b4030c417732825f1942cd12f4b7e",
+      "size": 1482
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/genai/bundler/llm_bundler_metadata_options_test.py",
+      "sha256": "84b30e993e884c21b3abec13469fa9f0bcf05f3d9c09c9dc5ecb8b9c930e72c7",
+      "size": 2435
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/genai/converter/__init__.py",
+      "sha256": "8df5248a70c947905595d9db24c6e8e6f22bd977396784d39da0894cda0052f8",
+      "size": 893
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/genai/converter/converter_base.py",
+      "sha256": "8e27eedcd691237ac53a764aacfbddc166054db587c5b6fa0d68f554ff2f40c8",
+      "size": 6876
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/genai/converter/converter_factory.py",
+      "sha256": "d8ad7a3d9050ca6d168573361ce74130732e8329288680f839368e228f942a4a",
+      "size": 2928
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/genai/converter/external_dependencies.py",
+      "sha256": "f53eca1b79124873bdf5a731e3f213610bd606f6ae0fdcb1d9712084677c9d33",
+      "size": 934
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/genai/converter/llm_converter.py",
+      "sha256": "b44f77da1fb89d253401651443904f3f6eb76838db8a16de198e1566a9189d9a",
+      "size": 25272
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/genai/converter/llm_converter_test.py",
+      "sha256": "bd003f832ab9a249b9394663186f00300c8d3c150d35a02a8e19597dee5e0dfd",
+      "size": 9095
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/genai/converter/pytorch_converter.py",
+      "sha256": "b08a559fedbb537441ab58118cfc1dab57293c49fcf5b2399eac109bf958ca36",
+      "size": 10868
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/genai/converter/pytorch_converter_test.py",
+      "sha256": "cbf320f69390b6550387ab959a4cf92dc51b93ea660cb03d2f729cc4a47e39a0",
+      "size": 3041
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/genai/converter/quantization_util.py",
+      "sha256": "434170322717980a09ece2044b93dc3857ea9b56a62d727d00b0a817dcf71224",
+      "size": 23526
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/genai/converter/quantization_util_test.py",
+      "sha256": "f1cfe62149733fc87081ff9d81da87dac05910c8ea6e173f00c91258acc5dc42",
+      "size": 10478
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/genai/converter/safetensors_converter.py",
+      "sha256": "039d5ed6d9e46d19a5737f8dfc7e1ec826d9fc3de0f02c46cf1188875453717e",
+      "size": 22400
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/genai/converter/safetensors_converter_test.py",
+      "sha256": "a02938167b230499043e55edbfc7ddabd767dc8d3a2ec49044c8b4055ffd99ec",
+      "size": 2802
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/genai/converter/weight_bins_writer.py",
+      "sha256": "55b7557ea7fc9eacc434020dd44883a94a4e59609f783015e2a066390cb48d3c",
+      "size": 4906
+    },
+    {
+      "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/genai/converter/weight_bins_writer_test.py",
+      "sha256": "cf5a88a93e22a162824f9e2df32dc8cb882cdfa041aa7170e03c8ee7227364cc",
+      "size": 3069
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/metadata/__init__.py",
@@ -7657,7 +7757,7 @@
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/test/test_utils.py",
-      "sha256": "5d12ce3df498f161bb73fc69aa8b3c3aabfbfbd60e8c2c7306f7e698b841cbc0",
+      "sha256": "e9f4f99428bc02d4c4af8e04d496b8fad7f815847b77cf6486fd0366cbdb53f7",
       "size": 7122
     },
     {
@@ -7677,8 +7777,8 @@
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/test/text/text_embedder_test.py",
-      "sha256": "f08266c7c42af73e7b7b15790a0b6b3b34c0b3039ced637327a64c3c2a590245",
-      "size": 11860
+      "sha256": "4271ccdd6676a733ffb9daa645b6761e45a49e8118b3e6c0b1d3a42e6adee41a",
+      "size": 11131
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/test/vision/__init__.py",
@@ -7687,22 +7787,22 @@
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/test/vision/face_detector_test.py",
-      "sha256": "91fb75464c0ce5100aa25f11c796d40adeacdef242cef4139464acb9177c0d24",
+      "sha256": "0889ab5c36dc1392de21b157fe573da31d21f4490b334aa40261d67b8b9ce023",
       "size": 22042
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/test/vision/face_landmarker_test.py",
-      "sha256": "629d8ef9d884ce35aa3e836ed05a7220fda9404a08ecbcf7ce04663e1e77e606",
+      "sha256": "4cfe5d94cc1747a252f199ca73b41909d0e039cadea2be031d0c829b2dd4911c",
       "size": 21451
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/test/vision/hand_landmarker_test.py",
-      "sha256": "09286fb13f4323371843959c54348813ee2032bbfe2ede64c1750ba000d0f3e7",
+      "sha256": "018142492da28c2b75b896c81476b68c9b7e215ee924cb6e3c78432264784a5e",
       "size": 20262
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/test/vision/holistic_landmarker_test.py",
-      "sha256": "4e5d4b4bf6e7144b747fd50db871cd90c0356a094c626c78af5a6ca54c06d54d",
+      "sha256": "3c0fbfccdf04d50931abe422c35e97d984a48a0dba9e55928aaa830d53a25719",
       "size": 21745
     },
     {
@@ -7717,8 +7817,8 @@
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/test/vision/image_segmenter_test.py",
-      "sha256": "7c24af8ae31b1c77b4a50c7331d0b4c7fbdf07d4d0bc9fd55978d8536ed53346",
-      "size": 20519
+      "sha256": "f75e90f51c8aee032060baadd490f44e2e78d52241ffb94758ed278dde1052ed",
+      "size": 19403
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/test/vision/image_test.py",
@@ -7726,9 +7826,9 @@
       "size": 4237
     },
     {
-      "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/test/vision/interactive_segmenter_legacy_test.py",
-      "sha256": "01d3c1ffec502d6f3fd9511f580974ad269cc80a565a4a676c5323d289828faf",
-      "size": 12305
+      "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/test/vision/interactive_segmenter_test.py",
+      "sha256": "dd16a16d8e73eba6778dd6fd923a4a7ffec7e9957bfb815658c761d64bc47b59",
+      "size": 12071
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/test/vision/object_detector_test.py",
@@ -7737,7 +7837,7 @@
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/test/vision/pose_landmarker_test.py",
-      "sha256": "4b66b8af719da2598c7d29663b7260fd82cc2d22afebf14b58c2584054467a45",
+      "sha256": "7b78c563dc2feb75603b8c233e125cb89868929c532088fad747ca83a7f79bcc",
       "size": 19508
     },
     {
@@ -7747,38 +7847,28 @@
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/text/__init__.py",
-      "sha256": "6385453e4decd41f56f7ba3225163e78f6f46e664acdbee5896a1c11a539e184",
-      "size": 2234
+      "sha256": "38bc05778b31cc4f7318b8257bbaf6cf59f5d95d060f57dcbe6bb55eac6bad88",
+      "size": 1423
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/text/language_detector.py",
-      "sha256": "fe21dcbc950a9d3adb9c98d230c0e1da536f7bc64b0c1e3ca75de333dfc606aa",
-      "size": 9775
+      "sha256": "09e30aad461cd8e5cf0a820eeccce10d0f34b69a3960763a7b9ad27bce63ce20",
+      "size": 9769
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/text/text_classifier.py",
-      "sha256": "541b4a90b349f4a74de11344963090b2b6705594d988a59263db317e318debbc",
-      "size": 9814
+      "sha256": "f98e32212c7885c6f53469fb8b8f2f37c7f70758aab9c3c8860d88a6325d9842",
+      "size": 9742
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/text/text_embedder.py",
-      "sha256": "c5ca1785e7ad8954f7a739d27f043ba4d7c08b94c312950892c12745dc7519a4",
-      "size": 10803
-    },
-    {
-      "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/text/text_proofreader.py",
-      "sha256": "eed6d7a06f47aadd6f38c27d71e3318a98c4997dce9181047adfbf100c03f9a3",
-      "size": 11196
-    },
-    {
-      "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/text/text_summarizer.py",
-      "sha256": "62fb258ecf3350c95d68708667469e10bc89e28bfae62b6297ae3dc1c8a5268e",
-      "size": 9532
+      "sha256": "b3930d058e32a28b003bb203872a088e0e36d7d028a843442cf55335bef4133d",
+      "size": 8719
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/vision/__init__.py",
-      "sha256": "a7ae5300b6b9530bd24fda8acd42c81025e89c5de44be6a094a91e4fbbc44505",
-      "size": 4531
+      "sha256": "84b0ee2f601faf2585bc3108f1d6404ee9934794a963859fd76a0efed4e34a69",
+      "size": 4045
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/vision/core/__init__.py",
@@ -7787,18 +7877,18 @@
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/vision/core/image.py",
-      "sha256": "427c6561e7b0290624d8b21563358d761aae5174b3d001bb14f4d1bc6b6dab29",
-      "size": 16930
+      "sha256": "60edc3a6abbca25a687d5ac8928f4cf4446bab38c366b6a0ed13a9c2caf63274",
+      "size": 16603
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/vision/core/image_processing_options.py",
-      "sha256": "fbc548c27d0cfcfad4b8511cb0bec2e6fbe4e7b8adf7f8491a7183e0b8da83fd",
-      "size": 2351
+      "sha256": "85aa586e56cb21c08afadf4964676299f813eb2219667c0393e69cffac7589c4",
+      "size": 2343
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/vision/core/image_processing_options_c.py",
-      "sha256": "33fb6946bb853e1b02e9059e9d150ad5c0d6f614e4950761fe0d41ceed794e93",
-      "size": 972
+      "sha256": "c10900de065061d6717bf04c6464cbaf677b56feb10acd0c5b836c0575931535",
+      "size": 968
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/vision/core/vision_task_running_mode.py",
@@ -7817,111 +7907,101 @@
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/vision/face_detector.py",
-      "sha256": "88f7a1c4f513a9b60e62fbe0b43c411724cc5394e7dee06a2481517eadd36092",
-      "size": 16000
+      "sha256": "95ce2b5b4678e8fe60b9704475823f6614ff2a5dc7df4b7f610e6f4a49006440",
+      "size": 15963
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/vision/face_landmarker.py",
-      "sha256": "227286efcd2dfa0920466c46ec582f6dbaee5dd8e8630c66babdf0d9f06bcb10",
-      "size": 96879
+      "sha256": "c88fd3d4c8980bcc5502da434b07853654a31872357c0982d842ddb7e616f43a",
+      "size": 96801
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/vision/gesture_recognizer.py",
-      "sha256": "0bf6664a6bc420cbc286265f252f6ac58a54f98bfe25e6141d334be3f20fb2e2",
-      "size": 18513
+      "sha256": "25a4d09222668f3b273dd96a03ed5ae6de97128b28eac2b54ad0beb57200af96",
+      "size": 18326
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/vision/gesture_recognizer_result.py",
-      "sha256": "043d0ab87e37b307a2ad369a98b600479b1a26d9be6629cd3a75e117fbfb4d32",
-      "size": 3482
+      "sha256": "0a1890c4fe3120506f48c4586959600dc9cb2bd1398f9d2c302d808b683e8f3a",
+      "size": 3480
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/vision/gesture_recognizer_result_c.py",
-      "sha256": "fc643c01a7435f10e8216be0181659f1036689623c2d8415af463398d2054240",
-      "size": 1455
+      "sha256": "3eac77e9e1b6d62010bcf0baccf7d663a7e25ae7dd480a89e75ad4e24f9887d8",
+      "size": 1445
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/vision/hand_landmarker.py",
-      "sha256": "7a3224f5d8259d210fd48ed930bbbef1232066410b41d695b4beac85ddfc2152",
-      "size": 20370
+      "sha256": "28fbfedaf30447cb37fe45d41725e908f87ed4836af842d99b6dda514b628755",
+      "size": 20223
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/vision/holistic_landmarker.py",
-      "sha256": "5bcfc50c5e0df451113266fce4aa1ea13e4b8692d9a23133e47ed3798d868433",
-      "size": 23534
+      "sha256": "e301a233eb4e32779bb68bd3200e3ea82f520b2ec2f3eeb8fedb84f0d3fe4eb8",
+      "size": 23476
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/vision/image_classifier.py",
-      "sha256": "256c746d87ee5f1b6538120ffa4cbd2c73b0b6ef31dd3b2d1532f8f43b3ba2df",
-      "size": 18187
+      "sha256": "bfe4b9dc4d746eebd41018206def45036555d5ea4d80a6d79eda0b39c20073e3",
+      "size": 18057
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/vision/image_embedder.py",
-      "sha256": "11d44e17423bcf393d9fcc275bf2184b1480318dea1877082ae1eb65b7ed0acc",
-      "size": 17830
+      "sha256": "03d4d3cfbe342a5d1db1a1298800f284f3af47126fa01a33d92d45878207ae4e",
+      "size": 17785
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/vision/image_segmenter.py",
-      "sha256": "0372df5fe350ec1cf7ad42e9c39351ecc3c5b4c859c3cc55791954a14f54c565",
-      "size": 19135
+      "sha256": "84c3e949ad9b840a2cf2ce84f02e7d0567f8b409c0f67d014dc38c60eafad0e1",
+      "size": 19003
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/vision/interactive_segmenter.py",
-      "sha256": "01b49b584fa552360990e24a4a0ace2a2b3b8ab907d25c9d8cea8173516ca6f6",
-      "size": 7406
-    },
-    {
-      "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/vision/interactive_segmenter_legacy.py",
-      "sha256": "47a7559531a8319d32c3eee23b4cf00a7f226ae780ea0a41599047ad9fb4e9bd",
-      "size": 12518
+      "sha256": "50f8b15ec35cc0867e7978f4eb7adb6c6637d06536eb3cd6a5f15ea9579ea3bc",
+      "size": 12216
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/vision/object_detector.py",
-      "sha256": "3ac8fad18d7da34b35dcd69b7c6a576784514e278d4f754b5207be036f5324a2",
-      "size": 20406
+      "sha256": "7221da145cdb0ffb2d756835c259a4424f632f557d1ef0b84a621dd8cdbffaba",
+      "size": 20371
     },
     {
       "path": ".venv/lib/python3.11/site-packages/mediapipe/tasks/python/vision/pose_landmarker.py",
-      "sha256": "5c32371ab051406daaae8a33a611a4541c5bc06bb652ea93fa305d30614a5923",
-      "size": 20683
+      "sha256": "ebad6ce4823d0e0eb38924822b8d7875e6a0ccd75d2455e3e9a460ba75d6526b",
+      "size": 20636
     },
     {
-      "path": ".venv/lib/python3.11/site-packages/mediapipe-1.0.1.dist-info/INSTALLER",
+      "path": ".venv/lib/python3.11/site-packages/mediapipe-0.10.35.dist-info/INSTALLER",
       "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
       "size": 4
     },
     {
-      "path": ".venv/lib/python3.11/site-packages/mediapipe-1.0.1.dist-info/METADATA",
-      "sha256": "5ea0016039f80d34f1d4d262efe79535ae0c2519168181518faaffca6942a7e2",
-      "size": 10688
+      "path": ".venv/lib/python3.11/site-packages/mediapipe-0.10.35.dist-info/METADATA",
+      "sha256": "fad91b1c3cd7ed72032bd50297e7242ef52f3a85361b58095e9037f5e4fd3dc8",
+      "size": 9823
     },
     {
-      "path": ".venv/lib/python3.11/site-packages/mediapipe-1.0.1.dist-info/RECORD",
-      "sha256": "9faa69ef841910244f92798a16c5018db3230c24008007bb87f9b30381d4bb27",
-      "size": 23462
+      "path": ".venv/lib/python3.11/site-packages/mediapipe-0.10.35.dist-info/RECORD",
+      "sha256": "f8cc32ed6ec5ee1dad8f0c68304a65b6df0ea497fb408ac2fe0cd186ba743db2",
+      "size": 26918
     },
     {
-      "path": ".venv/lib/python3.11/site-packages/mediapipe-1.0.1.dist-info/REQUESTED",
+      "path": ".venv/lib/python3.11/site-packages/mediapipe-0.10.35.dist-info/REQUESTED",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "size": 0
     },
     {
-      "path": ".venv/lib/python3.11/site-packages/mediapipe-1.0.1.dist-info/WHEEL",
+      "path": ".venv/lib/python3.11/site-packages/mediapipe-0.10.35.dist-info/WHEEL",
       "sha256": "504f4cb4979d9816b0a6eba495637d2bc2dc0597a82cc61d7f2ae2f3d80afd4c",
       "size": 106
     },
     {
-      "path": ".venv/lib/python3.11/site-packages/mediapipe-1.0.1.dist-info/licenses/LICENSE",
+      "path": ".venv/lib/python3.11/site-packages/mediapipe-0.10.35.dist-info/licenses/LICENSE",
       "sha256": "8707eef0533987efc5b155d64761eeb6e20793f50b9bd1a68dad1cf4719d0ed8",
       "size": 12331
     },
     {
-      "path": ".venv/lib/python3.11/site-packages/mediapipe-1.0.1.dist-info/licenses/NOTICE",
-      "sha256": "e8e3eddc5c36d7413635455933650d7423b937185180e393f9a006bee60162e7",
-      "size": 1569742
-    },
-    {
-      "path": ".venv/lib/python3.11/site-packages/mediapipe-1.0.1.dist-info/top_level.txt",
+      "path": ".venv/lib/python3.11/site-packages/mediapipe-0.10.35.dist-info/top_level.txt",
       "sha256": "c3f9f9f61aa736bd167289625b2c93237888aa262a6831baae344bc58ae69202",
       "size": 41
     },
