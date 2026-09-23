@@ -1,0 +1,24 @@
+{
+  "changed_files": [],
+  "changed_files_verified": false,
+  "created_at": "2026-09-23T00:29:05+00:00",
+  "cycle": 0,
+  "error": null,
+  "latency_ms": 175447.5,
+  "log": "type\":\"tool\",\"tool\":\"bash\",\"callID\":\"call_31e6c2ef30084dd490a6fcc6\",\"state\":{\"status\":\"completed\",\"input\":{\"command\":\"which ffmpeg ffprobe; ffmpeg -version 2>/dev/null | head -1; ls /opt/homebrew/opt/ffmpeg-full/bin/ffmpeg 2>/dev/null\"},\"output\":\"/opt/homebrew/bin/ffmpeg\\n/opt/homebrew/bin/ffprobe\\nffmpeg version 9.0.1 Copyright (c) 2000-2026 the FFmpeg developers\\n/opt/homebrew/opt/ffmpeg-full/bin/ffmpeg\\n\",\"metadata\":{\"output\":\"/opt/homebrew/bin/ffmpeg\\n/opt/homebrew/bin/ffprobe\\nffmpeg version 9.0.1 Copyright (c) 2000-2026 the FFmpeg developers\\n/opt/homebrew/opt/ffmpeg-full/bin/ffmpeg\\n\",\"exit\":0,\"truncated\":false},\"title\":\"which ffmpeg ffprobe; ffmpeg -version 2>/dev/null | head -1; ls /opt/homebrew/opt/ffmpeg-full/bin/ffmpeg 2>/dev/null\",\"time\":{\"start\":1790123341259,\"end\":1790123341404}},\"id\":\"prt_0cbaa7265001TRS7OhFNokE91E\",\"sessionID\":\"ses_f34582361ffeA9o1350l2KoTmj\",\"messageID\":\"msg_0cba9e8e6001vRv6sEa91Clo3q\"}}\n{\"type\":\"tool_use\",\"timestamp\":1790123345292,\"sessionID\":\"ses_f34582361ffeA9o1350l2KoTmj\",\"part\":{\"type\":\"tool\",\"tool\":\"bash\",\"callID\":\"call_7ecc5cdf7cdf43fcb6188271\",\"state\":{\"status\":\"error\",\"input\":{\"command\":\"cp /Volumes/Medios/Repos/CleanVideos/video_pipeline/models/pose_landmarker_lite.task scripts/models/pose_landmarker_lite.task && ls -la scripts/models/\"},\"error\":\"The user rejected permission to use this specific tool call.\",\"time\":{\"start\":1790123345287,\"end\":1790123345291}},\"id\":\"prt_0cbaa75cd001N0hAvLU1sIQLnE\",\"sessionID\":\"ses_f34582361ffeA9o1350l2KoTmj\",\"messageID\":\"msg_0cba9e8e6001vRv6sEa91Clo3q\"}}\n{\"type\":\"step_finish\",\"timestamp\":1790123345433,\"sessionID\":\"ses_f34582361ffeA9o1350l2KoTmj\",\"part\":{\"id\":\"prt_0cbaa8615001yG3e3Y6KtS1LYY\",\"reason\":\"tool-calls\",\"snapshot\":\"d0187ee4fdaab1422525c8aa4e3bfabc4384cef9\",\"messageID\":\"msg_0cba9e8e6001vRv6sEa91Clo3q\",\"sessionID\":\"ses_f34582361ffeA9o1350l2KoTmj\",\"type\":\"step-finish\",\"tokens\":{\"total\":51592,\"input\":428,\"output\":1500,\"reasoning\":0,\"cache\":{\"write\":0,\"read\":49664}},\"cost\":0.001113192}}",
+  "model": "opencode-go/deepseek-v4-flash",
+  "output": {
+    "exit_code": 0,
+    "reported_status": "COMPLETED",
+    "session_id": "ses_f34582361ffeA9o1350l2KoTmj"
+  },
+  "provider": "opencode",
+  "result_hash": "eb14dec0d806719fd8e081e40cb7f2973fbe142e6c9c143e555290752e2dde82",
+  "role": "IMPLEMENTER",
+  "schema_version": "1",
+  "status": "COMPLETED",
+  "tasks_id": "at-3ff4cdf22cf3",
+  "usage": {
+    "duration_ms": 175440.4
+  }
+}

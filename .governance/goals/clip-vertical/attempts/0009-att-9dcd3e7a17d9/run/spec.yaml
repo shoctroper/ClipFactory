@@ -1,0 +1,53 @@
+id: clipfactory
+version: 1
+root: ../../../../../..
+task_type: CODE
+objective: Implement the subject-following crop logic in scripts/render_vertical.py
+  so the 9:16 vertical crop tracks the subject across frames, making test_A4_el_recorte_sigue_al_sujeto
+  pass and raising clipfactory_vertical_passing from 6 to 7.
+gate_policy:
+  scope:
+    required: true
+  tests:
+    required: true
+  artifacts:
+    required: true
+  regressions:
+    required: false
+  reproducibility:
+    required: false
+review:
+  enabled: false
+  required: false
+scope:
+  baseline: .governance/baseline.json
+  allow:
+  - scripts
+  - tests
+  deny:
+  - acceptance/
+  - README.md
+  - PIPELINE.md
+  ignore:
+  - .governance
+  - .governance
+  - .governance/runs
+  - .governance/current.json
+  - .gov-runs
+  - output/
+  - guiones/
+  - .governance/
+acceptance:
+  tests:
+    command: python3 -m pytest -q -p no:cacheprovider acceptance/test_vertical.py
+    timeout: 1800.0
+    junit: false
+  artifacts:
+    required:
+    - path: README.md
+      kind: file
+    - path: PIPELINE.md
+      kind: file
+verification:
+  reproducible_runs: 1
+escalate_when: []

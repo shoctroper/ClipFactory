@@ -1,0 +1,28 @@
+{
+  "changed_files": [],
+  "changed_files_verified": false,
+  "created_at": "2026-09-23T00:33:25+00:00",
+  "cycle": 1,
+  "error": null,
+  "latency_ms": 12048.4,
+  "log": "{\"verdict\":\"FAIL\",\"repairable\":true,\"spec_defect\":false,\"notes\":\"Acceptance run failed: 2 failed, 6 passed (exit 1, output_sha256 eb26e068...). objective was 7 passing. test_A3 (no output/_acceptance/vertical.mp4) and test_A4 (no output/_acceptance/crop_plan.json) still fail, false_green=false. scope_diff shows zero in-scope changes (scripts/tests untouched; only .governance modified) and render_vertical.py's subject-following crop pipeline was not exercised end-to-end to produce acceptance artifacts. Defect lies in implementation not producing required evidence; not a spec defect.\"}",
+  "model": "opencode/big-pickle",
+  "output": {
+    "notes": "Acceptance run failed: 2 failed, 6 passed (exit 1, output_sha256 eb26e068...). objective was 7 passing. test_A3 (no output/_acceptance/vertical.mp4) and test_A4 (no output/_acceptance/crop_plan.json) still fail, false_green=false. scope_diff shows zero in-scope changes (scripts/tests untouched; only .governance modified) and render_vertical.py's subject-following crop pipeline was not exercised end-to-end to produce acceptance artifacts. Defect lies in implementation not producing required evidence; not a spec defect.",
+    "repairable": true,
+    "spec_defect": false,
+    "verdict": "FAIL"
+  },
+  "provider": "opencode",
+  "result_hash": "800bcf59c092645f22ae71a4584fc55cb0612b5beaf75a5737817dca5e1e781d",
+  "role": "QA",
+  "schema_version": "1",
+  "status": "COMPLETED",
+  "tasks_id": "at-06386007c94a",
+  "usage": {
+    "cost": 0,
+    "input_tokens": 556,
+    "output_tokens": 306,
+    "tokens": 16990
+  }
+}

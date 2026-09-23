@@ -1,0 +1,75 @@
+{
+  "agent_validations": {
+    "semantic_review": {
+      "repairable": true,
+      "spec_defect": false,
+      "status": "FAIL",
+      "verdict": {
+        "model": "opencode/big-pickle",
+        "provider": "opencode",
+        "repairable": true,
+        "research": false,
+        "spec_defect": false,
+        "verdict": "FAIL"
+      }
+    }
+  },
+  "artifacts": {
+    "entries": [
+      {
+        "exists": true,
+        "kind": "file",
+        "path": "README.md",
+        "status": "PASS"
+      },
+      {
+        "exists": true,
+        "kind": "file",
+        "path": "PIPELINE.md",
+        "status": "PASS"
+      }
+    ],
+    "status": "PASS"
+  },
+  "failed_validations": [
+    "tests",
+    "semantic_review"
+  ],
+  "repairable": true,
+  "scope_diff": {
+    "after_hash": "c39c1f603d45ddaca4450dfa7a64bcade6e00a3a922935cc2190ba14e80592aa",
+    "allow": [
+      "scripts",
+      "tests"
+    ],
+    "before_hash": "c39c1f603d45ddaca4450dfa7a64bcade6e00a3a922935cc2190ba14e80592aa",
+    "change_kinds": {},
+    "changed_files": [],
+    "deny": [
+      "acceptance/",
+      "README.md",
+      "PIPELINE.md"
+    ],
+    "forbidden_files": [],
+    "in_scope": true,
+    "protected_violations": [],
+    "rule": "real worktree diff; forbidden/unexpected -> scope violation",
+    "status": "PASS",
+    "unexpected_files": []
+  },
+  "spec_defect": false,
+  "tests": {
+    "exit_code": 1,
+    "false_green": false,
+    "output_sha256": "eb26e068ff759bc5e2c94a287712e91d9217ad003d5f9cc56feaacc27d6b8632",
+    "reason": "exit_nonzero",
+    "status": "FAIL",
+    "stderr_tail": "",
+    "stdout_tail": "...[truncated]...\ndre.test_A3_la_salida_es_9_16 ____________________\n\nself = <test_vertical.A_Reencuadre testMethod=test_A3_la_salida_es_9_16>\n\n    def test_A3_la_salida_es_9_16(self):\n        salida = ROOT / \"output\" / \"_acceptance\" / \"vertical.mp4\"\n        if not salida.is_file():\n>           self.fail(\"no hay salida vertical que medir: %s\" % salida)\nE           AssertionError: no hay salida vertical que medir: /Volumes/Medios/Repos/ClipFactory/output/_acceptance/vertical.mp4\n\nacceptance/test_vertical.py:85: AssertionError\n_______________ A_Reencuadre.test_A4_el_recorte_sigue_al_sujeto ________________\n\nself = <test_vertical.A_Reencuadre testMethod=test_A4_el_recorte_sigue_al_sujeto>\n\n    def test_A4_el_recorte_sigue_al_sujeto(self):\n        \"\"\"Un recorte fijo al centro deja a Mario fuera de cuadro cuando se mueve.\n    \n        La prueba no mira el video: mira que el plan de recorte tenga mas de una\n        posicion. Un solo valor para todo el clip es un recorte fijo.\n        \"\"\"\n        plan = ROOT / \"output\" / \"_acceptance\" / \"crop_plan.json\"\n>       self.assertTrue(plan.is_file(), \"falta el plan de recorte\")\nE       AssertionError: False is not true : falta el plan de recorte\n\nacceptance/test_vertical.py:98: AssertionError\n=========================== short test summary info ============================\nFAILED acceptance/test_vertical.py::A_Reencuadre::test_A3_la_salida_es_9_16\nFAILED acceptance/test_vertical.py::A_Reencuadre::test_A4_el_recorte_sigue_al_sujeto\n2 failed, 6 passed in 0.02s\n",
+    "test_counts": {
+      "failed": 2,
+      "passed": 6
+    },
+    "timed_out": false
+  }
+}
