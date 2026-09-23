@@ -1,12 +1,12 @@
 {
-  "attempt_id": "att-4a7111774a0a",
-  "attempt_seq": 11,
+  "attempt_id": "att-16e724ad3c90",
+  "attempt_seq": 12,
   "classification": "OPERATIONAL_LIMIT",
   "contract_hash": "915269e0fc4ed24543e1854ff06e03f85c202338fe6f8b78c26ff147b67b7a27",
   "goal_id": "clip-vertical",
   "governance_version": "1.0.0",
-  "objective": "Corregir el recorte vertical en scripts/render_vertical.py para que el crop siga al sujeto (failing test A_Reencuadre::test_A4_el_recorte_sigue_al_sujeto) y subir clipfactory_vertical_passing de 6 a >=7.",
-  "out_root": "/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/attempts/0011-att-4a7111774a0a/run",
+  "objective": "Corregir el seguimiento del sujeto en scripts/render_vertical.py para que el recorte vertical 9:16 acompañe al sujeto en movimiento y pase test_A4 (A_Reencuadre::test_A4_el_recorte_sigue_al_sujeto), reutilizando vertical_cropper de CleanVideos sin reimplementarlo.",
+  "out_root": "/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/attempts/0012-att-16e724ad3c90/run",
   "project": "clipfactory",
   "task_type": "CODE"
 }

@@ -1,0 +1,55 @@
+id: clipfactory
+version: 1
+root: ../../../../../..
+task_type: CODE
+objective: Corregir el seguimiento del sujeto en scripts/render_vertical.py para que
+  el recorte vertical 9:16 acompañe al sujeto en movimiento y pase test_A4 (A_Reencuadre::test_A4_el_recorte_sigue_al_sujeto),
+  reutilizando vertical_cropper de CleanVideos sin reimplementarlo.
+gate_policy:
+  scope:
+    required: true
+  tests:
+    required: true
+  artifacts:
+    required: true
+  regressions:
+    required: false
+  reproducibility:
+    required: false
+review:
+  enabled: false
+  required: false
+scope:
+  baseline: .governance/baseline.json
+  allow:
+  - scripts
+  - tests
+  deny:
+  - acceptance/
+  - README.md
+  - PIPELINE.md
+  - acceptance
+  - .governance
+  ignore:
+  - .governance
+  - .governance
+  - .governance/runs
+  - .governance/current.json
+  - .gov-runs
+  - output/
+  - guiones/
+  - .governance/
+acceptance:
+  tests:
+    command: python3 -m pytest -q -p no:cacheprovider acceptance/test_vertical.py
+    timeout: 1800.0
+    junit: false
+  artifacts:
+    required:
+    - path: README.md
+      kind: file
+    - path: PIPELINE.md
+      kind: file
+verification:
+  reproducible_runs: 1
+escalate_when: []
