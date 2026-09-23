@@ -1,12 +1,26 @@
 {
   "attempt_id": "att-7945905ebed9",
-  "attempt_seq": 16,
-  "classification": "NO_AUTHORIZED_WORK",
-  "contract_hash": "915269e0fc4ed24543e1854ff06e03f85c202338fe6f8b78c26ff147b67b7a27",
+  "executor": "supervisor",
   "goal_id": "clip-vertical",
-  "governance_version": "1.0.0",
   "objective": "Rework scripts/render_vertical.py so the rejection/closure per-test runs of acceptance A_Reencuadre tests A3 (salida 9:16) and A4 (recorte sigue al sujeto) pass, since closure runs 2 and 3 fail exactly on those two non-baseline cases while the deliverable is the only in-scope artifact.",
-  "out_root": "/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/attempts/0016-att-7945905ebed9/run",
-  "project": "clipfactory",
+  "producer_task": null,
+  "proposal_hash": "4d5add1bdcd88663307f53b900555be884f4ddbf8ee20a343ac2f60919d325ec",
+  "scope": {
+    "allow": [
+      "scripts",
+      "tests"
+    ],
+    "deny": [
+      "acceptance/",
+      "README.md",
+      "PIPELINE.md"
+    ],
+    "ignore": [
+      "output/",
+      "guiones/",
+      ".governance/"
+    ]
+  },
+  "seq": 16,
   "task_type": "CODE"
 }

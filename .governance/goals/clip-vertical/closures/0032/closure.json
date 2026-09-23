@@ -1,0 +1,89 @@
+{
+  "baseline_red": [
+    {
+      "detail": "already red in the baseline",
+      "id": "acceptance.test_vertical.A_Reencuadre::test_A1_existe_un_renderizador_vertical",
+      "kind": "BASELINE_RED"
+    },
+    {
+      "detail": "already red in the baseline",
+      "id": "acceptance.test_vertical.A_Reencuadre::test_A2_reutiliza_el_cropper_de_cleanvideos",
+      "kind": "BASELINE_RED"
+    },
+    {
+      "detail": "already red in the baseline",
+      "id": "acceptance.test_vertical.A_Reencuadre::test_A3_la_salida_es_9_16",
+      "kind": "BASELINE_RED"
+    },
+    {
+      "detail": "already red in the baseline",
+      "id": "acceptance.test_vertical.A_Reencuadre::test_A4_el_recorte_sigue_al_sujeto",
+      "kind": "BASELINE_RED"
+    },
+    {
+      "detail": "already red in the baseline",
+      "id": "acceptance.test_vertical.A_Reencuadre::test_A5_los_subtitulos_caben_en_vertical",
+      "kind": "BASELINE_RED"
+    },
+    {
+      "detail": "already red in the baseline",
+      "id": "acceptance.test_vertical.A_Reencuadre::test_A6_no_pisa_la_salida_horizontal",
+      "kind": "BASELINE_RED"
+    },
+    {
+      "detail": "already red in the baseline",
+      "id": "acceptance.test_vertical.A_Reencuadre::test_A7_sin_ffmpeg_falla_diciendo_por_que",
+      "kind": "BASELINE_RED"
+    }
+  ],
+  "evidence_dir": "/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/closures/0032",
+  "flaky": [],
+  "regressions": [
+    {
+      "detail": "path outside the envelope scope",
+      "id": "acceptance/evaluate.py",
+      "kind": "SCOPE"
+    },
+    {
+      "detail": "path outside the envelope scope",
+      "id": "acceptance/test_vertical.py",
+      "kind": "SCOPE"
+    }
+  ],
+  "runs": [
+    {
+      "case_count": 8,
+      "exit_code": 1,
+      "mode": "per_test",
+      "node_ids": [],
+      "passed": false,
+      "run": 1,
+      "stdout_sha256": "2195e1815f2c2cf79adfb4104e55d43abeb3cdbf39ff8ab5f2cfec47d76a4ed3"
+    },
+    {
+      "case_count": 2,
+      "exit_code": 1,
+      "mode": "per_test",
+      "node_ids": [
+        "acceptance/test_vertical.py::A_Reencuadre::test_A3_la_salida_es_9_16",
+        "acceptance/test_vertical.py::A_Reencuadre::test_A4_el_recorte_sigue_al_sujeto"
+      ],
+      "passed": false,
+      "run": 2,
+      "stdout_sha256": "d3956d64f0ff4745557fbd80c0ff8e1f0dd8c96e85e313ea0453eda12c76fc37"
+    },
+    {
+      "case_count": 2,
+      "exit_code": 1,
+      "mode": "per_test",
+      "node_ids": [
+        "acceptance/test_vertical.py::A_Reencuadre::test_A3_la_salida_es_9_16",
+        "acceptance/test_vertical.py::A_Reencuadre::test_A4_el_recorte_sigue_al_sujeto"
+      ],
+      "passed": false,
+      "run": 3,
+      "stdout_sha256": "1d364c257563f678f90092e4a6f6e22858d324019066913e04fe408bba8b0498"
+    }
+  ],
+  "verified": false
+}

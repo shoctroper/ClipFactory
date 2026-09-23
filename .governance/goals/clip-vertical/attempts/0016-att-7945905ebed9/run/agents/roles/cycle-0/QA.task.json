@@ -1,0 +1,84 @@
+{
+  "allowed_write": false,
+  "created_at": "2026-09-23T03:39:42+00:00",
+  "cycle": 0,
+  "inputs": {
+    "changed_files": [],
+    "deterministic_validation": {
+      "artifacts": {
+        "entries": [
+          {
+            "exists": true,
+            "kind": "file",
+            "path": "README.md",
+            "status": "PASS"
+          },
+          {
+            "exists": true,
+            "kind": "file",
+            "path": "PIPELINE.md",
+            "status": "PASS"
+          }
+        ],
+        "status": "PASS"
+      },
+      "scope_diff": {
+        "after_hash": "b3c487ebe6b286b6b4f819d6653f0601b04bdfce243bbc4a25150e1cf91fc2ea",
+        "allow": [
+          "scripts",
+          "tests"
+        ],
+        "before_hash": "b3c487ebe6b286b6b4f819d6653f0601b04bdfce243bbc4a25150e1cf91fc2ea",
+        "change_kinds": {},
+        "changed_files": [],
+        "deny": [
+          "acceptance/",
+          "README.md",
+          "PIPELINE.md"
+        ],
+        "forbidden_files": [],
+        "in_scope": true,
+        "protected_violations": [],
+        "rule": "real worktree diff; forbidden/unexpected -> scope violation",
+        "status": "PASS",
+        "unexpected_files": []
+      },
+      "tests": {
+        "exit_code": 0,
+        "false_green": false,
+        "output_sha256": "b3a21ba89f8a0236eecf1ae15ebc7b199cde8ea88088ab8174956d0cfcaeb70d",
+        "reason": "exit_zero",
+        "status": "PASS",
+        "stderr_tail": "",
+        "stdout_tail": "........                                                                 [100%]\n8 passed in 0.09s\n",
+        "test_counts": {
+          "passed": 8
+        },
+        "timed_out": false
+      }
+    },
+    "prior_validation": null
+  },
+  "instruction": "Milestone: clipfactory (v1). Task type: CODE. Role: QA.\nRole purpose: Independently run tests, validations and evidence inspection; detect false greens. Never repairs code.\nObjective: Rework scripts/render_vertical.py so the rejection/closure per-test runs of acceptance A_Reencuadre tests A3 (salida 9:16) and A4 (recorte sigue al sujeto) pass, since closure runs 2 and 3 fail exactly on those two non-baseline cases while the deliverable is the only in-scope artifact.\nAuthorized scope allow: ['scripts', 'tests']\nAuthorized scope deny: ['acceptance/', 'README.md', 'PIPELINE.md']\nAcceptance command: python3 -m pytest -q -p no:cacheprovider acceptance/test_vertical.py\nYou are read-only. Produce declarative evidence; do not modify the worktree. Be bounded: base your JSON verdict on the provided inputs and at most a quick look at the changed files. Do NOT run long explorations, test suites, or multi-step tool loops; respond with the JSON object in a few steps.",
+  "parent_run_id": "clipfactory-root",
+  "policy_hash": "7844d57e2db8c744038badd1bd4cb4bf3c28fd499687d84d5b54a87ce68ac04a",
+  "role": "QA",
+  "schema_version": "1",
+  "scope": {
+    "allow": [
+      "scripts",
+      "tests"
+    ],
+    "deny": [
+      "acceptance/",
+      "README.md",
+      "PIPELINE.md"
+    ]
+  },
+  "spec_id": "clipfactory",
+  "spec_version": 1,
+  "task_hash": "8b47bdc3fce978ba5448c4ba06a16b7b4bbfaf31b2a10e6729a9b72e950d33f3",
+  "task_type": "CODE",
+  "tasks_id": "at-e3dca658022b",
+  "worktree": "/Volumes/Medios/Repos/ClipFactory"
+}

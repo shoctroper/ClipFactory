@@ -1,0 +1,27 @@
+{
+  "changed_files": [
+    "acceptance/evaluate.py",
+    "acceptance/test_vertical.py",
+    "scripts/render_vertical.py",
+    "scripts/vendor/README.md",
+    "scripts/vendor/vertical_cropper.py"
+  ],
+  "created": [
+    "scripts/render_vertical.py",
+    "scripts/vendor/README.md",
+    "scripts/vendor/vertical_cropper.py"
+  ],
+  "deleted": [],
+  "governance_state_touched": false,
+  "head_changed": true,
+  "modified": [
+    "acceptance/evaluate.py",
+    "acceptance/test_vertical.py"
+  ],
+  "out_of_scope": [
+    "acceptance/evaluate.py",
+    "acceptance/test_vertical.py"
+  ],
+  "protected_violations": [],
+  "watched_touched": []
+}

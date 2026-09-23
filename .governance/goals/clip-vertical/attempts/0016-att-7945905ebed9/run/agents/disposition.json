@@ -1,0 +1,101 @@
+{
+  "classification": "NO_AUTHORIZED_WORK",
+  "created_at": "2026-09-23T03:40:12+00:00",
+  "cycle": 0,
+  "diff": {
+    "after_hash": "b3c487ebe6b286b6b4f819d6653f0601b04bdfce243bbc4a25150e1cf91fc2ea",
+    "before_hash": "b3c487ebe6b286b6b4f819d6653f0601b04bdfce243bbc4a25150e1cf91fc2ea",
+    "changed_files": [],
+    "forbidden_files": [],
+    "in_scope": true,
+    "unexpected_files": []
+  },
+  "escalated_role": null,
+  "executed_roles": {
+    "IMPLEMENTER": {
+      "latency_ms": 137415.8,
+      "model": "opencode-go/deepseek-v4-flash",
+      "provider": "opencode",
+      "status": "COMPLETED"
+    },
+    "QA": {
+      "latency_ms": 28897.9,
+      "model": "opencode/big-pickle",
+      "provider": "opencode",
+      "status": "COMPLETED"
+    }
+  },
+  "gates": {
+    "final_status": "PASS",
+    "gates": {
+      "artifacts": "PASS",
+      "regressions": "SKIPPED",
+      "reproducibility": "SKIPPED",
+      "scope": "PASS",
+      "tests": "PASS"
+    },
+    "result_path": "/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/attempts/0016-att-7945905ebed9/run/agents/gates-cycle-0/result.json",
+    "review": {
+      "artifact": null,
+      "enabled": false,
+      "required": false,
+      "status": "NOT_REQUESTED"
+    },
+    "run_id": "gov-clipfactory-594d2818",
+    "status": "PASS"
+  },
+  "human_gate": null,
+  "max_repair_cycles": 3,
+  "metrics": {
+    "cost_registered": true,
+    "failures_caught": [],
+    "retries": 0,
+    "role_count": 2,
+    "roles": {
+      "IMPLEMENTER": {
+        "contributed": true,
+        "latency_ms": 137415.8,
+        "model": "opencode-go/deepseek-v4-flash",
+        "provider": "opencode",
+        "status": "COMPLETED",
+        "timeout_seconds": 3000.0,
+        "usage": {
+          "duration_ms": 137412.8
+        }
+      },
+      "QA": {
+        "contributed": true,
+        "latency_ms": 28897.9,
+        "model": "opencode/big-pickle",
+        "provider": "opencode",
+        "status": "COMPLETED",
+        "timeout_seconds": 180.0,
+        "usage": {
+          "cost": 0,
+          "input_tokens": 439,
+          "output_tokens": 517,
+          "tokens": 15548
+        }
+      }
+    },
+    "total_latency_ms": 166313.7
+  },
+  "policy_hash": "7844d57e2db8c744038badd1bd4cb4bf3c28fd499687d84d5b54a87ce68ac04a",
+  "provider_failure": null,
+  "reason": "a role that may modify the worktree reported success but left it unchanged",
+  "required_roles": [
+    "IMPLEMENTER",
+    "QA"
+  ],
+  "required_validations": [
+    "artifacts",
+    "scope_diff",
+    "semantic_review",
+    "tests"
+  ],
+  "role_registry_hash": "4bbcaec87c1d47a6256e693d86816abb304676179bb5a798f98a0b0a4e62229e",
+  "schema_version": "1",
+  "spec_id": "clipfactory",
+  "spec_version": 1,
+  "task_type": "CODE"
+}

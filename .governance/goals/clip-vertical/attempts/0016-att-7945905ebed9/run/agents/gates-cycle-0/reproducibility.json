@@ -1,0 +1,12 @@
+{
+  "duration_ms": 0.0,
+  "gate": "reproducibility",
+  "observations": {
+    "reason": "not_applicable",
+    "reproducible_runs": 1
+  },
+  "policy_basis": "gate_policy.reproducibility.required = false",
+  "reason": "verification.reproducible_runs < 2 (gate not applicable)",
+  "required": false,
+  "status": "SKIPPED"
+}

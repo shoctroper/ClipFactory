@@ -1,0 +1,12 @@
+{
+  "attempt_id": "att-4184f702aa2f",
+  "attempt_seq": 15,
+  "classification": "OPERATIONAL_LIMIT",
+  "contract_hash": "915269e0fc4ed24543e1854ff06e03f85c202338fe6f8b78c26ff147b67b7a27",
+  "goal_id": "clip-vertical",
+  "governance_version": "1.0.0",
+  "objective": "Repair the closure regressions so a re-run of closure verification passes: harden scripts/render_vertical.py so the 9:16 output (A3) and subject-following crop (A4) behaviours pass when the acceptance suite runs directly per-test, and add/adjust in-envelope regression coverage under tests/ that pins those behaviours, without ever touching the pinned acceptance paths.",
+  "out_root": "/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/attempts/0015-att-4184f702aa2f/run",
+  "project": "clipfactory",
+  "task_type": "CODE"
+}

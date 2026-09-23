@@ -1,5 +1,5 @@
 {
-  "attempts_count": 16,
+  "attempts_count": 15,
   "authority_envelope": {
     "accept_missing_tests": [],
     "allow": [
@@ -26,7 +26,6 @@
     "stall_attempts": 6
   },
   "closure_failures": [
-    2,
     2,
     2,
     2,
@@ -84,9 +83,9 @@
       "timed_out": false
     }
   },
-  "goal_hash": "772fbac5b679ad70d2d02a8e4ed2121b96812319169dea71507b0d79d76ab4b9",
+  "goal_hash": "7bed1d164cf490907af1f68d5c7bf22109d2f755ac6aa2b59c39526d55f5d736",
   "goal_id": "clip-vertical",
-  "halt_reason": "CLOSURE_NO_PROGRESS",
+  "halt_reason": null,
   "last_completion_verification": {
     "baseline_red": [
       {
@@ -125,7 +124,7 @@
         "kind": "BASELINE_RED"
       }
     ],
-    "evidence_dir": "/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/closures/0033",
+    "evidence_dir": "/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/closures/0032",
     "flaky": [],
     "regressions": [
       {
@@ -147,7 +146,7 @@
         "node_ids": [],
         "passed": false,
         "run": 1,
-        "stdout_sha256": "a09246c75933472807b3ad0d29f0a2432db9cfd56c21d0e719c55565bd2c227a"
+        "stdout_sha256": "2195e1815f2c2cf79adfb4104e55d43abeb3cdbf39ff8ab5f2cfec47d76a4ed3"
       },
       {
         "case_count": 2,
@@ -159,7 +158,7 @@
         ],
         "passed": false,
         "run": 2,
-        "stdout_sha256": "bcc4f6fcb67c5f06b57ff21c8dd14389e65d97b81fe69eb03b32036d986c0a80"
+        "stdout_sha256": "d3956d64f0ff4745557fbd80c0ff8e1f0dd8c96e85e313ea0453eda12c76fc37"
       },
       {
         "case_count": 2,
@@ -171,14 +170,14 @@
         ],
         "passed": false,
         "run": 3,
-        "stdout_sha256": "de929a9610b2b0893b4fd95ba84ae1f39a15413c64f4b6755b920a595c3c567f"
+        "stdout_sha256": "1d364c257563f678f90092e4a6f6e22858d324019066913e04fe408bba8b0498"
       }
     ],
     "verified": false
   },
   "last_evaluation": {
     "authority_required": false,
-    "evaluation_path": "/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/evaluations/0033.json",
+    "evaluation_path": "/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/evaluations/0032.json",
     "evaluator_output": "{\"clipfactory_vertical_passing\": 8, \"progress\": 8, \"total\": 8, \"collected\": 8, \"skipped\": 0, \"notes\": [], \"tail\": [\"........                                                                 [100%]\", \"8 passed in 0.05s\"]}",
     "observed": 8,
     "op": ">=",
@@ -212,6 +211,6 @@
   "provider_backoff_until": null,
   "repository_id": "repo-d6704ac2de7a31eb",
   "schema_version": "2",
-  "status": "STALLED",
+  "status": "GOAL_INCOMPLETE_CONTINUE",
   "task_type": "CODE"
 }

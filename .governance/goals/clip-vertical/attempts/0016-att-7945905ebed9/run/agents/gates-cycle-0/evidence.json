@@ -1,0 +1,100 @@
+{
+  "gates": {
+    "artifacts": {
+      "duration_ms": 0.4,
+      "gate": "artifacts",
+      "observations": {
+        "required": [
+          {
+            "exists": true,
+            "kind": "file",
+            "path": "README.md",
+            "size": 8792,
+            "status": "PASS"
+          },
+          {
+            "exists": true,
+            "kind": "file",
+            "path": "PIPELINE.md",
+            "size": 22342,
+            "status": "PASS"
+          }
+        ],
+        "rule": "missing/empty/unparsable/unsupported -> FAIL; unreadable -> ESCALATE"
+      },
+      "policy_basis": null,
+      "reason": null,
+      "required": true,
+      "status": "PASS"
+    },
+    "regressions": {
+      "duration_ms": 0.0,
+      "gate": "regressions",
+      "observations": {
+        "reason": "disabled_or_not_configured"
+      },
+      "policy_basis": "gate_policy.regressions.required = false",
+      "reason": "regressions not enabled or not configured",
+      "required": false,
+      "status": "SKIPPED"
+    },
+    "reproducibility": {
+      "duration_ms": 0.0,
+      "gate": "reproducibility",
+      "observations": {
+        "reason": "not_applicable",
+        "reproducible_runs": 1
+      },
+      "policy_basis": "gate_policy.reproducibility.required = false",
+      "reason": "verification.reproducible_runs < 2 (gate not applicable)",
+      "required": false,
+      "status": "SKIPPED"
+    },
+    "scope": {
+      "duration_ms": 422.7,
+      "gate": "scope",
+      "observations": {
+        "added_files": [],
+        "baseline": ".governance/baseline.json",
+        "baseline_file_count": 3918,
+        "changed_files": [],
+        "current_file_count": 3918,
+        "deleted_files": [],
+        "forbidden_files": [],
+        "modified_files": [],
+        "rule": "deny=['acceptance/', 'README.md', 'PIPELINE.md'] allow=['scripts', 'tests']; forbidden or unexpected -> FAIL",
+        "unexpected_files": []
+      },
+      "policy_basis": null,
+      "reason": null,
+      "required": true,
+      "status": "PASS"
+    },
+    "tests": {
+      "duration_ms": 238.0,
+      "gate": "tests",
+      "observations": {
+        "command": "python3 -m pytest -q -p no:cacheprovider acceptance/test_vertical.py",
+        "decision_reason": "exit_zero",
+        "duration_ms": 237.9,
+        "error": null,
+        "exit_code": 0,
+        "output_sha256": "a55fb41dd7bfb62d3a428da525eaaacc8a85d814884804b31d41f7fc9a1311d1",
+        "rule": "exit_code==0 -> PASS; exit_code!=0 -> FAIL; timeout -> ESCALATE",
+        "stderr_tail": "",
+        "stdout_tail": "........                                                                 [100%]\n8 passed in 0.05s\n",
+        "test_counts": {
+          "passed": 8
+        },
+        "test_counts_source": "pytest_summary",
+        "timed_out": false
+      },
+      "policy_basis": null,
+      "reason": null,
+      "required": true,
+      "status": "PASS"
+    }
+  },
+  "spec_id": "clipfactory",
+  "timestamp": "2026-09-23T03:40:12+00:00"
+}
