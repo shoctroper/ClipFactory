@@ -1,0 +1,27 @@
+{
+  "duration_ms": 0.3,
+  "gate": "artifacts",
+  "observations": {
+    "required": [
+      {
+        "exists": true,
+        "kind": "file",
+        "path": "README.md",
+        "size": 8792,
+        "status": "PASS"
+      },
+      {
+        "exists": true,
+        "kind": "file",
+        "path": "PIPELINE.md",
+        "size": 22342,
+        "status": "PASS"
+      }
+    ],
+    "rule": "missing/empty/unparsable/unsupported -> FAIL; unreadable -> ESCALATE"
+  },
+  "policy_basis": null,
+  "reason": null,
+  "required": true,
+  "status": "PASS"
+}

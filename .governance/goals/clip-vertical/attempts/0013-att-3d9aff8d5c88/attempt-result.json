@@ -1,0 +1,18 @@
+{
+  "attempt_id": "att-3d9aff8d5c88",
+  "changed_files": [
+    "scripts/render_vertical.py"
+  ],
+  "classification": "COMPLETED",
+  "evaluation_status": null,
+  "executor": "supervisor",
+  "finished_at": "2026-09-23T02:40:16+00:00",
+  "gates_status": "PASS",
+  "governance_state_touched": false,
+  "model": "opencode-go/deepseek-v4-flash",
+  "out_root": "/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/attempts/0013-att-3d9aff8d5c88/run",
+  "protected_violations": [],
+  "provider": "opencode",
+  "scope_violations": [],
+  "started_at": "2026-09-23T01:49:18+00:00"
+}

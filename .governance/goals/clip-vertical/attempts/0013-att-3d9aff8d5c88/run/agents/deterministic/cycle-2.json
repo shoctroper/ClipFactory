@@ -1,0 +1,59 @@
+{
+  "artifacts": {
+    "entries": [
+      {
+        "exists": true,
+        "kind": "file",
+        "path": "README.md",
+        "status": "PASS"
+      },
+      {
+        "exists": true,
+        "kind": "file",
+        "path": "PIPELINE.md",
+        "status": "PASS"
+      }
+    ],
+    "status": "PASS"
+  },
+  "scope_diff": {
+    "after_hash": "b3c487ebe6b286b6b4f819d6653f0601b04bdfce243bbc4a25150e1cf91fc2ea",
+    "allow": [
+      "scripts",
+      "tests"
+    ],
+    "before_hash": "89d848bc0d2ac122d946c975e61a7b2fb268c0c45254b1f7809c4eb3ec76bddf",
+    "change_kinds": {
+      "scripts/render_vertical.py": "modified"
+    },
+    "changed_files": [
+      "scripts/render_vertical.py"
+    ],
+    "deny": [
+      "acceptance/",
+      "README.md",
+      "PIPELINE.md",
+      "acceptance",
+      ".governance"
+    ],
+    "forbidden_files": [],
+    "in_scope": true,
+    "protected_violations": [],
+    "rule": "real worktree diff; forbidden/unexpected -> scope violation",
+    "status": "PASS",
+    "unexpected_files": []
+  },
+  "tests": {
+    "exit_code": 0,
+    "false_green": false,
+    "output_sha256": "a55fb41dd7bfb62d3a428da525eaaacc8a85d814884804b31d41f7fc9a1311d1",
+    "reason": "exit_zero",
+    "status": "PASS",
+    "stderr_tail": "",
+    "stdout_tail": "........                                                                 [100%]\n8 passed in 0.05s\n",
+    "test_counts": {
+      "passed": 8
+    },
+    "timed_out": false
+  }
+}

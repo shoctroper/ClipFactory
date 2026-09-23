@@ -1,0 +1,11 @@
+{
+  "duration_ms": 0.0,
+  "gate": "regressions",
+  "observations": {
+    "reason": "disabled_or_not_configured"
+  },
+  "policy_basis": "gate_policy.regressions.required = false",
+  "reason": "regressions not enabled or not configured",
+  "required": false,
+  "status": "SKIPPED"
+}

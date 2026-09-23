@@ -1,5 +1,5 @@
 {
-  "attempts_count": 13,
+  "attempts_count": 12,
   "authority_envelope": {
     "accept_missing_tests": [],
     "allow": [
@@ -25,9 +25,7 @@
     "replan_attempts": 4,
     "stall_attempts": 6
   },
-  "closure_failures": [
-    2
-  ],
+  "closure_failures": [],
   "consecutive_quota": 0,
   "consecutive_rejections": 0,
   "created_at": "2026-09-22T13:51:38+00:00",
@@ -78,108 +76,19 @@
       "timed_out": false
     }
   },
-  "goal_hash": "8dd547b5bd1d4c5c680c92eb3342cde17c8954dddc443600be4bacd8a7521c80",
+  "goal_hash": "9a7a45e3048cd98a4cf7128309b07aaba58b3f27a43694130e4a5d6f1e5160de",
   "goal_id": "clip-vertical",
   "halt_reason": null,
-  "last_completion_verification": {
-    "baseline_red": [
-      {
-        "detail": "already red in the baseline",
-        "id": "acceptance.test_vertical.A_Reencuadre::test_A1_existe_un_renderizador_vertical",
-        "kind": "BASELINE_RED"
-      },
-      {
-        "detail": "already red in the baseline",
-        "id": "acceptance.test_vertical.A_Reencuadre::test_A2_reutiliza_el_cropper_de_cleanvideos",
-        "kind": "BASELINE_RED"
-      },
-      {
-        "detail": "already red in the baseline",
-        "id": "acceptance.test_vertical.A_Reencuadre::test_A3_la_salida_es_9_16",
-        "kind": "BASELINE_RED"
-      },
-      {
-        "detail": "already red in the baseline",
-        "id": "acceptance.test_vertical.A_Reencuadre::test_A4_el_recorte_sigue_al_sujeto",
-        "kind": "BASELINE_RED"
-      },
-      {
-        "detail": "already red in the baseline",
-        "id": "acceptance.test_vertical.A_Reencuadre::test_A5_los_subtitulos_caben_en_vertical",
-        "kind": "BASELINE_RED"
-      },
-      {
-        "detail": "already red in the baseline",
-        "id": "acceptance.test_vertical.A_Reencuadre::test_A6_no_pisa_la_salida_horizontal",
-        "kind": "BASELINE_RED"
-      },
-      {
-        "detail": "already red in the baseline",
-        "id": "acceptance.test_vertical.A_Reencuadre::test_A7_sin_ffmpeg_falla_diciendo_por_que",
-        "kind": "BASELINE_RED"
-      }
-    ],
-    "evidence_dir": "/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/closures/0027",
-    "flaky": [],
-    "regressions": [
-      {
-        "detail": "path outside the envelope scope",
-        "id": "acceptance/evaluate.py",
-        "kind": "SCOPE"
-      },
-      {
-        "detail": "path outside the envelope scope",
-        "id": "acceptance/test_vertical.py",
-        "kind": "SCOPE"
-      }
-    ],
-    "runs": [
-      {
-        "case_count": 8,
-        "exit_code": 1,
-        "mode": "per_test",
-        "node_ids": [],
-        "passed": false,
-        "run": 1,
-        "stdout_sha256": "b5b2ae7cf27529562b28d1154c367b48b1a12b38aeb9852f3f2a5a33780e7d3e"
-      },
-      {
-        "case_count": 2,
-        "exit_code": 1,
-        "mode": "per_test",
-        "node_ids": [
-          "acceptance/test_vertical.py::A_Reencuadre::test_A3_la_salida_es_9_16",
-          "acceptance/test_vertical.py::A_Reencuadre::test_A4_el_recorte_sigue_al_sujeto"
-        ],
-        "passed": false,
-        "run": 2,
-        "stdout_sha256": "d367d7b1b34a7519d5f96a8abab76e23e7264774c95c76d7a6d84723995c831c"
-      },
-      {
-        "case_count": 2,
-        "exit_code": 1,
-        "mode": "per_test",
-        "node_ids": [
-          "acceptance/test_vertical.py::A_Reencuadre::test_A3_la_salida_es_9_16",
-          "acceptance/test_vertical.py::A_Reencuadre::test_A4_el_recorte_sigue_al_sujeto"
-        ],
-        "passed": false,
-        "run": 3,
-        "stdout_sha256": "770ea8fcb4702bee69e9b4166cc7b73451d97a8496c4b1fdf8efe1e2b79c85c4"
-      }
-    ],
-    "verified": false
-  },
   "last_evaluation": {
     "authority_required": false,
-    "evaluation_path": "/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/evaluations/0027.json",
-    "evaluator_output": "{\"clipfactory_vertical_passing\": 8, \"progress\": 8, \"total\": 8, \"collected\": 8, \"skipped\": 0, \"notes\": [], \"tail\": [\"........                                                                 [100%]\", \"8 passed in 0.05s\"]}",
-    "observed": 8,
+    "evaluation_path": "/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/evaluations/0026.json",
+    "evaluator_output": "{\"clipfactory_vertical_passing\": 6, \"progress\": 6, \"total\": 8, \"collected\": 8, \"skipped\": 0, \"notes\": [], \"tail\": [\"FAILED acceptance/test_vertical.py::A_Reencuadre::test_A4_el_recorte_sigue_al_sujeto\", \"2 failed, 6 passed in 0.01s\"]}",
+    "observed": 6,
     "op": ">=",
-    "progress": 8,
+    "progress": 6,
     "reason": null,
     "target": 7,
-    "verified": true
+    "verified": false
   },
   "objective": "ClipFactory entrega cortos verticales 9:16 con el recorte siguiendo al sujeto, reutilizando vertical_cropper de CleanVideos en vez de reimplementarlo.",
   "outcome_predicate": {

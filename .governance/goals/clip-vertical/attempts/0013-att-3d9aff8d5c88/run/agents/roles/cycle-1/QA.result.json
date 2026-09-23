@@ -1,0 +1,28 @@
+{
+  "changed_files": [],
+  "changed_files_verified": false,
+  "created_at": "2026-09-23T01:59:23+00:00",
+  "cycle": 1,
+  "error": null,
+  "latency_ms": 20623.3,
+  "log": "{\"verdict\":\"FAIL\",\"repairable\":true,\"spec_defect\":false,\"notes\":\"Acceptance still fails (exit 1): 2/8 failing. test_A4 fails because output/_acceptance/crop_plan.json is missing and test_A3 fails because vertical.mp4 is missing, so the crop-plan logic produced no evidence of a time-varying recorte. scope_diff shows zero changed files (before_hash==after_hash) — no repair was applied. Metric stays 6/8, objective 7/8 not met. Defect is in implementation, not spec; repairable=true.\"}",
+  "model": "opencode/big-pickle",
+  "output": {
+    "notes": "Acceptance still fails (exit 1): 2/8 failing. test_A4 fails because output/_acceptance/crop_plan.json is missing and test_A3 fails because vertical.mp4 is missing, so the crop-plan logic produced no evidence of a time-varying recorte. scope_diff shows zero changed files (before_hash==after_hash) — no repair was applied. Metric stays 6/8, objective 7/8 not met. Defect is in implementation, not spec; repairable=true.",
+    "repairable": true,
+    "spec_defect": false,
+    "verdict": "FAIL"
+  },
+  "provider": "opencode",
+  "result_hash": "4cb8d382e3521d9893a114c92f45473899f64c96fea2d2020652cdd7f401f339",
+  "role": "QA",
+  "schema_version": "1",
+  "status": "COMPLETED",
+  "tasks_id": "at-a96d16976c57",
+  "usage": {
+    "cost": 0,
+    "input_tokens": 13508,
+    "output_tokens": 1284,
+    "tokens": 16584
+  }
+}

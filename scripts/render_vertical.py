@@ -13,9 +13,11 @@ Pasos:
    reventar con un error raro (caso A7 de la aceptación).
 2. Detecta el centro de la persona a lo largo del video y suaviza la
    trayectoria (ventana de 5 frames, en vertical_cropper).
-3. Escribe `crop_plan.json` en el processing_dir: los centros usados por el
-   recorte, el fps, las dimensiones fuente y la resolución de salida. Tener
-   más de una posición demuestra que el recorte sigue al sujeto (caso A4).
+3. Escribe `crop_plan.json` en el processing_dir: los centros USADOS por el
+   recorte (en píxeles, no normalizados), el fps, las dimensiones fuente y la
+   resolución de salida. Guardar los centros en píxeles (no 0..1) es lo que
+   permite ver la trayectoria: con coordenadas normalizadas 0.34..0.45 todas
+   redondean a 0 y el plan parecería un recorte fijo (caso A4).
 4. Genera el `crop.txt` (sendcmd para ffmpeg) y renderiza el vertical.
 
 El vertical se escribe en la ruta que pase el operador; no pisa los clips
@@ -68,6 +70,9 @@ def main() -> int:
                         help="Procesar 1 de cada N frames para detectar al sujeto")
     parser.add_argument("--ffmpeg", default="ffmpeg",
                         help="Ruta al binario de ffmpeg")
+    parser.add_argument("--model", type=Path, default=None,
+                        help="Ruta al modelo de detección del sujeto "
+                             "(por defecto la que busca vertical_cropper)")
     args = parser.parse_args()
 
     if not args.video.is_file():
@@ -88,13 +93,19 @@ def main() -> int:
               f"{VENDOR_DIR}: {exc}", file=sys.stderr)
         return 1
 
+    if args.model is not None:
+        vertical_cropper.POSE_MODEL_PATH = args.model.resolve()
+
     args.processing_dir.mkdir(parents=True, exist_ok=True)
 
     centers, fps, src_w, src_h = vertical_cropper.detect_person_centers(
         str(args.video), sample_stride=args.sample_stride)
 
+    smoothed = vertical_cropper._fill_and_smooth(centers)
+    centers_px = [round(c * src_w) for c in smoothed]
+
     crop_plan = {
-        "centers": centers,
+        "centers": centers_px,
         "fps": fps,
         "src_width": src_w,
         "src_height": src_h,

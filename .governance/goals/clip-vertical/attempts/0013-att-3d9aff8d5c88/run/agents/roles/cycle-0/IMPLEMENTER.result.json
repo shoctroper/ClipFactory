@@ -1,0 +1,24 @@
+{
+  "changed_files": [],
+  "changed_files_verified": false,
+  "created_at": "2026-09-23T01:49:37+00:00",
+  "cycle": 0,
+  "error": null,
+  "latency_ms": 17490.1,
+  "log": "olumes/Medios/Repos/ClipFactory/output/VideoConGuionYouTube 2>&1\",\"time\":{\"start\":1790128176854,\"end\":1790128176872}},\"id\":\"prt_0cbf43d74001BCLO9D2057M6Op\",\"sessionID\":\"ses_f340c00f6ffeR0ngxpr9A5HHrC\",\"messageID\":\"msg_0cbf43440001izq7UJ2FNcPm9B\"}}\n{\"type\":\"tool_use\",\"timestamp\":1790128177135,\"sessionID\":\"ses_f340c00f6ffeR0ngxpr9A5HHrC\",\"part\":{\"type\":\"tool\",\"tool\":\"bash\",\"callID\":\"call_dd485f14448042e79a172d3d\",\"state\":{\"status\":\"error\",\"input\":{\"command\":\"cat /Volumes/Medios/Repos/CleanVideos/video_pipeline/scripts/vertical_cropper.py | shasum -a 256; shasum -a 256 /Volumes/Medios/Repos/ClipFactory/scripts/vendor/vertical_cropper.py\"},\"error\":\"The user rejected permission to use this specific tool call.\",\"time\":{\"start\":1790128177130,\"end\":1790128177134}},\"id\":\"prt_0cbf43ed8001Hwi3jJ28falst8\",\"sessionID\":\"ses_f340c00f6ffeR0ngxpr9A5HHrC\",\"messageID\":\"msg_0cbf43440001izq7UJ2FNcPm9B\"}}\n{\"type\":\"tool_use\",\"timestamp\":1790128177294,\"sessionID\":\"ses_f340c00f6ffeR0ngxpr9A5HHrC\",\"part\":{\"type\":\"tool\",\"tool\":\"bash\",\"callID\":\"call_50aeda816912404489206d09\",\"state\":{\"status\":\"completed\",\"input\":{\"command\":\"ls /Volumes/Medios/Repos/CleanVideos/video_pipeline/models/ 2>&1\"},\"output\":\"pose_landmarker_lite.task\\n\",\"metadata\":{\"output\":\"pose_landmarker_lite.task\\n\",\"exit\":0,\"truncated\":false},\"title\":\"ls /Volumes/Medios/Repos/CleanVideos/video_pipeline/models/ 2>&1\",\"time\":{\"start\":1790128177284,\"end\":1790128177293}},\"id\":\"prt_0cbf4401a001uQ6XprBBw510ks\",\"sessionID\":\"ses_f340c00f6ffeR0ngxpr9A5HHrC\",\"messageID\":\"msg_0cbf43440001izq7UJ2FNcPm9B\"}}\n{\"type\":\"step_finish\",\"timestamp\":1790128177357,\"sessionID\":\"ses_f340c00f6ffeR0ngxpr9A5HHrC\",\"part\":{\"id\":\"prt_0cbf440cb0013Yvf1cTDZiUI5d\",\"reason\":\"tool-calls\",\"snapshot\":\"e52da0812d011a38f1890dd956d7ef3993cceaf3\",\"messageID\":\"msg_0cbf43440001izq7UJ2FNcPm9B\",\"sessionID\":\"ses_f340c00f6ffeR0ngxpr9A5HHrC\",\"type\":\"step-finish\",\"tokens\":{\"total\":27672,\"input\":1379,\"output\":437,\"reasoning\":0,\"cache\":{\"write\":0,\"read\":25856}},\"cost\":0.000546618}}",
+  "model": "opencode-go/deepseek-v4-flash",
+  "output": {
+    "exit_code": 0,
+    "reported_status": "COMPLETED",
+    "session_id": "ses_f340c00f6ffeR0ngxpr9A5HHrC"
+  },
+  "provider": "opencode",
+  "result_hash": "d35f114b989cf3339d4f62198f895b47e5f39206546be43632da8e97d81b4721",
+  "role": "IMPLEMENTER",
+  "schema_version": "1",
+  "status": "COMPLETED",
+  "tasks_id": "at-0db82604cfb0",
+  "usage": {
+    "duration_ms": 17489.3
+  }
+}

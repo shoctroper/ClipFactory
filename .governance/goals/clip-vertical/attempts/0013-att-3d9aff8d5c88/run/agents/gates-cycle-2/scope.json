@@ -1,0 +1,24 @@
+{
+  "duration_ms": 422.9,
+  "gate": "scope",
+  "observations": {
+    "added_files": [],
+    "baseline": ".governance/baseline.json",
+    "baseline_file_count": 3918,
+    "changed_files": [
+      "scripts/render_vertical.py"
+    ],
+    "current_file_count": 3918,
+    "deleted_files": [],
+    "forbidden_files": [],
+    "modified_files": [
+      "scripts/render_vertical.py"
+    ],
+    "rule": "deny=['acceptance/', 'README.md', 'PIPELINE.md', 'acceptance', '.governance'] allow=['scripts', 'tests']; forbidden or unexpected -> FAIL",
+    "unexpected_files": []
+  },
+  "policy_basis": null,
+  "reason": null,
+  "required": true,
+  "status": "PASS"
+}
