@@ -1,0 +1,24 @@
+{
+  "duration_ms": 249.2,
+  "gate": "tests",
+  "observations": {
+    "command": "python3 -m pytest -q -p no:cacheprovider acceptance/test_vertical.py",
+    "decision_reason": "exit_zero",
+    "duration_ms": 249.1,
+    "error": null,
+    "exit_code": 0,
+    "output_sha256": "ca5028afd3c7db02583dcb87ce0f742d4c5fec8328a7eb9763ab92c3faf77cb8",
+    "rule": "exit_code==0 -> PASS; exit_code!=0 -> FAIL; timeout -> ESCALATE",
+    "stderr_tail": "",
+    "stdout_tail": "........                                                                 [100%]\n8 passed in 0.06s\n",
+    "test_counts": {
+      "passed": 8
+    },
+    "test_counts_source": "pytest_summary",
+    "timed_out": false
+  },
+  "policy_basis": null,
+  "reason": null,
+  "required": true,
+  "status": "PASS"
+}

@@ -1,0 +1,12 @@
+{
+  "attempt_id": "att-3d9aff8d5c88",
+  "attempt_seq": 13,
+  "classification": "COMPLETED",
+  "contract_hash": "915269e0fc4ed24543e1854ff06e03f85c202338fe6f8b78c26ff147b67b7a27",
+  "goal_id": "clip-vertical",
+  "governance_version": "1.0.0",
+  "objective": "Corregir la lógica del recorte vertical (9:16) para que siga al sujeto en el tiempo, de modo que la prueba acceptance/test_vertical.py::A_Reencuadre::test_A4_el_recorte_sigue_al_sujeto pase y la métrica clipfactory_vertical_passing alcance 7/8.",
+  "out_root": "/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/attempts/0013-att-3d9aff8d5c88/run",
+  "project": "clipfactory",
+  "task_type": "CODE"
+}

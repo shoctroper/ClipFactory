@@ -19567,8 +19567,8 @@
     },
     {
       "path": "scripts/render_vertical.py",
-      "sha256": "ff427a2a16b9702b1ed6be381df03b36a76799576b8c1ee2fb0640b7a8085ccb",
-      "size": 5215
+      "sha256": "ff53f62c5155579a8acd74373f70a84c4f5eb43bb19407622aadc8d746c677dc",
+      "size": 5780
     },
     {
       "path": "scripts/requirements.txt",

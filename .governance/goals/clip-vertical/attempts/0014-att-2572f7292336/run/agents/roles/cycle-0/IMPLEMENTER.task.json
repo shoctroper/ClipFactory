@@ -1,0 +1,29 @@
+{
+  "allowed_write": true,
+  "created_at": "2026-09-23T02:41:27+00:00",
+  "cycle": 0,
+  "inputs": {},
+  "instruction": "Milestone: clipfactory (v1). Task type: CODE. Role: IMPLEMENTER.\nRole purpose: Implement the authorized change inside the authorized scope, with real tools.\nObjective: Repair the closure regression by ensuring the accepted state only touches in-envelope paths while preserving the 8/8 passing vertical rendering behavior, then re-verify closure.\nAuthorized scope allow: ['scripts', 'tests']\nAuthorized scope deny: ['acceptance/', 'README.md', 'PIPELINE.md', 'acceptance']\nAcceptance command: python3 -m pytest -q -p no:cacheprovider acceptance/test_vertical.py\nDo not touch protected authority paths. Stay strictly inside the authorized scope. Governance will verify the real diff.",
+  "parent_run_id": "clipfactory-root",
+  "policy_hash": "7844d57e2db8c744038badd1bd4cb4bf3c28fd499687d84d5b54a87ce68ac04a",
+  "role": "IMPLEMENTER",
+  "schema_version": "1",
+  "scope": {
+    "allow": [
+      "scripts",
+      "tests"
+    ],
+    "deny": [
+      "acceptance/",
+      "README.md",
+      "PIPELINE.md",
+      "acceptance"
+    ]
+  },
+  "spec_id": "clipfactory",
+  "spec_version": 1,
+  "task_hash": "40e570615a2c2ef08641cdfdf049456a251af2965f5cac05f721728c4e6ed0b4",
+  "task_type": "CODE",
+  "tasks_id": "at-f7fbc1faf377",
+  "worktree": "/Volumes/Medios/Repos/ClipFactory"
+}

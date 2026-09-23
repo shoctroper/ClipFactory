@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="0.024" timestamp="2026-09-22T20:40:22.933159-06:00" hostname="MacBook-Pro-de-Mario.local"><testcase classname="acceptance.test_vertical.A_Reencuadre" name="test_A3_la_salida_es_9_16" time="0.000"><failure message="AssertionError: no hay salida vertical que medir: /private/var/folders/6n/s6j20gdx10b9fkzqr86zl4040000gn/T/gov-closure-qwqdfpao/wt/output/_acceptance/vertical.mp4">self = &lt;test_vertical.A_Reencuadre testMethod=test_A3_la_salida_es_9_16&gt;
+
+    def test_A3_la_salida_es_9_16(self):
+        salida = ROOT / "output" / "_acceptance" / "vertical.mp4"
+        if not salida.is_file():
+&gt;           self.fail("no hay salida vertical que medir: %s" % salida)
+E           AssertionError: no hay salida vertical que medir: /private/var/folders/6n/s6j20gdx10b9fkzqr86zl4040000gn/T/gov-closure-qwqdfpao/wt/output/_acceptance/vertical.mp4
+
+acceptance/test_vertical.py:85: AssertionError</failure></testcase><testcase classname="acceptance.test_vertical.A_Reencuadre" name="test_A4_el_recorte_sigue_al_sujeto" time="0.000"><failure message="AssertionError: False is not true : falta el plan de recorte">self = &lt;test_vertical.A_Reencuadre testMethod=test_A4_el_recorte_sigue_al_sujeto&gt;
+
+    def test_A4_el_recorte_sigue_al_sujeto(self):
+        """Un recorte fijo al centro deja a Mario fuera de cuadro cuando se mueve.
+    
+        La prueba no mira el video: mira que el plan de recorte tenga mas de una
+        posicion. Un solo valor para todo el clip es un recorte fijo.
+        """
+        plan = ROOT / "output" / "_acceptance" / "crop_plan.json"
+&gt;       self.assertTrue(plan.is_file(), "falta el plan de recorte")
+E       AssertionError: False is not true : falta el plan de recorte
+
+acceptance/test_vertical.py:98: AssertionError</failure></testcase></testsuite></testsuites>

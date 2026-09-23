@@ -1,0 +1,20 @@
+{
+  "duration_ms": 424.6,
+  "gate": "scope",
+  "observations": {
+    "added_files": [],
+    "baseline": ".governance/baseline.json",
+    "baseline_file_count": 3918,
+    "changed_files": [],
+    "current_file_count": 3918,
+    "deleted_files": [],
+    "forbidden_files": [],
+    "modified_files": [],
+    "rule": "deny=['acceptance/', 'README.md', 'PIPELINE.md', 'acceptance'] allow=['scripts', 'tests']; forbidden or unexpected -> FAIL",
+    "unexpected_files": []
+  },
+  "policy_basis": null,
+  "reason": null,
+  "required": true,
+  "status": "PASS"
+}
