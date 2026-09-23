@@ -30,7 +30,7 @@ if skipped:
 print(json.dumps({
     "clipfactory_vertical_passing": passed,
     "progress": passed,
-    "total": total or 7,
+    "total": total or 8,
     "collected": total,
     "skipped": skipped,
     "notes": notes,

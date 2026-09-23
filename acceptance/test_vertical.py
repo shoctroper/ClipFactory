@@ -43,18 +43,41 @@ class A_Reencuadre(unittest.TestCase):
         self.assertTrue(mod.is_file(),
                         "falta el punto de entrada del render vertical")
 
-    def test_A2_reutiliza_el_cropper_de_cleanvideos(self):
+    def test_A2_reutiliza_el_cropper_y_no_lo_reimplementa(self):
         """No se reimplementa el seguimiento de sujeto: se usa el que ya existe.
 
         Dos implementaciones del mismo recorte divergen, y la segunda empieza
         sin saber lo que la primera aprendio sobre suavizado y muestreo.
+
+        Corregido el 2026-09-22. La version anterior exigia usar el original en
+        CleanVideos, y el agente implementador NO PUEDE LEER FUERA DE SU
+        REPOSITORIO: tres intentos seguidos murieron en OPERATIONAL_LIMIT con
+        diff vacio. Era una barra imposible, del mismo tipo que ya nos costo un
+        dia en G2. La copia vive en scripts/vendor/ y A2b vigila que no diverja.
         """
         src = (ROOT / "scripts" / "render_vertical.py").read_text(encoding="utf-8")
         self.assertIn("vertical_cropper", src,
-                      "debe importar/invocar vertical_cropper de CleanVideos")
+                      "debe invocar vertical_cropper, no reimplementarlo")
         for inventado in ("mediapipe", "pose_landmarker"):
             self.assertNotIn(inventado, src,
                              "no reimplementes la deteccion: reutilizala (%s)" % inventado)
+
+    def test_A2b_la_copia_vendorizada_no_ha_divergido(self):
+        """Copiar crea riesgo de divergencia, asi que se vigila con un hash.
+
+        Si CleanVideos mejora su recorte y esta copia se queda atras, el corte
+        de Mario empeora sin que nadie lo note. Este caso lo convierte en un
+        fallo ruidoso en vez de una degradacion silenciosa.
+        """
+        import hashlib
+        copia = ROOT / "scripts" / "vendor" / "vertical_cropper.py"
+        origen = CLEANVIDEOS / "scripts" / "vertical_cropper.py"
+        self.assertTrue(copia.is_file(), "falta la copia vendorizada")
+        if not origen.is_file():
+            self.fail("no se encuentra el original en %s" % origen)
+        h = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
+        self.assertEqual(h(copia), h(origen),
+                         "la copia vendorizada diverge del original de CleanVideos")
 
     def test_A3_la_salida_es_9_16(self):
         salida = ROOT / "output" / "_acceptance" / "vertical.mp4"
