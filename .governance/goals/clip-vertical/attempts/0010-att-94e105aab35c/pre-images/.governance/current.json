@@ -1,0 +1,12 @@
+{
+  "attempt_id": "att-9dcd3e7a17d9",
+  "attempt_seq": 9,
+  "classification": "OPERATIONAL_LIMIT",
+  "contract_hash": "915269e0fc4ed24543e1854ff06e03f85c202338fe6f8b78c26ff147b67b7a27",
+  "goal_id": "clip-vertical",
+  "governance_version": "1.0.0",
+  "objective": "Implement the subject-following crop logic in scripts/render_vertical.py so the 9:16 vertical crop tracks the subject across frames, making test_A4_el_recorte_sigue_al_sujeto pass and raising clipfactory_vertical_passing from 6 to 7.",
+  "out_root": "/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/attempts/0009-att-9dcd3e7a17d9/run",
+  "project": "clipfactory",
+  "task_type": "CODE"
+}

@@ -1,0 +1,25 @@
+{
+  "branch": "main",
+  "clean": false,
+  "detached": false,
+  "dirty": true,
+  "head": "854897227046b4f9668b6b0bc1777c3563f2fc2d",
+  "relevant_files": {},
+  "working_tree": [
+    ".governance/goals/clip-vertical/attempts/0010-att-94e105aab35c/attempt-spec.json",
+    ".governance/goals/clip-vertical/attempts/0010-att-94e105aab35c/boundary-config.json",
+    ".governance/goals/clip-vertical/attempts/0010-att-94e105aab35c/governance-fingerprint.json",
+    ".governance/goals/clip-vertical/attempts/0010-att-94e105aab35c/pre-images/.governance/current.json",
+    ".governance/goals/clip-vertical/attempts/0010-att-94e105aab35c/pre-images/.governance/goals/clip-vertical/goal.json",
+    ".governance/goals/clip-vertical/attempts/0010-att-94e105aab35c/pre-images/.governance/project.yaml",
+    ".governance/goals/clip-vertical/attempts/0010-att-94e105aab35c/pre-images/acceptance/evaluate.py",
+    ".governance/goals/clip-vertical/attempts/0010-att-94e105aab35c/pre-images/acceptance/test_vertical.py",
+    ".governance/goals/clip-vertical/attempts/0010-att-94e105aab35c/pre-snapshot.json",
+    ".governance/goals/clip-vertical/attempts/0010-att-94e105aab35c/run/repository-identity.json",
+    ".governance/goals/clip-vertical/evaluations/0020-bracket/pre-snapshot.json",
+    ".governance/goals/clip-vertical/evaluations/0020.json",
+    ".governance/goals/clip-vertical/events.jsonl",
+    ".governance/goals/clip-vertical/goal.json",
+    ".governance/last-rebaseline.json"
+  ]
+}

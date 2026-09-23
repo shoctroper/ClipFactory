@@ -1,0 +1,16 @@
+{
+  "attempt_id": "att-94e105aab35c",
+  "changed_files": [],
+  "classification": "TECHNICAL_BLOCK",
+  "evaluation_status": null,
+  "executor": "supervisor",
+  "finished_at": "2026-09-23T01:03:51+00:00",
+  "gates_status": null,
+  "governance_state_touched": false,
+  "model": "opencode-go/deepseek-v4-flash",
+  "out_root": "/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/attempts/0010-att-94e105aab35c/run",
+  "protected_violations": [],
+  "provider": "opencode",
+  "scope_violations": [],
+  "started_at": "2026-09-23T00:54:00+00:00"
+}

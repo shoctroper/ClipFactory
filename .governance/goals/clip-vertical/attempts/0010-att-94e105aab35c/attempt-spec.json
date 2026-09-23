@@ -1,0 +1,27 @@
+{
+  "attempt_id": "att-94e105aab35c",
+  "executor": "supervisor",
+  "goal_id": "clip-vertical",
+  "objective": "Que el recorte vertical siga al sujeto a lo largo del clip (test A_Reencuadre::test_A4_el_recorte_sigue_al_sujeto), reutilizando vertical_cropper de CleanVideos en lugar de reimplementarlo, para pasar de 6 a 7 tests en acceptance/evaluate.py.",
+  "producer_task": null,
+  "proposal_hash": "2ad6867291dd5a2c21633fac0078c5bec8f8835ba339bdd26e3186b5ef75860f",
+  "scope": {
+    "allow": [
+      "scripts",
+      "tests"
+    ],
+    "deny": [
+      "acceptance/",
+      "README.md",
+      "PIPELINE.md",
+      "acceptance"
+    ],
+    "ignore": [
+      "output/",
+      "guiones/",
+      ".governance/"
+    ]
+  },
+  "seq": 10,
+  "task_type": "CODE"
+}
