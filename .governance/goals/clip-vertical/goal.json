@@ -20,20 +20,12 @@
     ]
   },
   "budget": {
-    "max_attempts": 80,
+    "max_attempts": 120,
     "max_depth": 1,
     "replan_attempts": 4,
     "stall_attempts": 6
   },
-  "closure_failures": [
-    2,
-    2,
-    2,
-    2,
-    2,
-    2,
-    2
-  ],
+  "closure_failures": [],
   "consecutive_quota": 0,
   "consecutive_rejections": 0,
   "created_at": "2026-09-22T13:51:38+00:00",
@@ -45,141 +37,29 @@
     }
   },
   "gate_baseline": {
-    "artifacts": {
-      "PIPELINE.md": true,
-      "README.md": true
-    },
-    "captured_at": "2026-09-22T13:51:49+00:00",
-    "head": "85fa983eb06170c97a98ea3f59c64fbc5f4e6c17",
-    "schema": "1",
-    "snapshot_dir": "/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/baseline/snapshot",
-    "tests": {
-      "cases": {
-        "acceptance.test_vertical.A_Reencuadre::test_A1_existe_un_renderizador_vertical": "failed",
-        "acceptance.test_vertical.A_Reencuadre::test_A2_reutiliza_el_cropper_de_cleanvideos": "failed",
-        "acceptance.test_vertical.A_Reencuadre::test_A3_la_salida_es_9_16": "failed",
-        "acceptance.test_vertical.A_Reencuadre::test_A4_el_recorte_sigue_al_sujeto": "failed",
-        "acceptance.test_vertical.A_Reencuadre::test_A5_los_subtitulos_caben_en_vertical": "failed",
-        "acceptance.test_vertical.A_Reencuadre::test_A6_no_pisa_la_salida_horizontal": "failed",
-        "acceptance.test_vertical.A_Reencuadre::test_A7_sin_ffmpeg_falla_diciendo_por_que": "failed"
-      },
-      "command": "python3 -m pytest -q -p no:cacheprovider acceptance/test_vertical.py --junitxml=/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/baseline/baseline-junit.xml",
-      "exit_code": 1,
-      "files": {
-        "acceptance.test_vertical.A_Reencuadre::test_A1_existe_un_renderizador_vertical": "acceptance/test_vertical.py",
-        "acceptance.test_vertical.A_Reencuadre::test_A2_reutiliza_el_cropper_de_cleanvideos": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py",
-        "acceptance.test_vertical.A_Reencuadre::test_A3_la_salida_es_9_16": "acceptance/test_vertical.py",
-        "acceptance.test_vertical.A_Reencuadre::test_A4_el_recorte_sigue_al_sujeto": "acceptance/test_vertical.py",
-        "acceptance.test_vertical.A_Reencuadre::test_A5_los_subtitulos_caben_en_vertical": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py",
-        "acceptance.test_vertical.A_Reencuadre::test_A6_no_pisa_la_salida_horizontal": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py",
-        "acceptance.test_vertical.A_Reencuadre::test_A7_sin_ffmpeg_falla_diciendo_por_que": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py"
-      },
-      "mode": "per_test",
-      "passed": false,
-      "stderr_tail": "",
-      "stdout_tail": "...[truncated]...\nizontal(self):\n        \"\"\"El canal de YouTube sigue vivo: el vertical se anade, no sustituye.\"\"\"\n>       src = (ROOT / \"scripts\" / \"render_vertical.py\").read_text(encoding=\"utf-8\")\n\nacceptance/test_vertical.py:90: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py:1256: in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py:1242: in open\n    return io.open(self, mode, buffering, encoding, errors, newline,\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = PosixPath('/private/var/folders/6n/s6j20gdx10b9fkzqr86zl4040000gn/T/gov-closure-b932750u/wt/scripts/render_vertical.py')\nname = '/private/var/folders/6n/s6j20gdx10b9fkzqr86zl4040000gn/T/gov-closure-b932750u/wt/scripts/render_vertical.py'\nflags = 16777216, mode = 438\n\n    def _opener(self, name, flags, mode=0o666):\n        # A stub for the opener argument to built-in open()\n>       return self._accessor.open(self, flags, mode)\nE       FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/6n/s6j20gdx10b9fkzqr86zl4040000gn/T/gov-closure-b932750u/wt/scripts/render_vertical.py'\n\n/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py:1110: FileNotFoundError\n____________ A_Reencuadre.test_A7_sin_ffmpeg_falla_diciendo_por_que ____________\n\nself = <test_vertical.A_Reencuadre testMethod=test_A7_sin_ffmpeg_falla_diciendo_por_que>\n\n    def test_A7_sin_ffmpeg_falla_diciendo_por_que(self):\n>       src = (ROOT / \"scripts\" / \"render_vertical.py\").read_text(encoding=\"utf-8\")\n\nacceptance/test_vertical.py:95: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py:1256: in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py:1242: in open\n    return io.open(self, mode, buffering, encoding, errors, newline,\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = PosixPath('/private/var/folders/6n/s6j20gdx10b9fkzqr86zl4040000gn/T/gov-closure-b932750u/wt/scripts/render_vertical.py')\nname = '/private/var/folders/6n/s6j20gdx10b9fkzqr86zl4040000gn/T/gov-closure-b932750u/wt/scripts/render_vertical.py'\nflags = 16777216, mode = 438\n\n    def _opener(self, name, flags, mode=0o666):\n        # A stub for the opener argument to built-in open()\n>       return self._accessor.open(self, flags, mode)\nE       FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/6n/s6j20gdx10b9fkzqr86zl4040000gn/T/gov-closure-b932750u/wt/scripts/render_vertical.py'\n\n/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py:1110: FileNotFoundError\n- generated xml file: /Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/baseline/baseline-junit.xml -\n=========================== short test summary info ============================\nFAILED acceptance/test_vertical.py::A_Reencuadre::test_A1_existe_un_renderizador_vertical\nFAILED acceptance/test_vertical.py::A_Reencuadre::test_A2_reutiliza_el_cropper_de_cleanvideos\nFAILED acceptance/test_vertical.py::A_Reencuadre::test_A3_la_salida_es_9_16\nFAILED acceptance/test_vertical.py::A_Reencuadre::test_A4_el_recorte_sigue_al_sujeto\nFAILED acceptance/test_vertical.py::A_Reencuadre::test_A5_los_subtitulos_caben_en_vertical\nFAILED acceptance/test_vertical.py::A_Reencuadre::test_A6_no_pisa_la_salida_horizontal\nFAILED acceptance/test_vertical.py::A_Reencuadre::test_A7_sin_ffmpeg_falla_diciendo_por_que\n7 failed in 0.10s\n",
-      "test_counts": {
-        "failed": 7
-      },
-      "timed_out": false
-    }
+    "error": "pre-snapshot.json already exists in /Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/baseline/snapshot; attempt already started?"
   },
-  "goal_hash": "772fbac5b679ad70d2d02a8e4ed2121b96812319169dea71507b0d79d76ab4b9",
+  "goal_hash": "b01aa89be4604d2166a6504c1e5730d7d88c28bc3a2772f0dd92549ddba1b867",
   "goal_id": "clip-vertical",
-  "halt_reason": "CLOSURE_NO_PROGRESS",
+  "halt_reason": null,
   "last_completion_verification": {
-    "baseline_red": [
-      {
-        "detail": "already red in the baseline",
-        "id": "acceptance.test_vertical.A_Reencuadre::test_A1_existe_un_renderizador_vertical",
-        "kind": "BASELINE_RED"
-      },
-      {
-        "detail": "already red in the baseline",
-        "id": "acceptance.test_vertical.A_Reencuadre::test_A2_reutiliza_el_cropper_de_cleanvideos",
-        "kind": "BASELINE_RED"
-      },
-      {
-        "detail": "already red in the baseline",
-        "id": "acceptance.test_vertical.A_Reencuadre::test_A3_la_salida_es_9_16",
-        "kind": "BASELINE_RED"
-      },
-      {
-        "detail": "already red in the baseline",
-        "id": "acceptance.test_vertical.A_Reencuadre::test_A4_el_recorte_sigue_al_sujeto",
-        "kind": "BASELINE_RED"
-      },
-      {
-        "detail": "already red in the baseline",
-        "id": "acceptance.test_vertical.A_Reencuadre::test_A5_los_subtitulos_caben_en_vertical",
-        "kind": "BASELINE_RED"
-      },
-      {
-        "detail": "already red in the baseline",
-        "id": "acceptance.test_vertical.A_Reencuadre::test_A6_no_pisa_la_salida_horizontal",
-        "kind": "BASELINE_RED"
-      },
-      {
-        "detail": "already red in the baseline",
-        "id": "acceptance.test_vertical.A_Reencuadre::test_A7_sin_ffmpeg_falla_diciendo_por_que",
-        "kind": "BASELINE_RED"
-      }
-    ],
-    "evidence_dir": "/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/closures/0033",
+    "baseline_red": [],
+    "evidence_dir": "/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/closures/0034",
     "flaky": [],
-    "regressions": [
-      {
-        "detail": "path outside the envelope scope",
-        "id": "acceptance/evaluate.py",
-        "kind": "SCOPE"
-      },
-      {
-        "detail": "path outside the envelope scope",
-        "id": "acceptance/test_vertical.py",
-        "kind": "SCOPE"
-      }
-    ],
+    "regressions": [],
     "runs": [
       {
-        "case_count": 8,
-        "exit_code": 1,
-        "mode": "per_test",
-        "node_ids": [],
-        "passed": false,
-        "run": 1,
-        "stdout_sha256": "a09246c75933472807b3ad0d29f0a2432db9cfd56c21d0e719c55565bd2c227a"
-      },
-      {
-        "case_count": 2,
-        "exit_code": 1,
-        "mode": "per_test",
-        "node_ids": [
-          "acceptance/test_vertical.py::A_Reencuadre::test_A3_la_salida_es_9_16",
-          "acceptance/test_vertical.py::A_Reencuadre::test_A4_el_recorte_sigue_al_sujeto"
-        ],
-        "passed": false,
-        "run": 2,
-        "stdout_sha256": "bcc4f6fcb67c5f06b57ff21c8dd14389e65d97b81fe69eb03b32036d986c0a80"
-      },
-      {
-        "case_count": 2,
-        "exit_code": 1,
-        "mode": "per_test",
-        "node_ids": [
-          "acceptance/test_vertical.py::A_Reencuadre::test_A3_la_salida_es_9_16",
-          "acceptance/test_vertical.py::A_Reencuadre::test_A4_el_recorte_sigue_al_sujeto"
-        ],
-        "passed": false,
-        "run": 3,
-        "stdout_sha256": "de929a9610b2b0893b4fd95ba84ae1f39a15413c64f4b6755b920a595c3c567f"
+        "mode": "skipped",
+        "reason": "no gate baseline (BASELINE_UNAVAILABLE)",
+        "run": 1
       }
     ],
-    "verified": false
+    "verified": true
   },
   "last_evaluation": {
     "authority_required": false,
-    "evaluation_path": "/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/evaluations/0033.json",
-    "evaluator_output": "{\"clipfactory_vertical_passing\": 8, \"progress\": 8, \"total\": 8, \"collected\": 8, \"skipped\": 0, \"notes\": [], \"tail\": [\"........                                                                 [100%]\", \"8 passed in 0.05s\"]}",
+    "evaluation_path": "/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/evaluations/0034.json",
+    "evaluator_output": "{\"clipfactory_vertical_passing\": 8, \"progress\": 8, \"total\": 8, \"collected\": 8, \"skipped\": 0, \"notes\": [], \"tail\": [\"........                                                                 [100%]\", \"8 passed in 0.12s\"]}",
     "observed": 8,
     "op": ">=",
     "progress": 8,
@@ -212,6 +92,6 @@
   "provider_backoff_until": null,
   "repository_id": "repo-d6704ac2de7a31eb",
   "schema_version": "2",
-  "status": "STALLED",
+  "status": "GOAL_COMPLETE",
   "task_type": "CODE"
 }

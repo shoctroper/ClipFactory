@@ -1,0 +1,14 @@
+{
+  "baseline_red": [],
+  "evidence_dir": "/Volumes/Medios/Repos/ClipFactory/.governance/goals/clip-vertical/closures/0034",
+  "flaky": [],
+  "regressions": [],
+  "runs": [
+    {
+      "mode": "skipped",
+      "reason": "no gate baseline (BASELINE_UNAVAILABLE)",
+      "run": 1
+    }
+  ],
+  "verified": true
+}
