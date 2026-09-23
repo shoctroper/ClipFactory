@@ -1,0 +1,22 @@
+{
+  "classification": "TECHNICAL_BLOCK",
+  "cost_registered": true,
+  "failures_caught": [],
+  "retries": 1,
+  "role_count": 1,
+  "roles": {
+    "IMPLEMENTER": {
+      "contributed": true,
+      "latency_ms": 694854.2,
+      "model": "opencode-go/deepseek-v4-flash",
+      "provider": "opencode",
+      "status": "COMPLETED",
+      "timeout_seconds": 3000.0,
+      "usage": {
+        "duration_ms": 694836.8
+      }
+    }
+  },
+  "task_type": "CODE",
+  "total_latency_ms": 694854.2
+}

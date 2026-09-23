@@ -1,0 +1,28 @@
+{
+  "changed_files": [],
+  "changed_files_verified": false,
+  "created_at": "2026-09-23T00:14:13+00:00",
+  "cycle": 0,
+  "error": null,
+  "latency_ms": 6165.3,
+  "log": "{\"verdict\":\"FAIL\",\"repairable\":true,\"spec_defect\":false,\"notes\":\"Acceptance run failed (exit 1, 2 failed: test_A3 y test_A4). No se generó output/_acceptance/vertical.mp4 ni crop_plan.json, por lo que A4 (recorte sigue al sujeto) no pasa. scope_diff indica changed_files=[] (sin cambios implementados en scripts/tests); la métrica no sube a >=7. Objetivo no cumplido; defecto en la implementación (no entregada).\"}",
+  "model": "opencode/big-pickle",
+  "output": {
+    "notes": "Acceptance run failed (exit 1, 2 failed: test_A3 y test_A4). No se generó output/_acceptance/vertical.mp4 ni crop_plan.json, por lo que A4 (recorte sigue al sujeto) no pasa. scope_diff indica changed_files=[] (sin cambios implementados en scripts/tests); la métrica no sube a >=7. Objetivo no cumplido; defecto en la implementación (no entregada).",
+    "repairable": true,
+    "spec_defect": false,
+    "verdict": "FAIL"
+  },
+  "provider": "opencode",
+  "result_hash": "fa3ef707866c0ba2736e06c9a2c6e1fc5a9cec1ac2ae2ca97ab288a22fb988ff",
+  "role": "QA",
+  "schema_version": "1",
+  "status": "COMPLETED",
+  "tasks_id": "at-927179917b18",
+  "usage": {
+    "cost": 0,
+    "input_tokens": 12307,
+    "output_tokens": 298,
+    "tokens": 14397
+  }
+}

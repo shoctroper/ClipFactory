@@ -462,13 +462,13 @@
     },
     {
       "path": "acceptance/evaluate.py",
-      "sha256": "2141ea89119f8530fee0651041545b088b50b3836a2343ed62381f62cf2d1974",
+      "sha256": "3d17d65901441d929a343fdb6ef2374a83c3eaad60ae2fa8451c7a243c288ef4",
       "size": 1155
     },
     {
       "path": "acceptance/test_vertical.py",
-      "sha256": "383bf26d7ed00ff4846c45b2fd273791cdf0d277c40227d1a1ee4809be46607c",
-      "size": 4846
+      "sha256": "2a393d0fa927a5face3dc1e9280cf13f46f037dba49442b0395c90464746ec66",
+      "size": 6133
     },
     {
       "path": "scripts/extract_candidates.py",
@@ -496,6 +496,11 @@
       "size": 8430
     },
     {
+      "path": "scripts/render_vertical.py",
+      "sha256": "ff427a2a16b9702b1ed6be381df03b36a76799576b8c1ee2fb0640b7a8085ccb",
+      "size": 5215
+    },
+    {
       "path": "scripts/requirements.txt",
       "sha256": "5e6621cfd3a8edff95b03203a6abd50bedc6eb6f613caefd84434dbb71f31318",
       "size": 18
@@ -504,6 +509,16 @@
       "path": "scripts/run_with_vram_monitor.sh",
       "sha256": "30d008d3ccc28dd6d942e77d12d96461520f6efd8a980be8843bb681d216e1fe",
       "size": 824
+    },
+    {
+      "path": "scripts/vendor/README.md",
+      "sha256": "1b8e5b754f885ea95170ed7351bdb10461be310e27c0a9348c1736d3275a7779",
+      "size": 852
+    },
+    {
+      "path": "scripts/vendor/vertical_cropper.py",
+      "sha256": "70d7e39ad81efbbaf5494c06a37c11d36b45ed19f908001ca0b09e4ecdca8fc7",
+      "size": 5368
     }
   ],
   "generator": "GovernanceOs",

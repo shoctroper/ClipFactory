@@ -1,10 +1,14 @@
 {
-  "added": [],
-  "added_total": 0,
-  "at": "2026-09-22T14:05:18+00:00",
-  "changed_count": 0,
-  "head": "39c2576949260b9c628c075ba68c9899c08c5bc5",
-  "new_count": 101,
+  "added": [
+    "scripts/render_vertical.py",
+    "scripts/vendor/README.md",
+    "scripts/vendor/vertical_cropper.py"
+  ],
+  "added_total": 3,
+  "at": "2026-09-23T00:09:02+00:00",
+  "changed_count": 2,
+  "head": "51280ba5b33cd09f6c9100e415f5ad32e2fb3d6f",
+  "new_count": 104,
   "previous_count": 101,
   "removed": [],
   "removed_total": 0

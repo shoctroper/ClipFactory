@@ -1,0 +1,30 @@
+{
+  "allowed_write": true,
+  "created_at": "2026-09-23T00:09:14+00:00",
+  "cycle": 0,
+  "inputs": {},
+  "instruction": "Milestone: clipfactory (v1). Task type: CODE. Role: IMPLEMENTER.\nRole purpose: Implement the authorized change inside the authorized scope, with real tools.\nObjective: Implementar recorte vertical que sigue al sujeto en scripts/render_vertical.py, reutilizando vertical_cropper de CleanVideos, para que el test A4 (el recorte sigue al sujeto) pase y la métrica clipfactory_vertical_passing suba de 6 a >=7.\nAuthorized scope allow: ['scripts', 'tests']\nAuthorized scope deny: ['acceptance/', 'README.md', 'PIPELINE.md', 'acceptance', '.governance']\nAcceptance command: python3 -m pytest -q -p no:cacheprovider acceptance/test_vertical.py\nDo not touch protected authority paths. Stay strictly inside the authorized scope. Governance will verify the real diff.",
+  "parent_run_id": "clipfactory-root",
+  "policy_hash": "7844d57e2db8c744038badd1bd4cb4bf3c28fd499687d84d5b54a87ce68ac04a",
+  "role": "IMPLEMENTER",
+  "schema_version": "1",
+  "scope": {
+    "allow": [
+      "scripts",
+      "tests"
+    ],
+    "deny": [
+      "acceptance/",
+      "README.md",
+      "PIPELINE.md",
+      "acceptance",
+      ".governance"
+    ]
+  },
+  "spec_id": "clipfactory",
+  "spec_version": 1,
+  "task_hash": "b72e6d595cbbec0c590283967014c34b06bfea04af3ea457112fae7c04089dc4",
+  "task_type": "CODE",
+  "tasks_id": "at-e66debf1a72b",
+  "worktree": "/Volumes/Medios/Repos/ClipFactory"
+}

@@ -1,0 +1,16 @@
+{
+  "allow_merge": false,
+  "allow_push": false,
+  "allowed_branches": [
+    "main"
+  ],
+  "base_branch": "main",
+  "base_commit": "51280ba5b33cd09f6c9100e415f5ad32e2fb3d6f",
+  "branch": "main",
+  "create": false,
+  "mode": "direct",
+  "reason": "low-risk direct work on an authorized branch",
+  "requested_branch": null,
+  "status": "DIRECT",
+  "task_type": "CODE"
+}
