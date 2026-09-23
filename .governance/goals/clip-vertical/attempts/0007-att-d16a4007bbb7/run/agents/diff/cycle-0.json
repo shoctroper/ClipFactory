@@ -1,0 +1,24 @@
+{
+  "after_hash": "85d35926a4b6131c1b7b57dafdd13247d85fbe8fdbdab56c31e7f98b053a1f2b",
+  "allow": [
+    "scripts",
+    "tests"
+  ],
+  "before_hash": "84a97c59a49fc7b082ea6d0982a4b95e1b8489b66248859a294d6817a663a318",
+  "change_kinds": {
+    "scripts/render_vertical.py": "added"
+  },
+  "changed_files": [
+    "scripts/render_vertical.py"
+  ],
+  "deny": [
+    "acceptance/",
+    "README.md",
+    "PIPELINE.md"
+  ],
+  "forbidden_files": [],
+  "in_scope": true,
+  "protected_violations": [],
+  "rule": "real worktree diff; forbidden/unexpected -> scope violation",
+  "unexpected_files": []
+}

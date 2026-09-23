@@ -1,0 +1,15 @@
+{
+  "changed_files": [
+    "scripts/render_vertical.py"
+  ],
+  "created": [
+    "scripts/render_vertical.py"
+  ],
+  "deleted": [],
+  "governance_state_touched": false,
+  "head_changed": false,
+  "modified": [],
+  "out_of_scope": [],
+  "protected_violations": [],
+  "watched_touched": []
+}

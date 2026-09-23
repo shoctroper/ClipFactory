@@ -1,0 +1,91 @@
+{
+  "allowed_write": false,
+  "created_at": "2026-09-23T00:07:57+00:00",
+  "cycle": 0,
+  "inputs": {
+    "changed_files": [
+      "scripts/render_vertical.py"
+    ],
+    "deterministic_validation": {
+      "artifacts": {
+        "entries": [
+          {
+            "exists": true,
+            "kind": "file",
+            "path": "README.md",
+            "status": "PASS"
+          },
+          {
+            "exists": true,
+            "kind": "file",
+            "path": "PIPELINE.md",
+            "status": "PASS"
+          }
+        ],
+        "status": "PASS"
+      },
+      "scope_diff": {
+        "after_hash": "85d35926a4b6131c1b7b57dafdd13247d85fbe8fdbdab56c31e7f98b053a1f2b",
+        "allow": [
+          "scripts",
+          "tests"
+        ],
+        "before_hash": "84a97c59a49fc7b082ea6d0982a4b95e1b8489b66248859a294d6817a663a318",
+        "change_kinds": {
+          "scripts/render_vertical.py": "added"
+        },
+        "changed_files": [
+          "scripts/render_vertical.py"
+        ],
+        "deny": [
+          "acceptance/",
+          "README.md",
+          "PIPELINE.md"
+        ],
+        "forbidden_files": [],
+        "in_scope": true,
+        "protected_violations": [],
+        "rule": "real worktree diff; forbidden/unexpected -> scope violation",
+        "status": "PASS",
+        "unexpected_files": []
+      },
+      "tests": {
+        "exit_code": 1,
+        "false_green": false,
+        "output_sha256": "eb26e068ff759bc5e2c94a287712e91d9217ad003d5f9cc56feaacc27d6b8632",
+        "reason": "exit_nonzero",
+        "status": "FAIL",
+        "stderr_tail": "",
+        "stdout_tail": "...[truncated]...\ndre.test_A3_la_salida_es_9_16 ____________________\n\nself = <test_vertical.A_Reencuadre testMethod=test_A3_la_salida_es_9_16>\n\n    def test_A3_la_salida_es_9_16(self):\n        salida = ROOT / \"output\" / \"_acceptance\" / \"vertical.mp4\"\n        if not salida.is_file():\n>           self.fail(\"no hay salida vertical que medir: %s\" % salida)\nE           AssertionError: no hay salida vertical que medir: /Volumes/Medios/Repos/ClipFactory/output/_acceptance/vertical.mp4\n\nacceptance/test_vertical.py:85: AssertionError\n_______________ A_Reencuadre.test_A4_el_recorte_sigue_al_sujeto ________________\n\nself = <test_vertical.A_Reencuadre testMethod=test_A4_el_recorte_sigue_al_sujeto>\n\n    def test_A4_el_recorte_sigue_al_sujeto(self):\n        \"\"\"Un recorte fijo al centro deja a Mario fuera de cuadro cuando se mueve.\n    \n        La prueba no mira el video: mira que el plan de recorte tenga mas de una\n        posicion. Un solo valor para todo el clip es un recorte fijo.\n        \"\"\"\n        plan = ROOT / \"output\" / \"_acceptance\" / \"crop_plan.json\"\n>       self.assertTrue(plan.is_file(), \"falta el plan de recorte\")\nE       AssertionError: False is not true : falta el plan de recorte\n\nacceptance/test_vertical.py:98: AssertionError\n=========================== short test summary info ============================\nFAILED acceptance/test_vertical.py::A_Reencuadre::test_A3_la_salida_es_9_16\nFAILED acceptance/test_vertical.py::A_Reencuadre::test_A4_el_recorte_sigue_al_sujeto\n2 failed, 6 passed in 0.02s\n",
+        "test_counts": {
+          "failed": 2,
+          "passed": 6
+        },
+        "timed_out": false
+      }
+    },
+    "prior_validation": null
+  },
+  "instruction": "Milestone: clipfactory (v1). Task type: CODE. Role: QA.\nRole purpose: Independently run tests, validations and evidence inspection; detect false greens. Never repairs code.\nObjective: Corregir el manejo del caso sin ffmpeg para que el caso A7 devuelva el mensaje esperado por las pruebas verticales.\nAuthorized scope allow: ['scripts', 'tests']\nAuthorized scope deny: ['acceptance/', 'README.md', 'PIPELINE.md']\nAcceptance command: python3 -m pytest -q -p no:cacheprovider acceptance/test_vertical.py\nYou are read-only. Produce declarative evidence; do not modify the worktree. Be bounded: base your JSON verdict on the provided inputs and at most a quick look at the changed files. Do NOT run long explorations, test suites, or multi-step tool loops; respond with the JSON object in a few steps.",
+  "parent_run_id": "clipfactory-root",
+  "policy_hash": "7844d57e2db8c744038badd1bd4cb4bf3c28fd499687d84d5b54a87ce68ac04a",
+  "role": "QA",
+  "schema_version": "1",
+  "scope": {
+    "allow": [
+      "scripts",
+      "tests"
+    ],
+    "deny": [
+      "acceptance/",
+      "README.md",
+      "PIPELINE.md"
+    ]
+  },
+  "spec_id": "clipfactory",
+  "spec_version": 1,
+  "task_hash": "dbec4b6d882db582df39c324e6e900f98de96160688cf9e42619235c8361c868",
+  "task_type": "CODE",
+  "tasks_id": "at-916111dfea13",
+  "worktree": "/Volumes/Medios/Repos/ClipFactory"
+}
