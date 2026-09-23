@@ -1,0 +1,24 @@
+{
+  "changed_files": [],
+  "changed_files_verified": false,
+  "created_at": "2026-09-23T02:57:36+00:00",
+  "cycle": 0,
+  "error": null,
+  "latency_ms": 272538.8,
+  "log": "le\":\"which gov 2>/dev/null; ls ~/.local/bin/ 2>/dev/null | grep -i gov; ls ~/.config/ 2>/dev/null | grep -i gov; pip show governance-cli 2>/dev/null | head -3; ls /Volumes/Medios/Repos/ 2>/dev/null\",\"time\":{\"start\":1790132255416,\"end\":1790132255438}},\"id\":\"prt_0cc327945001eouYuc5jYcW0Y7\",\"sessionID\":\"ses_f33d1a770ffetqrHxswXsNeSM7\",\"messageID\":\"msg_0cc320d150011UrhMDi2qgRboK\"}}\n{\"type\":\"tool_use\",\"timestamp\":1790132256178,\"sessionID\":\"ses_f33d1a770ffetqrHxswXsNeSM7\",\"part\":{\"type\":\"tool\",\"tool\":\"bash\",\"callID\":\"call_ba9dd38480e348169187ffd1\",\"state\":{\"status\":\"error\",\"input\":{\"command\":\"cat /private/var/folders/6n/s6j20gdx10b9fkzqr86zl4040000gn/T/gov-closure-iyxq_g77/wt/.git 2>/dev/null; echo \\\"---gitfile content of an old closure wt---\\\"; for d in $(ls -dt /private/var/folders/6n/s6j20gdx10b9fkzqr86zl4040000gn/T/gov-closure-* | head -20); do c=\\\"$d/wt/.git\\\"; [ -f \\\"$c\\\" ] && echo \\\"$c: $(cat $c)\\\"; done\"},\"error\":\"The user rejected permission to use this specific tool call.\",\"time\":{\"start\":1790132256166,\"end\":1790132256173}},\"id\":\"prt_0cc327ad6001U1zlC2rQnx2oOH\",\"sessionID\":\"ses_f33d1a770ffetqrHxswXsNeSM7\",\"messageID\":\"msg_0cc320d150011UrhMDi2qgRboK\"}}\n{\"type\":\"text\",\"timestamp\":1790132256203,\"sessionID\":\"ses_f33d1a770ffetqrHxswXsNeSM7\",\"part\":{\"id\":\"prt_0cc3278a6001VL7hqVgmXksq6e\",\"messageID\":\"msg_0cc320d150011UrhMDi2qgRboK\",\"sessionID\":\"ses_f33d1a770ffetqrHxswXsNeSM7\",\"type\":\"text\",\"text\":\"Let me understand the closure verification machinery — how it builds the worktree.\",\"time\":{\"start\":1790132254886,\"end\":1790132256201}}}\n{\"type\":\"step_finish\",\"timestamp\":1790132256241,\"sessionID\":\"ses_f33d1a770ffetqrHxswXsNeSM7\",\"part\":{\"id\":\"prt_0cc327def001rBIKiNRLkAKrf9\",\"reason\":\"tool-calls\",\"snapshot\":\"6c4e9c0e21b25b674019835e45bb01b6509db943\",\"messageID\":\"msg_0cc320d150011UrhMDi2qgRboK\",\"sessionID\":\"ses_f33d1a770ffetqrHxswXsNeSM7\",\"type\":\"step-finish\",\"tokens\":{\"total\":101401,\"input\":240,\"output\":3625,\"reasoning\":0,\"cache\":{\"write\":0,\"read\":97536}},\"cost\":0.002503608}}",
+  "model": "opencode-go/deepseek-v4-flash",
+  "output": {
+    "exit_code": 0,
+    "reported_status": "COMPLETED",
+    "session_id": "ses_f33d1a770ffetqrHxswXsNeSM7"
+  },
+  "provider": "opencode",
+  "result_hash": "edadb7de6823ae9404a03466e91c6fa58138cf428e7be1e32ee2c98dc1326740",
+  "role": "IMPLEMENTER",
+  "schema_version": "1",
+  "status": "COMPLETED",
+  "tasks_id": "at-9a814b5652c1",
+  "usage": {
+    "duration_ms": 272533.1
+  }
+}

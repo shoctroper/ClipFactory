@@ -1,0 +1,12 @@
+{
+  "anchor_sha256": "6ac292e626bd46272c460238a7174e9c4616ef9932380c27433910939c4dc336",
+  "evaluator_pins": {
+    "argv": "d9faf74d42d385f2482cf4d28472adcf87a5a682f3a6903bf69fc3b60822756a",
+    "files": {
+      "acceptance/evaluate.py": "3d17d65901441d929a343fdb6ef2374a83c3eaad60ae2fa8451c7a243c288ef4",
+      "acceptance/test_vertical.py": "2a393d0fa927a5face3dc1e9280cf13f46f037dba49442b0395c90464746ec66"
+    }
+  },
+  "goal_json_sha256": "a2ca3ffe9140625644b10750c6d584bfc29475a8104738cc9a89d06cc459942f",
+  "ledger_head": "a43c15a12a78963db8e11302d1e8fa7f8b4c538caf7107723210a83096262e06"
+}

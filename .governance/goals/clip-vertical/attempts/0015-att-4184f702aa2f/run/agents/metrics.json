@@ -1,0 +1,38 @@
+{
+  "classification": "OPERATIONAL_LIMIT",
+  "cost_registered": true,
+  "failures_caught": [
+    "QA"
+  ],
+  "retries": 3,
+  "role_count": 2,
+  "roles": {
+    "IMPLEMENTER": {
+      "contributed": true,
+      "latency_ms": 866514.4,
+      "model": "opencode-go/deepseek-v4-flash",
+      "provider": "opencode",
+      "status": "COMPLETED",
+      "timeout_seconds": 3000.0,
+      "usage": {
+        "duration_ms": 866504.5
+      }
+    },
+    "QA": {
+      "contributed": true,
+      "latency_ms": 9659.4,
+      "model": "opencode/big-pickle",
+      "provider": "opencode",
+      "status": "COMPLETED",
+      "timeout_seconds": 180.0,
+      "usage": {
+        "cost": 0,
+        "input_tokens": 12867,
+        "output_tokens": 653,
+        "tokens": 15312
+      }
+    }
+  },
+  "task_type": "CODE",
+  "total_latency_ms": 876173.8
+}

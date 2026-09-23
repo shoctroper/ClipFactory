@@ -1,0 +1,24 @@
+{
+  "after_hash": "b3c487ebe6b286b6b4f819d6653f0601b04bdfce243bbc4a25150e1cf91fc2ea",
+  "allow": [
+    "scripts",
+    "tests"
+  ],
+  "before_hash": "b3c487ebe6b286b6b4f819d6653f0601b04bdfce243bbc4a25150e1cf91fc2ea",
+  "change_kinds": {},
+  "changed_files": [],
+  "deny": [
+    "acceptance/",
+    "README.md",
+    "PIPELINE.md",
+    "acceptance",
+    "acceptance/test_vertical.py",
+    "acceptance/evaluate.py",
+    ".governance"
+  ],
+  "forbidden_files": [],
+  "in_scope": true,
+  "protected_violations": [],
+  "rule": "real worktree diff; forbidden/unexpected -> scope violation",
+  "unexpected_files": []
+}

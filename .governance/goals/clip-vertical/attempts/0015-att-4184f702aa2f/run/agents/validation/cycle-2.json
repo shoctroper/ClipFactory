@@ -1,0 +1,77 @@
+{
+  "agent_validations": {
+    "semantic_review": {
+      "repairable": true,
+      "spec_defect": false,
+      "status": "FAIL",
+      "verdict": {
+        "model": "opencode/big-pickle",
+        "provider": "opencode",
+        "repairable": true,
+        "research": false,
+        "spec_defect": false,
+        "verdict": "FAIL"
+      }
+    }
+  },
+  "artifacts": {
+    "entries": [
+      {
+        "exists": true,
+        "kind": "file",
+        "path": "README.md",
+        "status": "PASS"
+      },
+      {
+        "exists": true,
+        "kind": "file",
+        "path": "PIPELINE.md",
+        "status": "PASS"
+      }
+    ],
+    "status": "PASS"
+  },
+  "failed_validations": [
+    "semantic_review"
+  ],
+  "repairable": true,
+  "scope_diff": {
+    "after_hash": "b3c487ebe6b286b6b4f819d6653f0601b04bdfce243bbc4a25150e1cf91fc2ea",
+    "allow": [
+      "scripts",
+      "tests"
+    ],
+    "before_hash": "b3c487ebe6b286b6b4f819d6653f0601b04bdfce243bbc4a25150e1cf91fc2ea",
+    "change_kinds": {},
+    "changed_files": [],
+    "deny": [
+      "acceptance/",
+      "README.md",
+      "PIPELINE.md",
+      "acceptance",
+      "acceptance/test_vertical.py",
+      "acceptance/evaluate.py",
+      ".governance"
+    ],
+    "forbidden_files": [],
+    "in_scope": true,
+    "protected_violations": [],
+    "rule": "real worktree diff; forbidden/unexpected -> scope violation",
+    "status": "PASS",
+    "unexpected_files": []
+  },
+  "spec_defect": false,
+  "tests": {
+    "exit_code": 0,
+    "false_green": false,
+    "output_sha256": "77fdfe918870f639ee4ece217e9ca065e1999f84c4b1f5a5e7312abcb37cadce",
+    "reason": "exit_zero",
+    "status": "PASS",
+    "stderr_tail": "",
+    "stdout_tail": "........                                                                 [100%]\n8 passed in 0.08s\n",
+    "test_counts": {
+      "passed": 8
+    },
+    "timed_out": false
+  }
+}
