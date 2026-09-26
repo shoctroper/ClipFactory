@@ -1,0 +1,52 @@
+{
+  "goal_id": "f6-4-clipfactory-e2e",
+  "objective": "THIS IS F6.4: make ClipFactory something Mario can actually RUN and EDIT. His words: 'que sean proyectos funcionales, quiero poder probar metiendo ediciones'.\n\nSTATE VERIFIED 2026-09-25: the 6 stages are implemented and the vertical acceptance is 8/8, but there is no single command that runs the pipeline end to end — you must chain 5 scripts by hand with the right paths — and scripts/match_candidates.py does not even start (ModuleNotFoundError: rapidfuzz). There is also no way to adjust a clip and re-render just that clip: moving one clip's start by two seconds means hand-editing clip_plan.json and re-cutting everything.\n\nWHAT TO BUILD\n1. scripts/pipeline.py --guion G --transcript T --video V --output DIR [--edits E]: one invocation, stages 1 through 6, resumable.\n2. Do not die without rapidfuzz: declare it in scripts/requirements.txt AND degrade to a stdlib matcher (difflib) when the import fails. Running the pipeline in an environment without rapidfuzz must NOT raise ModuleNotFoundError.\n3. IDEMPOTENT: re-running with the same input does not redo finished work and does not corrupt output.\n4. EDITS: an edits.json where Mario adjusts start/end/title per clip id. After re-running, the edited clip reflects the new window and the clips he did NOT touch stay BYTE-IDENTICAL (do not re-encode what was not edited). An invalid edit (end <= start, unknown id) is rejected with a clear message and a non-zero exit, leaving no corrupt video behind.\n5. manifest.json listing, per clip: id, path, start, end, state — so the human review stage is not guesswork.\n\nHARD RULE from CLAUDE.md: everything ClipFactory writes lives inside this repository. The gate runs the pipeline with a fake HOME and fails if anything is written there.\n\nThe gate builds 6-second synthetic videos with ffmpeg lavfi: NO downloads, NO GPU, NO WhisperX, NO LLM. The existing vertical acceptance must stay at 8/8 or better.\n\nSIZE OF ONE ATTEMPT: one capability from the SPINE, written to disk with its test, in one pass. An attempt that changes no file is NO_AUTHORIZED_WORK.\nSPINE: S1 scripts/pipeline.py end-to-end + manifest.json -> S2 rapidfuzz optional (stdlib fallback) -> S3 idempotence/resume -> S4 edits.json with selective re-render and validation -> S5 tests/test_pipeline_e2e.py.\n\nAcceptance: pinned acceptance/evaluate_f6_4_e2e.py returns 1 (10 checks). Today RED at 2/10.",
+  "task_type": "CODE",
+  "outcome_predicate": {
+    "metric": "f6_4_clipfactory_e2e",
+    "op": ">=",
+    "value": 1,
+    "progress_direction": "up",
+    "evaluator": {
+      "command": [
+        "python3",
+        "acceptance/evaluate_f6_4_e2e.py"
+      ],
+      "pinned": [
+        "acceptance/evaluate_f6_4_e2e.py",
+        "acceptance/evaluate.py"
+      ],
+      "timeout_seconds": 2700
+    }
+  },
+  "authority_envelope": {
+    "allow": [
+      "scripts",
+      "tests",
+      "PIPELINE.md",
+      "ARRANQUE.md",
+      "README.md",
+      "docs"
+    ],
+    "deny": [
+      "acceptance",
+      "output",
+      "guiones"
+    ],
+    "executors": [
+      "supervisor"
+    ],
+    "producer_commands": [],
+    "task_types": [
+      "CODE"
+    ]
+  },
+  "budget": {
+    "max_attempts": 14,
+    "stall_attempts": 4,
+    "replan_attempts": 4
+  },
+  "planner": {
+    "mode": "agent"
+  }
+}
