@@ -76,9 +76,7 @@ def plan_clips(
     segs = load_segments(transcript)
     video_end = segs[-1]["end"]
 
-    usable = [
-        m for m in matches if not m.get("needs_review") and m.get("match_start_sec") is not None
-    ]
+    usable = [m for m in matches if m.get("match_start_sec") is not None]
     usable.sort(key=lambda m: m["match_start_sec"])
 
     windows: dict[str, dict] = {}

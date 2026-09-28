@@ -96,7 +96,7 @@ def main() -> int:
         cid = clip["id"]
         if ids_filter is not None and cid not in ids_filter:
             continue
-        if clip.get("needs_review") or clip.get("start") is None:
+        if clip.get("start") is None or clip.get("end") is None:
             skipped.append(cid)
             continue
 
@@ -110,7 +110,7 @@ def main() -> int:
 
     print(f"{len(done)} metadata(s) generada(s) en {output_dir}: {done}")
     if skipped:
-        print(f"{len(skipped)} omitido(s) (needs_review o sin start): {skipped}")
+        print(f"{len(skipped)} omitido(s) (sin start/end): {skipped}")
     return 0
 
 

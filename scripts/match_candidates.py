@@ -23,9 +23,20 @@ import sys
 import unicodedata
 from pathlib import Path
 
-from rapidfuzz import fuzz
+try:
+    from rapidfuzz import fuzz
+except ImportError:
+    import difflib
+
+    class _FuzzShim:
+        @staticmethod
+        def ratio(s1: str, s2: str) -> float:
+            return difflib.SequenceMatcher(None, s1, s2).ratio() * 100.0
+
+    fuzz = _FuzzShim()
 
 WORD_LEN_SLACK = 3  # además de +-2, probamos algunas variantes más largas/cortas
+
 PUNCT_RE = re.compile(r"[^\w\s]", re.UNICODE)
 SPACE_RE = re.compile(r"\s+")
 
@@ -90,7 +101,7 @@ def best_match(
     if not candidate_starts:
         return {"score": 0.0, "start": None, "end": None, "matched_text": None}
 
-    lengths = range(max(1, n - 2), n + WORD_LEN_SLACK)
+    lengths = range(1, n + WORD_LEN_SLACK + 1)
     best = {"score": -1.0, "start": None, "end": None, "matched_text": None}
     for i in candidate_starts:
         for length in lengths:

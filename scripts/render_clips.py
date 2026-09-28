@@ -60,11 +60,27 @@ def overlaps(a_start: float, a_end: float, b_start: float, b_end: float) -> bool
     return a_start < b_end and b_start < a_end
 
 
+def has_subtitles_filter(ffmpeg: str = DEFAULT_FFMPEG) -> bool:
+    try:
+        res = subprocess.run([ffmpeg, "-filters"], capture_output=True, text=True)
+        if res.returncode != 0:
+            return False
+        for line in res.stdout.splitlines():
+            parts = line.strip().split()
+            if len(parts) >= 2 and parts[1] == "subtitles":
+                return True
+        return False
+    except Exception:
+        return False
+
+
 def build_cues(
-    clip: dict, match: dict, words: list[dict], max_words_per_line: int
+    clip: dict, match: dict | None, words: list[dict], max_words_per_line: int
 ) -> list[dict]:
     clip_start, clip_end = clip["start"], clip["end"]
-    quote_start, quote_end = match.get("match_start_sec"), match.get("match_end_sec")
+    quote_start = match.get("match_start_sec") if match else None
+    quote_end = match.get("match_end_sec") if match else None
+    quote_text = (match.get("quote") if match else None) or clip.get("quote")
 
     clip_words = [w for w in words if clip_start <= w["start"] < clip_end]
 
@@ -88,7 +104,11 @@ def build_cues(
     quote_emitted = False
     last_seg_idx = None
     for w in clip_words:
-        in_quote = quote_start is not None and overlaps(w["start"], w["end"], quote_start, quote_end)
+        in_quote = (
+            quote_start is not None
+            and quote_end is not None
+            and overlaps(w["start"], w["end"], quote_start, quote_end)
+        )
         if in_quote:
             flush_context()
             if not quote_emitted:
@@ -96,7 +116,7 @@ def build_cues(
                     {
                         "start": max(clip_start, quote_start),
                         "end": min(clip_end, quote_end),
-                        "text": match["quote"],
+                        "text": quote_text or " ".join(w["word"] for w in clip_words),
                     }
                 )
                 quote_emitted = True
@@ -107,11 +127,20 @@ def build_cues(
         last_seg_idx = w["seg_idx"]
     flush_context()
 
+    if not cues and clip_words:
+        cues.append(
+            {
+                "start": clip_start,
+                "end": clip_end,
+                "text": quote_text or " ".join(w["word"] for w in clip_words),
+            }
+        )
+
     cues.sort(key=lambda c: c["start"])
     return cues
 
 
-def write_srt(cues: list[dict], clip_start: float, path: Path) -> None:
+def build_srt_content(cues: list[dict], clip_start: float) -> str:
     lines = []
     for i, cue in enumerate(cues, start=1):
         start = cue["start"] - clip_start
@@ -122,7 +151,19 @@ def write_srt(cues: list[dict], clip_start: float, path: Path) -> None:
         lines.append(f"{fmt_srt_time(start)} --> {fmt_srt_time(end)}")
         lines.append(cue["text"])
         lines.append("")
-    path.write_text("\n".join(lines), encoding="utf-8")
+    return "\n".join(lines)
+
+
+def write_srt(cues: list[dict], clip_start: float, path: Path) -> None:
+    content = build_srt_content(cues, clip_start)
+    if path.is_file():
+        try:
+            if path.read_text(encoding="utf-8") == content:
+                return
+        except Exception:
+            pass
+    path.write_text(content, encoding="utf-8")
+
 
 
 def escape_ffmpeg_filter_path(path: Path) -> str:
@@ -131,9 +172,14 @@ def escape_ffmpeg_filter_path(path: Path) -> str:
 
 
 def render_clip(
-    ffmpeg: str, video: Path, clip: dict, srt_path: Path, out_path: Path, font_size: int
+    ffmpeg: str,
+    video: Path,
+    clip: dict,
+    srt_path: Path,
+    out_path: Path,
+    font_size: int,
+    burn_subtitles: bool = True,
 ) -> None:
-    vf = f"subtitles={escape_ffmpeg_filter_path(srt_path)}:force_style='FontSize={font_size},Alignment=2,MarginV=60'"
     cmd = [
         ffmpeg,
         "-y",
@@ -143,8 +189,11 @@ def render_clip(
         str(clip["end"]),
         "-i",
         str(video),
-        "-vf",
-        vf,
+    ]
+    if burn_subtitles:
+        vf = f"subtitles={escape_ffmpeg_filter_path(srt_path)}:force_style='FontSize={font_size},Alignment=2,MarginV=60'"
+        cmd += ["-vf", vf]
+    cmd += [
         "-c:v",
         "libx264",
         "-crf",
@@ -182,6 +231,14 @@ def main() -> int:
         print(f"Error: no se encontró el binario ffmpeg en '{args.ffmpeg}'.", file=sys.stderr)
         return 1
 
+    can_burn = has_subtitles_filter(args.ffmpeg)
+    if not can_burn:
+        print(
+            "ADVERTENCIA: ffmpeg no tiene el filtro 'subtitles' (falta libass). "
+            "Se cortarán los clips sin quemar subtítulos.",
+            file=sys.stderr,
+        )
+
     clip_plan = json.loads(args.clip_plan.read_text(encoding="utf-8"))
     matches = {m["id"]: m for m in json.loads(args.matches.read_text(encoding="utf-8"))}
     transcript = json.loads(args.transcript.read_text(encoding="utf-8"))
@@ -197,14 +254,10 @@ def main() -> int:
         cid = clip["id"]
         if ids_filter is not None and cid not in ids_filter:
             continue
-        if clip.get("needs_review") or clip.get("start") is None:
+        if clip.get("start") is None or clip.get("end") is None:
             skipped.append(cid)
             continue
         match = matches.get(cid)
-        if match is None:
-            print(f"ADVERTENCIA: {cid} no tiene entrada en matches.json, se omite.", file=sys.stderr)
-            skipped.append(cid)
-            continue
 
         cues = build_cues(clip, match, words, args.max_words_per_line)
         srt_path = output_dir / f"{cid}.srt"
@@ -212,7 +265,15 @@ def main() -> int:
 
         out_path = output_dir / f"{cid}.mp4"
         try:
-            render_clip(args.ffmpeg, args.video, clip, srt_path, out_path, args.font_size)
+            render_clip(
+                args.ffmpeg,
+                args.video,
+                clip,
+                srt_path,
+                out_path,
+                args.font_size,
+                burn_subtitles=can_burn,
+            )
             done.append(cid)
         except subprocess.CalledProcessError as exc:
             print(f"ERROR cortando {cid}: {exc.stderr[-2000:]}", file=sys.stderr)
@@ -220,7 +281,7 @@ def main() -> int:
 
     print(f"{len(done)} clip(s) renderizado(s) en {output_dir}: {done}")
     if skipped:
-        print(f"{len(skipped)} omitido(s) (needs_review o sin match): {skipped}")
+        print(f"{len(skipped)} omitido(s) (sin start/end): {skipped}")
     if failed:
         print(f"{len(failed)} fallido(s): {failed}")
     return 1 if failed else 0
